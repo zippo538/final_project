@@ -1,0 +1,21 @@
+# --- Konfigurasi Jalur (Paths) ---
+# Catatan: Jalur ini bersifat relatif terhadap lokasi di mana BASE_DIR (Path(__file__).parent.parent)
+# diasumsikan (misalnya, direktori root proyek Anda, jika file config.yaml ada di dalamnya).
+BASE_DIR: "." # Direktori basis proyek
+ARTIFACTS_DIR: "artifacts"
+LOGS_DIR: "logs"
+STATIC_DIR: "static"
+ASSETS_DIR: "static/assets"
+CSS_DIR: "static/css"
+
+#jalur data
+DATA_PATH: "artifacts/Twitter_Data.csv"
+
+#feature coloum
+FEATURE_COLUMN: "clean_text"
+TARGET_COLUMN: "category"
+
+mlflow:
+  tracking_uri: "sqlite:///mlflow.db"
+  experiment_name: "sentiment_analysis_modi_category"
+  artifact_path: "model"

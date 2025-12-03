@@ -1,147 +1,118 @@
-import pandas as pd
-import numpy as np
 import re
-import nltk
 import joblib
+import nltk
+import pandas as pd
 from pathlib import Path
-from typing import Optional, Tuple
+from typing import Optional
+from nltk.corpus import stopwords
+from sklearn.base import BaseEstimator, TransformerMixin
+
 from src.utils.logger import default_logger as logger
 from src.utils.config import config
-from nltk.corpus import stopwords
 
-class DataPreprocess :
-    def __init__(self,preprocessing_path : Optional[str] = None):
-        self.preprocessing_path = preprocessing_path or config.get('preprocessing_path','models/preprocessing')
-        self.preprocess = False 
-        
-        logger.info("Initialized Data Preprocessor")
-    
-    def _preprocessing_path(self)->None:
-        Path(self.preprocessing_path).mkdir(parents=True,exist_ok=True)
-        
-    def run_preprocess(self,df:pd.DataFrame, feature_cols : str, target_col : str) ->True : 
-        try : 
-            #change int
-            df[target_col] = df[target_col].astype(int)
-            
-            self.clean_data(df)
-            self.remove_unimportant_word(df,feature_cols)
-            self.stop_word(df,feature_cols)
-            self.preprocess = True
-            self.save_preprocessor()
-            logger.info("Data Preprocessor Has Successfully!!")
-            
-            
-            return self.preprocess
-        except Exception as e :
-            logger.error(f"Error Run Preprocessor : {e}")
-            raise 
-     
-    def clean_data(self,df:pd.DataFrame)-> pd.DataFrame : 
-        try : 
-             logger.info(f"Clean Data ")
-             
-             df.dropna()
-             logger.info(f"Delete Nan Values ")
-             
-             df.drop_duplicates()
-             logger.info(f"Delete Duplicate Values ")
-             
-             return df
-        
-        except Exception as e:
-            logger.error(f"Error Preprocessing Data : {e}")
-            raise
-        
-    def remove_unimportant_word(self,df:pd.DataFrame,feature_cols : str)-> pd.DataFrame : 
-        try : 
-            logger.info(f"Remove Unimportant Word ")
 
-            #remove space
-            df[feature_cols] = df[feature_cols].str.replace('\n',' ')
-            logger.info(f"Remove Space")
-             
-            #change to lower str
-            df[feature_cols] = df[feature_cols].apply(lambda x: x.lower())
-            logger.info(f"Lower Text")
-            
-            
-            #remove tag like - or _
-            df[feature_cols] = df[feature_cols].str.replace('-'," ").str.replace('_'," ")
-            logger.info(f"Remove Tag")
-            
+class TextPreprocessor(BaseEstimator, TransformerMixin):
+    """
+    Professional text preprocessing pipeline compatible with scikit-learn.
+    Follows SOLID principles & clean ML architecture.
+    """
 
-            #remove characters non alphanumeric
-            for text, i in df[feature_cols].items():
-                df.at[text,feature_cols] = re.sub(r'[^a-zA-Z0-9\s]', '', i)
-            logger.info(f"Remove Character non Alphanumeric")
-            
-            #remove emoji
-            text = []
-            emoji_pattern = r"[^\w\s,.!?-]"
-            pattern = r"\uFFFD"
-            for i in df[feature_cols].values.tolist():
-                clean_text = re.sub(emoji_pattern, '', i)
-                clean_text = re.sub(pattern, '', clean_text)
-                text.append(clean_text)
-                
-            df[feature_cols] = text 
-            
-            return df
-        
-        except Exception as e:
-            logger.error(f"Error Remove Uninimportant Word : {e}")
-            raise
-        
-    def stop_word(self,df:pd.DataFrame, feature_cols : str)-> pd.DataFrame : 
-        try : 
-            logger.info(f"Stop Word ")
-            
-            df[feature_cols] = df[feature_cols].apply(self.__preprocess_text)
-            
-            return df
-        
-        except Exception as e:
-            logger.error(f"Error Preprocessing Data : {e}")
-            raise    
-    
-    def __preprocess_text(self,text:str)-> str : 
-        nltk.download('stopwords') # cleaning text dari noise khusus stop words
-        nltk.download('punkt_tab')
-        
-        words = nltk.word_tokenize(text)
-        stop_words = set(stopwords.words('english'))
-        filtered_token = []
-        for token in words :
-            if token not in stop_words:
-                filtered_token.append(token)
-        return ' '.join(filtered_token)
+    def __init__(
+        self,
+        feature_column: str = None,
+        target_column: str = None,
+        preprocessing_path: Optional[str] = None,
+        language: str = "english"
+    ):
+        self.feature_column = feature_column or config.get("features.feature_column")
+        self.target_column = target_column or config.get("features.target_column")
+        self.preprocessing_path = preprocessing_path or config.get(
+            "preprocessing_path", "models/preprocessing"
+        )
+        self.language = language
 
-    def save_preprocessor(self)->None:
-        try : 
-            logger.info(f"Saving preprocessor to {self.preprocessing_path}")
-            self._prepare_preprocessing_path()
-            
-            # save pipeline 
-            joblib.dump(
-                self.preprocessor_pipeline,
-                Path(self.preprocessing_path) / 'pipeline.joblib'
+        self.stop_words = set(stopwords.words(self.language))
+
+        logger.info("Text Preprocessor initialized.")
+
+    # ============================================================
+    # Fit is not used for text cleaning but required for pipeline
+    # ============================================================
+    def fit(self, X, y=None):
+        return self
+
+    # ============================================================
+    # TRANSFORM — Core Preprocessing Logic
+    # ============================================================
+    def transform(self, df: pd.DataFrame) -> pd.DataFrame:
+        df = df.copy()  # avoid modifying original dataset
+        try:
+            logger.info("Starting preprocessing...")
+
+            df = self._clean_dataframe(df)
+            df[self.feature_column] = (
+                df[self.feature_column]
+                .astype(str)
+                .apply(self._normalize_text)
+                .apply(self._remove_non_alphanumeric)
+                .apply(self._remove_emojis)
+                .apply(self._remove_stopwords)
             )
-        except Exception as e:
-            logger.error(f"Error Save Preprocessor : {str(e)}")
-            raise
-        
-    def load_preprocessor(self)-> None:
-        try :
-            logger.info(f"Loading Preprocessor from {self.preprocessing_path}")
+
+            if self.target_column in df.columns:
+                df[self.target_column] = df[self.target_column].astype(int)
             
-            #load pipeline
-            pipeline_path = Path(self.preprocessing_path) / 'pipeline.joblib'
-            self.preprocessor_pipeline = joblib.load(pipeline_path)
-            
-            self.trained = True 
-            logger.info("Preprocessor Loaded Successfully")
+            print(df[self.target_column].value_counts())
+            logger.info("Preprocessing completed successfully.")
+            return df
+
         except Exception as e:
-            logger.error(f"Error loading preprocessor : {str(e)}")
+            logger.error(f"Transform error: {e}")
             raise
-    
+
+    # ============================================================
+    # 🔧 CLEANING UTILITIES
+    # ============================================================
+    def _clean_dataframe(self, df: pd.DataFrame) -> pd.DataFrame:
+        df = df.dropna()
+        df = df.drop_duplicates()
+        logger.info("Dropped NaN and duplicate rows.")
+        return df
+
+    def _normalize_text(self, text: str) -> str:
+        text = text.replace("\n", " ").lower()
+        text = re.sub(r"[_-]", " ", text)
+        return text
+
+    def _remove_non_alphanumeric(self, text: str) -> str:
+        return re.sub(r"[^a-zA-Z0-9\s]", "", text)
+
+    def _remove_emojis(self, text: str) -> str:
+        emoji_pattern = r"[^\w\s,.!?-]"
+        clean_text = re.sub(emoji_pattern, "", text)
+        clean_text = clean_text.replace("\uFFFD", "")
+        return clean_text
+
+    def _remove_stopwords(self, text: str) -> str:
+        tokens = nltk.word_tokenize(text)
+        filtered = [t for t in tokens if t not in self.stop_words]
+        return " ".join(filtered)
+
+    # ============================================================
+    # SAVE / LOAD
+    # ============================================================
+    def save(self):
+        """Save the transformer object using joblib"""
+        Path(self.preprocessing_path).mkdir(parents=True, exist_ok=True)
+
+        save_path = Path(self.preprocessing_path) / "preprocessor.joblib"
+        joblib.dump(self, save_path)
+
+        logger.info(f"Preprocessor saved to: {save_path}")
+
+    @staticmethod
+    def load(path: str):
+        """Load saved transformer"""
+        preprocessor = joblib.load(path)
+        logger.info(f"Preprocessor loaded from: {path}")
+        return preprocessor

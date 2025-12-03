@@ -48,8 +48,8 @@ class ModelTrainer :
             logger.error(f"Error setting up MLflow: {str(e)}")
             raise
     
-    def train_model(self,model_type:str, X_train: pd.DataFrame, y_train: pd.Series,
-                    X_test: pd.DataFrame, y_test: pd.Series) -> Dict[str,Any]: 
+    def train_model(self,model_type:str, X_train, y_train,
+                    X_test, y_test) -> Dict[str,Any]: 
             """
             Train Single Model
             """
@@ -100,8 +100,7 @@ class ModelTrainer :
                 logger.error(f"Error training {model_type} model: {str(e)}")
                 raise
             
-    def train_all_models(self, X_train: pd.DataFrame, y_train: pd.Series,
-                        X_test: pd.DataFrame, y_test: pd.Series) -> Dict[str, Dict[str, Any]]:
+    def train_all_models(self, X_train, y_train, X_test , y_test) -> Dict[str, Dict[str, Any]]:
         """
         Train all configured models
         

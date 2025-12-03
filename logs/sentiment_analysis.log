@@ -1,0 +1,1025 @@
+2025-12-03 07:41:21 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 07:41:21 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 07:41:21 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 07:41:36 - sentiment_analysis - ERROR - Error setting up MLflow: Must specify exactly one of: `experiment_id` or `experiment_name`.
+2025-12-03 07:41:36 - sentiment_analysis - ERROR - Pipeline execution failed: Must specify exactly one of: `experiment_id` or `experiment_name`.
+2025-12-03 07:45:57 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 07:45:57 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 07:45:58 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 07:45:58 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 07:46:15 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 07:46:15 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 07:46:15 - sentiment_analysis - INFO - Started pipeline run with ID: 4efa256035ac4feeb0b4b2867a3b43d7
+2025-12-03 07:46:15 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 07:46:15 - sentiment_analysis - INFO - Intialized Data loader : None
+2025-12-03 07:46:15 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 07:46:15 - sentiment_analysis - ERROR - Error Feature Engineering : Invalid file path or buffer object type: <class 'NoneType'>
+2025-12-03 07:46:15 - sentiment_analysis - ERROR - Pipeline execution failed: Invalid file path or buffer object type: <class 'NoneType'>
+2025-12-03 07:53:41 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 07:53:41 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 07:53:41 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 07:53:41 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 07:53:55 - sentiment_analysis - ERROR - Error setting up MLflow: Must specify exactly one of: `experiment_id` or `experiment_name`.
+2025-12-03 07:53:55 - sentiment_analysis - ERROR - Pipeline execution failed: Must specify exactly one of: `experiment_id` or `experiment_name`.
+2025-12-03 07:54:20 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 07:54:20 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 07:54:20 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 07:54:20 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 07:54:35 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 07:54:35 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 07:54:36 - sentiment_analysis - INFO - Started pipeline run with ID: 4d12fa5b1b6344e698922302e1ef9e48
+2025-12-03 07:54:36 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 07:54:36 - sentiment_analysis - INFO - Intialized Data loader : None
+2025-12-03 07:54:36 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 07:54:36 - sentiment_analysis - ERROR - Error Feature Engineering : Invalid file path or buffer object type: <class 'NoneType'>
+2025-12-03 07:54:36 - sentiment_analysis - ERROR - Pipeline execution failed: Invalid file path or buffer object type: <class 'NoneType'>
+2025-12-03 07:58:04 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 07:58:04 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 07:58:04 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 07:58:04 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 07:58:19 - sentiment_analysis - ERROR - Error setting up MLflow: (sqlite3.ProgrammingError) Error binding parameter 1: type 'WindowsPath' is not supported
+[SQL: SELECT experiments.experiment_id AS experiments_experiment_id, experiments.name AS experiments_name, experiments.artifact_location AS experiments_artifact_location, experiments.lifecycle_stage AS experiments_lifecycle_stage, experiments.creation_time AS experiments_creation_time, experiments.last_update_time AS experiments_last_update_time 
+FROM experiments 
+WHERE experiments.name = ? AND experiments.lifecycle_stage IN (?, ?)]
+[parameters: (WindowsPath('D:/Python/dibimbing/final_project/sentiment_analysis_modi_category'), 'active', 'deleted')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-12-03 07:58:19 - sentiment_analysis - ERROR - Pipeline execution failed: (sqlite3.ProgrammingError) Error binding parameter 1: type 'WindowsPath' is not supported
+[SQL: SELECT experiments.experiment_id AS experiments_experiment_id, experiments.name AS experiments_name, experiments.artifact_location AS experiments_artifact_location, experiments.lifecycle_stage AS experiments_lifecycle_stage, experiments.creation_time AS experiments_creation_time, experiments.last_update_time AS experiments_last_update_time 
+FROM experiments 
+WHERE experiments.name = ? AND experiments.lifecycle_stage IN (?, ?)]
+[parameters: (WindowsPath('D:/Python/dibimbing/final_project/sentiment_analysis_modi_category'), 'active', 'deleted')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-12-03 08:13:38 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 08:13:38 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 08:13:38 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 08:13:38 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 08:13:53 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 08:13:53 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 08:13:54 - sentiment_analysis - INFO - Started pipeline run with ID: 1379203e4616413db6a921bd48f1bd77
+2025-12-03 08:13:54 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 08:13:54 - sentiment_analysis - INFO - Intialized Data loader : None
+2025-12-03 08:13:54 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 08:13:54 - sentiment_analysis - ERROR - Error Feature Engineering : Invalid file path or buffer object type: <class 'NoneType'>
+2025-12-03 08:13:54 - sentiment_analysis - ERROR - Pipeline execution failed: Invalid file path or buffer object type: <class 'NoneType'>
+2025-12-03 08:16:00 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 08:16:00 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 08:16:00 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 08:16:00 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 08:16:15 - sentiment_analysis - ERROR - Error setting up MLflow: (sqlite3.OperationalError) duplicate column name: outputs
+[SQL: ALTER TABLE evaluation_dataset_records ADD COLUMN outputs JSON]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-03 08:16:15 - sentiment_analysis - ERROR - Pipeline execution failed: (sqlite3.OperationalError) duplicate column name: outputs
+[SQL: ALTER TABLE evaluation_dataset_records ADD COLUMN outputs JSON]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-03 08:16:19 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 08:16:19 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 08:16:19 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 08:16:19 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 08:16:34 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 08:16:34 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 08:16:35 - sentiment_analysis - INFO - Started pipeline run with ID: 397a1e250d53446181fa2b465a50b4c8
+2025-12-03 08:16:35 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 08:16:35 - sentiment_analysis - ERROR - Pipeline execution failed: 'Config' object has no attribute 'base_dir'
+2025-12-03 08:17:08 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 08:17:08 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 08:17:09 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 08:17:09 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 08:17:24 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 08:17:24 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 08:17:25 - sentiment_analysis - INFO - Started pipeline run with ID: 958970f789cb48b687fe04ed759693bc
+2025-12-03 08:17:25 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 08:17:25 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-03 08:17:25 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 08:17:25 - sentiment_analysis - ERROR - Error Feature Engineering : Invalid file path or buffer object type: <class 'NoneType'>
+2025-12-03 08:17:25 - sentiment_analysis - ERROR - Pipeline execution failed: Invalid file path or buffer object type: <class 'NoneType'>
+2025-12-03 08:18:48 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 08:18:48 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 08:18:49 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 08:18:49 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 08:19:05 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 08:19:05 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 08:19:05 - sentiment_analysis - INFO - Started pipeline run with ID: 00b67f48fe8c476a855455bc3d8d5b20
+2025-12-03 08:19:05 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 08:19:05 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-03 08:19:05 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 08:19:06 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-03 08:19:06 - sentiment_analysis - INFO - Validate Data
+2025-12-03 08:19:06 - sentiment_analysis - ERROR - Error Validate Data : None
+2025-12-03 08:19:06 - sentiment_analysis - ERROR - Error Feature Engineering : None
+2025-12-03 08:19:06 - sentiment_analysis - ERROR - Pipeline execution failed: None
+2025-12-03 08:21:40 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 08:21:40 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 08:21:40 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 08:21:40 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 08:21:56 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 08:21:56 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 08:21:56 - sentiment_analysis - INFO - Started pipeline run with ID: 5c37203db30b4314b02443e0c066efe3
+2025-12-03 08:21:56 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 08:21:56 - sentiment_analysis - ERROR - Pipeline execution failed: 'DataLoader' object has no attribute 'feature_coloum'
+2025-12-03 08:23:11 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 08:23:11 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 08:23:12 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 08:23:12 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 08:23:27 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 08:23:27 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 08:23:27 - sentiment_analysis - INFO - Started pipeline run with ID: 658eb79b9155497897cbce3df82dc9f0
+2025-12-03 08:23:27 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 08:23:27 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-03 08:23:27 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 08:23:28 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-03 08:23:28 - sentiment_analysis - INFO - Validate Data
+2025-12-03 08:23:28 - sentiment_analysis - ERROR - Error Validate Data : None
+2025-12-03 08:23:28 - sentiment_analysis - ERROR - Error Feature Engineering : None
+2025-12-03 08:23:28 - sentiment_analysis - ERROR - Pipeline execution failed: None
+2025-12-03 08:24:23 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 08:24:23 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 08:24:24 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 08:24:24 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 08:24:40 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 08:24:40 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 08:24:40 - sentiment_analysis - INFO - Started pipeline run with ID: 511b970383944cc4aa386aa9827a5204
+2025-12-03 08:24:40 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 08:24:40 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-03 08:24:40 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 08:24:41 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-03 08:24:41 - sentiment_analysis - INFO - Validate Data
+2025-12-03 08:24:41 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 08:24:41 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 08:24:41 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 08:24:41 - sentiment_analysis - INFO - category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 08:24:41 - sentiment_analysis - INFO - Validate Data
+2025-12-03 08:24:41 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 08:24:41 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 08:24:41 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 08:24:41 - sentiment_analysis - INFO - category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 08:24:41 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-03 08:24:41 - sentiment_analysis - INFO - Initialized Data Preprocessor
+2025-12-03 08:24:41 - sentiment_analysis - ERROR - Error Run Preprocessor : None
+2025-12-03 08:24:41 - sentiment_analysis - ERROR - Pipeline execution failed: None
+2025-12-03 08:25:10 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 08:25:10 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 08:25:11 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 08:25:11 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 08:25:25 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 08:25:25 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 08:25:26 - sentiment_analysis - INFO - Started pipeline run with ID: 2b4c4839be624ffbb97c6d1df62ccc00
+2025-12-03 08:25:26 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 08:25:26 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-03 08:25:26 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 08:25:26 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-03 08:25:26 - sentiment_analysis - INFO - Validate Data
+2025-12-03 08:25:26 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 08:25:26 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 08:25:26 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 08:25:26 - sentiment_analysis - INFO - category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 08:25:26 - sentiment_analysis - INFO - Validate Data
+2025-12-03 08:25:26 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 08:25:26 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 08:25:26 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 08:25:26 - sentiment_analysis - INFO - category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 08:25:27 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-03 08:25:27 - sentiment_analysis - INFO - Initialized Data Preprocessor
+2025-12-03 08:25:27 - sentiment_analysis - ERROR - Error Run Preprocessor : Cannot convert non-finite values (NA or inf) to integer
+2025-12-03 08:25:27 - sentiment_analysis - ERROR - Pipeline execution failed: Cannot convert non-finite values (NA or inf) to integer
+2025-12-03 08:29:55 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 08:29:55 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 08:29:56 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 08:29:56 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 08:30:11 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 08:30:11 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 08:30:11 - sentiment_analysis - INFO - Started pipeline run with ID: f19bff5f499f4af08463b690770a61a8
+2025-12-03 08:30:11 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 08:30:11 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-03 08:30:11 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 08:30:12 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-03 08:30:12 - sentiment_analysis - INFO - Validate Data
+2025-12-03 08:30:12 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 08:30:12 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 08:30:12 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 08:30:12 - sentiment_analysis - INFO - category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 08:30:12 - sentiment_analysis - INFO - Validate Data
+2025-12-03 08:30:12 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 08:30:12 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 08:30:12 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 08:30:12 - sentiment_analysis - INFO - category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 08:30:12 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-03 08:30:12 - sentiment_analysis - INFO - Initialized Data Preprocessor
+2025-12-03 08:30:12 - sentiment_analysis - INFO - Clean Data 
+2025-12-03 08:30:12 - sentiment_analysis - INFO - Delete Nan Values 
+2025-12-03 08:30:12 - sentiment_analysis - INFO - Delete Duplicate Values 
+2025-12-03 08:30:12 - sentiment_analysis - INFO - Remove Unimportant Word 
+2025-12-03 08:30:12 - sentiment_analysis - INFO - Remove Space
+2025-12-03 08:30:12 - sentiment_analysis - ERROR - Error Remove Uninimportant Word : 'float' object has no attribute 'lower'
+2025-12-03 08:30:12 - sentiment_analysis - ERROR - Error Run Preprocessor : 'float' object has no attribute 'lower'
+2025-12-03 08:30:12 - sentiment_analysis - ERROR - Pipeline execution failed: 'float' object has no attribute 'lower'
+2025-12-03 08:39:54 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 08:39:54 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 08:39:55 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 08:39:55 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 08:40:09 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 08:40:09 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 08:40:10 - sentiment_analysis - INFO - Started pipeline run with ID: 07c633d07f5f42999bd760b6fd74f0b6
+2025-12-03 08:40:10 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 08:40:10 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-03 08:40:10 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 08:40:11 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-03 08:40:11 - sentiment_analysis - INFO - Validate Data
+2025-12-03 08:40:11 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 08:40:11 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 08:40:11 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 08:40:11 - sentiment_analysis - INFO - category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 08:40:11 - sentiment_analysis - INFO - Validate Data
+2025-12-03 08:40:11 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 08:40:11 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 08:40:11 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 08:40:11 - sentiment_analysis - INFO - category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 08:40:11 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-03 08:40:11 - sentiment_analysis - INFO - Initialized Data Preprocessor
+2025-12-03 08:40:11 - sentiment_analysis - INFO - Clean Data 
+2025-12-03 08:40:11 - sentiment_analysis - INFO - Delete Nan Values 
+2025-12-03 08:40:11 - sentiment_analysis - INFO - Delete Duplicate Values 
+2025-12-03 08:40:11 - sentiment_analysis - INFO - Remove Unimportant Word 
+2025-12-03 08:40:11 - sentiment_analysis - INFO - Remove Space
+2025-12-03 08:40:11 - sentiment_analysis - ERROR - Error Remove Uninimportant Word : 'float' object has no attribute 'lower'
+2025-12-03 08:40:11 - sentiment_analysis - ERROR - Error Run Preprocessor : 'float' object has no attribute 'lower'
+2025-12-03 08:40:11 - sentiment_analysis - ERROR - Pipeline execution failed: 'float' object has no attribute 'lower'
+2025-12-03 08:44:21 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 08:44:21 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 08:44:22 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 08:44:22 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 08:44:37 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 08:44:37 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 08:44:38 - sentiment_analysis - INFO - Started pipeline run with ID: d1ada79aaeaa45bb9d15b21b8d04023c
+2025-12-03 08:44:38 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 08:44:38 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-03 08:44:38 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 08:44:38 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-03 08:44:38 - sentiment_analysis - INFO - Validate Data
+2025-12-03 08:44:38 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 08:44:38 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 08:44:38 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 08:44:38 - sentiment_analysis - INFO - category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 08:44:38 - sentiment_analysis - INFO - Validate Data
+2025-12-03 08:44:38 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 08:44:38 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 08:44:38 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 08:44:38 - sentiment_analysis - INFO - category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 08:44:39 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-03 08:44:39 - sentiment_analysis - INFO - Initialized Data Preprocessor
+2025-12-03 08:44:39 - sentiment_analysis - INFO - Clean Data 
+2025-12-03 08:44:39 - sentiment_analysis - INFO - Delete Nan Values 
+2025-12-03 08:44:39 - sentiment_analysis - INFO - Delete Duplicate Values 
+2025-12-03 08:44:39 - sentiment_analysis - INFO - Remove Unimportant Word 
+2025-12-03 08:44:39 - sentiment_analysis - INFO - Remove Space
+2025-12-03 08:44:39 - sentiment_analysis - INFO - Remove Tag
+2025-12-03 08:44:39 - sentiment_analysis - ERROR - Error Remove Uninimportant Word : expected string or bytes-like object, got 'float'
+2025-12-03 08:44:39 - sentiment_analysis - ERROR - Error Run Preprocessor : expected string or bytes-like object, got 'float'
+2025-12-03 08:44:39 - sentiment_analysis - ERROR - Pipeline execution failed: expected string or bytes-like object, got 'float'
+2025-12-03 08:45:07 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 08:45:07 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 08:45:08 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 08:45:08 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 08:45:23 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 08:45:23 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 08:45:24 - sentiment_analysis - INFO - Started pipeline run with ID: f48b492591784298a7621ea4311ddc82
+2025-12-03 08:45:24 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 08:45:24 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-03 08:45:24 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 08:45:24 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-03 08:45:24 - sentiment_analysis - INFO - Validate Data
+2025-12-03 08:45:24 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 08:45:24 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 08:45:24 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 08:45:24 - sentiment_analysis - INFO - category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 08:45:24 - sentiment_analysis - INFO - Validate Data
+2025-12-03 08:45:24 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 08:45:24 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 08:45:24 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 08:45:25 - sentiment_analysis - INFO - category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 08:45:25 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-03 08:45:25 - sentiment_analysis - INFO - Initialized Data Preprocessor
+2025-12-03 08:45:25 - sentiment_analysis - INFO - Clean Data 
+2025-12-03 08:45:25 - sentiment_analysis - INFO - Delete Nan Values 
+2025-12-03 08:45:25 - sentiment_analysis - INFO - Delete Duplicate Values 
+2025-12-03 08:45:25 - sentiment_analysis - INFO - Remove Unimportant Word 
+2025-12-03 08:45:25 - sentiment_analysis - INFO - Remove Space
+2025-12-03 08:45:25 - sentiment_analysis - INFO - 0         when modi promised “minimum government maximum...
+1         talk all the nonsense and continue all the dra...
+2         what did just say vote for modi  welcome bjp t...
+3         asking his supporters prefix chowkidar their n...
+4         answer who among these the most powerful world...
+                                ...                        
+162975    why these 456 crores paid neerav modi not reco...
+162976    dear rss terrorist payal gawar what about modi...
+162977    did you cover her interaction forum where she ...
+162978    there big project came into india modi dream p...
+162979    have you ever listen about like gurukul where ...
+Name: clean_text, Length: 162980, dtype: object
+2025-12-03 08:45:25 - sentiment_analysis - INFO - Remove Tag
+2025-12-03 08:45:25 - sentiment_analysis - ERROR - Error Remove Uninimportant Word : expected string or bytes-like object, got 'float'
+2025-12-03 08:45:25 - sentiment_analysis - ERROR - Error Run Preprocessor : expected string or bytes-like object, got 'float'
+2025-12-03 08:45:25 - sentiment_analysis - ERROR - Pipeline execution failed: expected string or bytes-like object, got 'float'
+2025-12-03 08:47:26 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 08:47:26 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 08:47:26 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 08:47:26 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 08:47:41 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 08:47:41 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 08:47:42 - sentiment_analysis - INFO - Started pipeline run with ID: 1e1cdf4440ab40c494ebadb6696e94e4
+2025-12-03 08:47:42 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 08:47:42 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-03 08:47:42 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 08:47:42 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-03 08:47:42 - sentiment_analysis - INFO - Validate Data
+2025-12-03 08:47:42 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 08:47:42 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 08:47:42 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 08:47:42 - sentiment_analysis - INFO - category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 08:47:42 - sentiment_analysis - INFO - Validate Data
+2025-12-03 08:47:42 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 08:47:42 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 08:47:42 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 08:47:42 - sentiment_analysis - INFO - category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 08:47:42 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-03 08:47:42 - sentiment_analysis - INFO - Initialized Data Preprocessor
+2025-12-03 08:47:42 - sentiment_analysis - INFO - Clean Data 
+2025-12-03 08:47:42 - sentiment_analysis - INFO - Delete Nan Values 
+2025-12-03 08:47:42 - sentiment_analysis - INFO - Delete Duplicate Values 
+2025-12-03 08:47:42 - sentiment_analysis - INFO - Remove Unimportant Word 
+2025-12-03 08:47:42 - sentiment_analysis - INFO - Remove Space
+2025-12-03 08:47:42 - sentiment_analysis - INFO - 0         when modi promised “minimum government maximum...
+1         talk all the nonsense and continue all the dra...
+2         what did just say vote for modi  welcome bjp t...
+3         asking his supporters prefix chowkidar their n...
+4         answer who among these the most powerful world...
+                                ...                        
+162975    why these 456 crores paid neerav modi not reco...
+162976    dear rss terrorist payal gawar what about modi...
+162977    did you cover her interaction forum where she ...
+162978    there big project came into india modi dream p...
+162979    have you ever listen about like gurukul where ...
+Name: clean_text, Length: 162980, dtype: object
+2025-12-03 08:47:43 - sentiment_analysis - INFO - Lower Text
+2025-12-03 08:47:43 - sentiment_analysis - INFO - Remove Tag
+2025-12-03 08:47:45 - sentiment_analysis - INFO - Remove Character non Alphanumeric
+2025-12-03 08:47:46 - sentiment_analysis - INFO - Stop Word 
+2025-12-03 08:48:18 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 08:48:18 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 08:48:19 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 08:48:19 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 08:48:34 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 08:48:34 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 08:48:34 - sentiment_analysis - INFO - Started pipeline run with ID: 1083fe9e50af4a22a4c94d3cde698cc4
+2025-12-03 08:48:34 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 08:48:34 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-03 08:48:34 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 08:48:35 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-03 08:48:35 - sentiment_analysis - INFO - Validate Data
+2025-12-03 08:48:35 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 08:48:35 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 08:48:35 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 08:48:35 - sentiment_analysis - INFO - category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 08:48:35 - sentiment_analysis - INFO - Validate Data
+2025-12-03 08:48:35 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 08:48:35 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 08:48:35 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 08:48:35 - sentiment_analysis - INFO - category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 08:48:35 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-03 08:48:35 - sentiment_analysis - INFO - Initialized Data Preprocessor
+2025-12-03 08:48:35 - sentiment_analysis - INFO - Clean Data 
+2025-12-03 08:48:35 - sentiment_analysis - INFO - Delete Nan Values 
+2025-12-03 08:48:35 - sentiment_analysis - INFO - Delete Duplicate Values 
+2025-12-03 08:48:35 - sentiment_analysis - INFO - Remove Unimportant Word 
+2025-12-03 08:48:35 - sentiment_analysis - INFO - Remove Space
+2025-12-03 08:48:35 - sentiment_analysis - INFO - 0         when modi promised “minimum government maximum...
+1         talk all the nonsense and continue all the dra...
+2         what did just say vote for modi  welcome bjp t...
+3         asking his supporters prefix chowkidar their n...
+4         answer who among these the most powerful world...
+                                ...                        
+162975    why these 456 crores paid neerav modi not reco...
+162976    dear rss terrorist payal gawar what about modi...
+162977    did you cover her interaction forum where she ...
+162978    there big project came into india modi dream p...
+162979    have you ever listen about like gurukul where ...
+Name: clean_text, Length: 162980, dtype: object
+2025-12-03 08:48:35 - sentiment_analysis - INFO - Lower Text
+2025-12-03 08:48:35 - sentiment_analysis - INFO - Remove Tag
+2025-12-03 08:48:38 - sentiment_analysis - INFO - Remove Character non Alphanumeric
+2025-12-03 08:48:39 - sentiment_analysis - INFO - Stop Word 
+2025-12-03 08:49:24 - sentiment_analysis - ERROR - Error Run Preprocessor : Cannot convert non-finite values (NA or inf) to integer
+2025-12-03 08:49:24 - sentiment_analysis - ERROR - Pipeline execution failed: Cannot convert non-finite values (NA or inf) to integer
+2025-12-03 09:19:20 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 09:19:20 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 09:20:00 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 09:20:00 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 09:20:01 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 09:20:01 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 09:20:40 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 09:20:40 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 09:20:41 - sentiment_analysis - INFO - Started pipeline run with ID: 7b17a26051ca4ea5891a0aa427c91ed3
+2025-12-03 09:20:41 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 09:20:41 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-03 09:20:41 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 09:20:41 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-03 09:20:41 - sentiment_analysis - INFO - Validate Data
+2025-12-03 09:20:41 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 09:20:41 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 09:20:41 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 09:20:41 - sentiment_analysis - INFO - category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 09:20:41 - sentiment_analysis - INFO - Validate Data
+2025-12-03 09:20:41 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 09:20:41 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 09:20:41 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 09:20:41 - sentiment_analysis - INFO - category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 09:20:42 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-03 09:20:42 - sentiment_analysis - ERROR - Pipeline execution failed: name 'DataPreprocess' is not defined
+2025-12-03 09:21:09 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 09:21:09 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 09:21:10 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 09:21:10 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 09:21:46 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 09:21:46 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 09:21:47 - sentiment_analysis - INFO - Started pipeline run with ID: 947533fdbc964959ad79da7eece907b1
+2025-12-03 09:21:47 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 09:21:47 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-03 09:21:47 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 09:21:48 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-03 09:21:48 - sentiment_analysis - INFO - Validate Data
+2025-12-03 09:21:48 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 09:21:48 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 09:21:48 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 09:21:48 - sentiment_analysis - INFO - category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 09:21:48 - sentiment_analysis - INFO - Validate Data
+2025-12-03 09:21:48 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 09:21:48 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 09:21:48 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 09:21:48 - sentiment_analysis - INFO - category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 09:21:49 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-03 09:21:49 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-03 09:21:49 - sentiment_analysis - ERROR - Pipeline execution failed: 'TextPreprocessor' object has no attribute 'run_preprocess'
+2025-12-03 09:48:07 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 09:48:07 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 09:48:07 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 09:48:07 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 09:48:22 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 09:48:22 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 09:48:23 - sentiment_analysis - INFO - Started pipeline run with ID: a709d0365e354a00b7513f64503d53aa
+2025-12-03 09:48:23 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 09:48:23 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-03 09:48:23 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 09:48:23 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-03 09:48:23 - sentiment_analysis - INFO - Validate Data
+2025-12-03 09:48:23 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 09:48:23 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 09:48:23 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 09:48:23 - sentiment_analysis - INFO - category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 09:48:23 - sentiment_analysis - INFO - Validate Data
+2025-12-03 09:48:23 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 09:48:23 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 09:48:23 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 09:48:23 - sentiment_analysis - INFO - category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 09:48:23 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-03 09:48:23 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-03 09:48:23 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-03 09:48:24 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-03 09:48:35 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-03 09:48:35 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-03 09:48:35 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-03 09:48:35 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-03 09:48:37 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-03 09:48:37 - sentiment_analysis - ERROR - Error logging TF-IDF model to MLflow: Run with UUID a709d0365e354a00b7513f64503d53aa is already active. To start a new run, first end the current run with mlflow.end_run(). To start a nested run, call start_run with nested=True
+2025-12-03 09:48:37 - sentiment_analysis - ERROR - Pipeline execution failed: Run with UUID a709d0365e354a00b7513f64503d53aa is already active. To start a new run, first end the current run with mlflow.end_run(). To start a nested run, call start_run with nested=True
+2025-12-03 09:51:41 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 09:51:41 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 09:51:41 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 09:51:41 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 09:51:56 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 09:51:56 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 09:51:57 - sentiment_analysis - INFO - Started pipeline run with ID: ebf2bd6db3884716b0fec6bd51d5c16c
+2025-12-03 09:51:57 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 09:51:57 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-03 09:51:57 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 09:51:57 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-03 09:51:57 - sentiment_analysis - INFO - Validate Data
+2025-12-03 09:51:57 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 09:51:57 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 09:51:57 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 09:51:57 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 09:51:57 - sentiment_analysis - INFO - Validate Data
+2025-12-03 09:51:57 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 09:51:57 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 09:51:57 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 09:51:57 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 09:51:57 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-03 09:51:57 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-03 09:51:57 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-03 09:51:58 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-03 09:52:09 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-03 09:52:09 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-03 09:52:09 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-03 09:52:09 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-03 09:52:11 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-03 09:52:11 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-03 09:52:18 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-03 09:52:18 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-03 09:52:18 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-03 09:52:19 - sentiment_analysis - ERROR - Pipeline execution failed: Unknown label type: continuous-multioutput. Maybe you are trying to fit a classifier, which expects discrete classes on a regression target with continuous values.
+2025-12-03 10:00:45 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 10:00:45 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 10:00:45 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 10:00:45 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 10:01:01 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 10:01:01 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 10:01:02 - sentiment_analysis - INFO - Started pipeline run with ID: a534bbab65574d5dae6d7b3268193072
+2025-12-03 10:01:02 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 10:01:02 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-03 10:01:02 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 10:01:02 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-03 10:01:02 - sentiment_analysis - INFO - Validate Data
+2025-12-03 10:01:02 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 10:01:02 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 10:01:02 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 10:01:02 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 10:01:02 - sentiment_analysis - INFO - Validate Data
+2025-12-03 10:01:02 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 10:01:03 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 10:01:03 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 10:01:03 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 10:01:03 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-03 10:01:03 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-03 10:01:03 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-03 10:01:03 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-03 10:01:14 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-03 10:01:14 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-03 10:01:14 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-03 10:01:14 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-03 10:01:17 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-03 10:01:17 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-03 10:01:23 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-03 10:01:23 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-03 10:01:24 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-03 10:01:24 - sentiment_analysis - ERROR - Pipeline execution failed: Unknown label type: continuous-multioutput. Maybe you are trying to fit a classifier, which expects discrete classes on a regression target with continuous values.
+2025-12-03 10:02:33 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 10:02:33 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 10:02:33 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 10:02:33 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 10:02:48 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 10:02:48 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 10:02:49 - sentiment_analysis - INFO - Started pipeline run with ID: 9824b61adffa4685ac050d505cb6d491
+2025-12-03 10:02:49 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 10:02:49 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-03 10:02:49 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 10:02:49 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-03 10:02:49 - sentiment_analysis - INFO - Validate Data
+2025-12-03 10:02:49 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 10:02:49 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 10:02:49 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 10:02:49 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 10:02:49 - sentiment_analysis - INFO - Validate Data
+2025-12-03 10:02:49 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 10:02:49 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 10:02:49 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 10:02:50 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 10:02:50 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-03 10:02:50 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-03 10:02:50 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-03 10:02:50 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-03 10:03:01 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-03 10:03:01 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-03 10:03:01 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-03 10:03:01 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-03 10:03:03 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-03 10:03:03 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-03 10:03:10 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-03 10:03:10 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-03 10:03:10 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-03 10:03:10 - sentiment_analysis - ERROR - Pipeline execution failed: Unknown label type: continuous-multioutput. Maybe you are trying to fit a classifier, which expects discrete classes on a regression target with continuous values.
+2025-12-03 10:05:59 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 10:05:59 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 10:06:00 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 10:06:00 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 10:06:15 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 10:06:15 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 10:06:15 - sentiment_analysis - INFO - Started pipeline run with ID: dd06295f5e224134b7b0b49fa6903bfd
+2025-12-03 10:06:15 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 10:06:15 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-03 10:06:15 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 10:06:16 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-03 10:06:16 - sentiment_analysis - INFO - Validate Data
+2025-12-03 10:06:16 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 10:06:16 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 10:06:16 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 10:06:16 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 10:06:16 - sentiment_analysis - INFO - Validate Data
+2025-12-03 10:06:16 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 10:06:16 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 10:06:16 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 10:06:16 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 10:06:16 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-03 10:06:16 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-03 10:06:16 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-03 10:06:16 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-03 10:06:27 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-03 10:06:27 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-03 10:06:27 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-03 10:06:27 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-03 10:06:29 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-03 10:06:29 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-03 10:06:36 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-03 10:06:36 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-03 10:06:36 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-03 10:06:36 - sentiment_analysis - ERROR - Pipeline execution failed: Unknown label type: continuous-multioutput. Maybe you are trying to fit a classifier, which expects discrete classes on a regression target with continuous values.
+2025-12-03 10:07:46 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 10:07:46 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 10:07:47 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 10:07:47 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 10:08:02 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 10:08:02 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 10:08:03 - sentiment_analysis - INFO - Started pipeline run with ID: 8e117062fd85473e97fb5d7ea2d7e1a0
+2025-12-03 10:08:03 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 10:08:03 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-03 10:08:03 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 10:08:03 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-03 10:08:03 - sentiment_analysis - INFO - Validate Data
+2025-12-03 10:08:03 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 10:08:04 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 10:08:04 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 10:08:04 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 10:08:04 - sentiment_analysis - INFO - Validate Data
+2025-12-03 10:08:04 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 10:08:04 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 10:08:04 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 10:08:04 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 10:08:04 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-03 10:08:04 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-03 10:08:04 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-03 10:08:04 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-03 10:08:15 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-03 10:08:15 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-03 10:08:15 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-03 10:08:15 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-03 10:08:17 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-03 10:08:17 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-03 10:08:23 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-03 10:08:24 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-03 10:08:24 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-03 10:08:24 - sentiment_analysis - ERROR - Pipeline execution failed: 'csr_matrix' object has no attribute 'ravel'
+2025-12-03 10:18:18 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 10:18:18 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 10:18:18 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 10:18:18 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 10:18:33 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 10:18:33 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 10:18:34 - sentiment_analysis - INFO - Started pipeline run with ID: 58d8953964264504820fd6075c06d9a3
+2025-12-03 10:18:34 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 10:18:34 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-03 10:18:34 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 10:18:34 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-03 10:18:34 - sentiment_analysis - INFO - Validate Data
+2025-12-03 10:18:34 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 10:18:34 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 10:18:34 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 10:18:35 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 10:18:35 - sentiment_analysis - INFO - Validate Data
+2025-12-03 10:18:35 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 10:18:35 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 10:18:35 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 10:18:35 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 10:18:35 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-03 10:18:35 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-03 10:18:35 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-03 10:18:35 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-03 10:18:49 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-03 10:18:49 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-03 10:18:49 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-03 10:18:49 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-03 10:18:51 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-03 10:18:51 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-03 10:18:58 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-03 10:18:58 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-03 10:18:58 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-03 10:18:58 - sentiment_analysis - ERROR - Pipeline execution failed: Unknown label type: continuous-multioutput. Maybe you are trying to fit a classifier, which expects discrete classes on a regression target with continuous values.
+2025-12-03 10:36:39 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 10:36:39 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 10:36:40 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 10:36:40 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 10:36:55 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 10:36:55 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 10:36:56 - sentiment_analysis - INFO - Started pipeline run with ID: 231902360357466f8b3c1df413651680
+2025-12-03 10:36:56 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 10:36:56 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-03 10:36:56 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 10:36:56 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-03 10:36:56 - sentiment_analysis - INFO - Validate Data
+2025-12-03 10:36:56 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 10:36:56 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 10:36:56 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 10:36:56 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 10:36:56 - sentiment_analysis - INFO - Validate Data
+2025-12-03 10:36:56 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 10:36:56 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 10:36:56 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 10:36:56 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 10:36:57 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-03 10:36:57 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-03 10:36:57 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-03 10:36:57 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-03 10:37:09 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-03 10:37:09 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-03 10:37:09 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-03 10:37:09 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-03 10:37:11 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-03 10:37:12 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-03 10:37:18 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-03 10:37:19 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-03 10:37:19 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-03 10:37:19 - sentiment_analysis - ERROR - Pipeline execution failed: Unknown label type: continuous-multioutput. Maybe you are trying to fit a classifier, which expects discrete classes on a regression target with continuous values.
+2025-12-03 10:39:45 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 10:39:45 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 10:39:46 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 10:39:46 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 10:40:01 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 10:40:01 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 10:40:01 - sentiment_analysis - INFO - Started pipeline run with ID: 05ecc01e315e4a4a839c20fd81489267
+2025-12-03 10:40:01 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 10:40:01 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-03 10:40:01 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 10:40:02 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-03 10:40:02 - sentiment_analysis - INFO - Validate Data
+2025-12-03 10:40:02 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 10:40:02 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 10:40:02 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 10:40:02 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 10:40:02 - sentiment_analysis - INFO - Validate Data
+2025-12-03 10:40:02 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 10:40:02 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 10:40:02 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 10:40:02 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 10:40:02 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-03 10:40:02 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-03 10:40:02 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-03 10:40:02 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-03 10:40:14 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-03 10:40:14 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-03 10:40:14 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-03 10:40:14 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-03 10:40:16 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-03 10:40:16 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-03 10:40:23 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-03 10:40:23 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-03 10:40:23 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-03 10:40:23 - sentiment_analysis - ERROR - Pipeline execution failed: Unknown label type: continuous-multioutput. Maybe you are trying to fit a classifier, which expects discrete classes on a regression target with continuous values.
+2025-12-03 10:41:29 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-03 10:41:29 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-03 10:41:29 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-03 10:41:29 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-03 10:41:44 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-03 10:41:44 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-03 10:41:45 - sentiment_analysis - INFO - Started pipeline run with ID: 8bcf0505145042019dc09fc546046311
+2025-12-03 10:41:45 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-03 10:41:45 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-03 10:41:45 - sentiment_analysis - INFO - Loading data from csv
+2025-12-03 10:41:45 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-03 10:41:45 - sentiment_analysis - INFO - Validate Data
+2025-12-03 10:41:45 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 10:41:45 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 10:41:45 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 10:41:45 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 10:41:45 - sentiment_analysis - INFO - Validate Data
+2025-12-03 10:41:45 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-03 10:41:45 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-03 10:41:45 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-03 10:41:45 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-03 10:41:46 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-03 10:41:46 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-03 10:41:46 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-03 10:41:46 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-03 10:41:57 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-03 10:41:57 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-03 10:41:57 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-03 10:41:57 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-03 10:41:59 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-03 10:41:59 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-03 10:42:05 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-03 10:42:06 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-03 10:42:06 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-03 10:42:06 - sentiment_analysis - ERROR - Pipeline execution failed: Unknown label type: continuous-multioutput. Maybe you are trying to fit a classifier, which expects discrete classes on a regression target with continuous values.

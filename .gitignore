@@ -3,3 +3,5 @@ research/mlruns
 mlflow.db
 __pycache__/
 # research/mlflow.db
+mlruns/
+models/

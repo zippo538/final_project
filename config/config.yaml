@@ -1,21 +1,33 @@
-# --- Konfigurasi Jalur (Paths) ---
-# Catatan: Jalur ini bersifat relatif terhadap lokasi di mana BASE_DIR (Path(__file__).parent.parent)
-# diasumsikan (misalnya, direktori root proyek Anda, jika file config.yaml ada di dalamnya).
-BASE_DIR: "." # Direktori basis proyek
-ARTIFACTS_DIR: "artifacts"
-LOGS_DIR: "logs"
-STATIC_DIR: "static"
-ASSETS_DIR: "static/assets"
-CSS_DIR: "static/css"
+# ==========================================
+# PATH CONFIGURATION
+# ==========================================
+paths:
+  # dataset utama
+  data_path: "artifacts/Twitter_Data.csv"
 
-#jalur data
-DATA_PATH: "artifacts/Twitter_Data.csv"
+  # folder preprocessing (misal untuk save tokenizer, encoder, pembersihan teks)
+  preprocessing_path: "models/preprocessing"
 
-#feature coloum
-FEATURE_COLUMN: "clean_text"
-TARGET_COLUMN: "category"
+  # folder output model
+  model_dir: "models/"
 
+# ==========================================
+# FEATURE CONFIGURATION
+# ==========================================
+features:
+  feature_column: "clean_text"
+  target_column: "category"
+
+# ==========================================
+# MLFLOW CONFIGURATION
+# ==========================================
 mlflow:
   tracking_uri: "sqlite:///mlflow.db"
   experiment_name: "sentiment_analysis_modi_category"
   artifact_path: "model"
+
+# ==========================================
+# GENERAL EXPERIMENT SETTINGS
+# ==========================================
+experiment:
+  name: "sentiment_analysis_modi_category"

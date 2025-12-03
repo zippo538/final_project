@@ -16,7 +16,7 @@ class ModelTrainer :
         self.setup_mlflow()
         logger.info(f"Initialized ModelTrainer with experiment: {experiment_name}")
         
-    def _calculate_metric(self,y_test: np.ndarray,y_pred:np.ndarray) -> Dict[str,float]:
+    def _calculate_metrics(self,y_test: np.ndarray,y_pred:np.ndarray) -> Dict[str,float]:
         try : 
             metrics = {
             'accuracy_score' : accuracy_score(y_test,y_pred),

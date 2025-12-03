@@ -7,6 +7,7 @@ from imblearn.over_sampling import SMOTE
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import LabelEncoder
+import numpy as np
 
 from src.utils.logger import default_logger as logger
 from src.utils.config import config
@@ -70,7 +71,7 @@ class TfidfFeatureExtractor(BaseEstimator, TransformerMixin):
     # ===========================================================
     def encode_labels(self, df: pd.DataFrame):
         logger.info("Encoding target labels...")
-        y = self.label_encoder.fit_transform(df[self.target_column]).astype(int)
+        y = self.label_encoder.fit_transform(df[self.target_column].values).astype(int)
         print(y)
         return y
 

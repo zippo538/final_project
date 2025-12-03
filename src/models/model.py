@@ -12,7 +12,7 @@ class ModelFactory:
     def get_model_config()-> Dict[str,Dict[str,Any]]:
         return { 
                 'logistic_regression': {
-        'model': LogisticRegression(),
+        'class': LogisticRegression,
         'params': {
             'C' : 10.0,
             'solver': 'saga',
@@ -21,14 +21,14 @@ class ModelFactory:
     },
 
     'naive_bayes': {
-        'model': MultinomialNB(),
+        'class': MultinomialNB,
         'params': {
             'alpha': 1.0
         }
     },
 
     'knn_classifier': {
-        'model': KNeighborsClassifier(),
+        'class': KNeighborsClassifier,
         'params': {
             'n_neighbors': 5,
             'weights': 'distance',
@@ -37,7 +37,7 @@ class ModelFactory:
     },
 
     'random_forest_classifier': {
-        'model': RandomForestClassifier(),
+        'class': RandomForestClassifier,
         'params': {
             'n_estimators': 100,
             'max_depth': 6,

@@ -10,6 +10,8 @@ from sklearn.base import BaseEstimator, TransformerMixin
 from src.utils.logger import default_logger as logger
 from src.utils.config import config
 
+nltk.download('stopwords') 
+nltk.download('punkt_tab')
 
 class TextPreprocessor(BaseEstimator, TransformerMixin):
     """
@@ -32,6 +34,8 @@ class TextPreprocessor(BaseEstimator, TransformerMixin):
         self.language = language
 
         self.stop_words = set(stopwords.words(self.language))
+        #download nltk
+        
 
         logger.info("Text Preprocessor initialized.")
 

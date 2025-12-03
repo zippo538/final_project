@@ -1,8 +1,11 @@
 import os
 import sys
 from pathlib import Path
+import numpy as np
 import mlflow
 from sklearn.model_selection import train_test_split
+from scipy.sparse import issparse
+
 
 # Add src to path for imports
 src_path = str(Path(__file__).parent.parent)
@@ -73,10 +76,11 @@ def run_pipeline():
             preprocessor.save()
             
             #feature extraction
-            feature_extraction = TfidfFeatureExtractor()
+            feature_extraction = TfidfFeatureExtractor(feature_column='clean_text',target_column='category')
             
             #apply tfidf and label encoder
-            X,y = feature_extraction.get_X_y(df_process)
+            X = feature_extraction.fit_transform(df_process)
+            y = feature_extraction.encode_labels(df_process)
             
             # print(X)
             print(y)
@@ -87,20 +91,23 @@ def run_pipeline():
             
             
             #split data
-            X_train, y_train, X_test, y_test = train_test_split(X,y,test_size=0.2,random_state=42)
+            X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.2,random_state=42)
             
             # print(X_train)
+            
+            # y_train = np.array(y_train).ravel()
+            # y_test = np.array(y_test).ravel()
             
             X_res,y_res = feature_extraction.apply_smote(X_train,y_train)
             
                       
             # Log preprocessing info
-            mlflow.log_param("x_train_size_smote", X_res.shape[0])
-            mlflow.log_param("y_train_size_smote", y_res.shape[0])
+            mlflow.log_param("x_train_size_smote", X_train.shape[0])
+            mlflow.log_param("y_train_size_smote", y_train.shape[0])
             mlflow.log_param("test_size", X_test.shape[0])
             
             # Save preprocessors for later use
-            preprocessor.save_preprocessors()
+            preprocessor.save()
             
             # 3. Model Training and Evaluation
             logger.info("Step 3: Training and evaluating models")

@@ -6,3 +6,4 @@ __pycache__/
 mlruns/
 models/
 logs/
+logs/sentiment_analysis.log

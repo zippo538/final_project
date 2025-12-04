@@ -777,3 +777,237 @@ category
 2025-12-04 08:57:05 - sentiment_analysis - INFO - Starting preprocessing...
 2025-12-04 08:57:05 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
 2025-12-04 08:57:05 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-04 09:25:53 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:25:53 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:25:55 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-04 09:25:55 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-04 09:26:09 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-04 09:26:09 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-04 09:26:10 - sentiment_analysis - INFO - Started pipeline run with ID: a8c7c0c3a5ee45cca5aad2220ca3e6c6
+2025-12-04 09:26:10 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-04 09:26:10 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-04 09:26:10 - sentiment_analysis - INFO - Loading data from csv
+2025-12-04 09:26:10 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-04 09:26:10 - sentiment_analysis - INFO - Validate Data
+2025-12-04 09:26:10 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-04 09:26:10 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-04 09:26:10 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-04 09:26:10 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-04 09:26:10 - sentiment_analysis - INFO - Validate Data
+2025-12-04 09:26:11 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-04 09:26:11 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-04 09:26:11 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-04 09:26:11 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-04 09:26:11 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-04 09:26:11 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-04 09:26:11 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-04 09:26:11 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-04 09:26:23 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-04 09:26:23 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-04 09:26:23 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-04 09:26:23 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-04 09:26:26 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-04 09:26:26 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-04 09:26:33 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-04 09:26:33 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-04 09:26:33 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-04 09:27:19 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-04 09:27:19 - sentiment_analysis - INFO - Step 3: Training and evaluating models
+2025-12-04 09:27:19 - sentiment_analysis - INFO - MLflow setup completed successfully
+2025-12-04 09:27:19 - sentiment_analysis - INFO - Initialized ModelTrainer with experiment: sentiment_analysis_modi_category
+2025-12-04 09:27:19 - sentiment_analysis - INFO - Starting training of all models
+2025-12-04 09:27:19 - sentiment_analysis - INFO - Training logistic_regression model
+2025-12-04 09:27:19 - sentiment_analysis - INFO - Creating model of type: logistic_regression
+2025-12-04 09:27:19 - sentiment_analysis - INFO - Successfully created logistic_regression model
+2025-12-04 09:27:34 - sentiment_analysis - INFO - Completed training logistic_regression model
+2025-12-04 09:27:34 - sentiment_analysis - INFO - Metrics: {'accuracy_score': 0.8893047800208628, 'precision': 0.8904127491637024, 'recall': 0.8893047800208628, 'f1_score': 0.8891801471352023}
+2025-12-04 09:27:34 - sentiment_analysis - INFO - Training naive_bayes model
+2025-12-04 09:27:34 - sentiment_analysis - INFO - Creating model of type: naive_bayes
+2025-12-04 09:27:34 - sentiment_analysis - INFO - Successfully created naive_bayes model
+2025-12-04 09:27:39 - sentiment_analysis - INFO - Completed training naive_bayes model
+2025-12-04 09:27:39 - sentiment_analysis - INFO - Metrics: {'accuracy_score': 0.7141805240228263, 'precision': 0.7495348331044707, 'recall': 0.7141805240228263, 'f1_score': 0.7143278196217873}
+2025-12-04 09:27:39 - sentiment_analysis - INFO - Training knn_classifier model
+2025-12-04 09:27:39 - sentiment_analysis - INFO - Creating model of type: knn_classifier
+2025-12-04 09:27:39 - sentiment_analysis - INFO - Successfully created knn_classifier model
+2025-12-04 09:29:23 - sentiment_analysis - INFO - Completed training knn_classifier model
+2025-12-04 09:29:23 - sentiment_analysis - INFO - Metrics: {'accuracy_score': 0.45582008958704057, 'precision': 0.6495740514478042, 'recall': 0.45582008958704057, 'f1_score': 0.39386332542355174}
+2025-12-04 09:29:23 - sentiment_analysis - INFO - Training random_forest_classifier model
+2025-12-04 09:29:23 - sentiment_analysis - INFO - Creating model of type: random_forest_classifier
+2025-12-04 09:29:23 - sentiment_analysis - INFO - Successfully created random_forest_classifier model
+2025-12-04 09:29:49 - sentiment_analysis - INFO - Completed training random_forest_classifier model
+2025-12-04 09:29:49 - sentiment_analysis - INFO - Metrics: {'accuracy_score': 0.6707369454500829, 'precision': 0.71413576192153, 'recall': 0.6707369454500829, 'f1_score': 0.6671662210627104}
+2025-12-04 09:29:49 - sentiment_analysis - INFO - Selecting best model
+2025-12-04 09:29:49 - sentiment_analysis - INFO - Selected logistic_regression as best model
+2025-12-04 09:29:49 - sentiment_analysis - INFO - Best model metrics: {'accuracy_score': 0.8893047800208628, 'precision': 0.8904127491637024, 'recall': 0.8893047800208628, 'f1_score': 0.8891801471352023}
+2025-12-04 09:29:49 - sentiment_analysis - INFO - Completed training all models
+2025-12-04 09:29:50 - sentiment_analysis - INFO - Pipeline execution completed successfully
+2025-12-04 09:41:20 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:41:20 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:42:07 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:42:07 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:42:15 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 09:42:16 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 09:42:16 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 09:42:16 - sentiment_analysis - INFO - Run 4276c72e2ee84c90ba09cad6e52417f5 score: 0.8893047800208628
+2025-12-04 09:42:16 - sentiment_analysis - INFO - Run c12c5ff9554f46f891bd78ab66296527 score: 0.7141805240228263
+2025-12-04 09:42:16 - sentiment_analysis - INFO - Run b0c99cdc99ef4ef89728f3a49a42c40f score: 0.6707369454500829
+2025-12-04 09:42:16 - sentiment_analysis - INFO - Run bcf497fe895d48d1a3479369b863433a score: 0.45582008958704057
+2025-12-04 09:42:16 - sentiment_analysis - INFO - Best run ID: 4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 09:42:16 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-04 09:42:16 - sentiment_analysis - INFO - Preprocessor loaded from: D:\Python\dibimbing\final_project\models\preprocessing\preprocessor.joblib
+2025-12-04 09:42:16 - sentiment_analysis - INFO - Preprocessor loaded from: D:\Python\dibimbing\final_project\models\tfidf\tfidf_vectorizer.joblib
+2025-12-04 09:42:16 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-04 09:42:50 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:42:50 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:42:50 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:42:50 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:43:49 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:43:49 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:43:54 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:43:54 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:43:54 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:43:54 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:43:54 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:43:54 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:43:55 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 09:43:56 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 09:43:56 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 09:43:56 - sentiment_analysis - INFO - Run 4276c72e2ee84c90ba09cad6e52417f5 score: 0.8893047800208628
+2025-12-04 09:43:56 - sentiment_analysis - INFO - Run c12c5ff9554f46f891bd78ab66296527 score: 0.7141805240228263
+2025-12-04 09:43:56 - sentiment_analysis - INFO - Run b0c99cdc99ef4ef89728f3a49a42c40f score: 0.6707369454500829
+2025-12-04 09:43:56 - sentiment_analysis - INFO - Run bcf497fe895d48d1a3479369b863433a score: 0.45582008958704057
+2025-12-04 09:43:56 - sentiment_analysis - INFO - Best run ID: 4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 09:43:56 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-04 09:43:56 - sentiment_analysis - INFO - Preprocessor loaded from: D:\Python\dibimbing\final_project\models\preprocessing\preprocessor.joblib
+2025-12-04 09:43:57 - sentiment_analysis - INFO - Preprocessor loaded from: D:\Python\dibimbing\final_project\models\tfidf\tfidf_vectorizer.joblib
+2025-12-04 09:43:57 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-04 09:44:28 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:44:28 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:44:28 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:44:28 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:44:28 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:44:28 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:44:28 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:44:28 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:44:29 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:44:29 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:44:35 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 09:44:36 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 09:44:36 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 09:44:36 - sentiment_analysis - INFO - Run 4276c72e2ee84c90ba09cad6e52417f5 score: 0.8893047800208628
+2025-12-04 09:44:36 - sentiment_analysis - INFO - Run c12c5ff9554f46f891bd78ab66296527 score: 0.7141805240228263
+2025-12-04 09:44:36 - sentiment_analysis - INFO - Run b0c99cdc99ef4ef89728f3a49a42c40f score: 0.6707369454500829
+2025-12-04 09:44:36 - sentiment_analysis - INFO - Run bcf497fe895d48d1a3479369b863433a score: 0.45582008958704057
+2025-12-04 09:44:36 - sentiment_analysis - INFO - Best run ID: 4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 09:44:36 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-04 09:44:36 - sentiment_analysis - INFO - Preprocessor loaded from: D:\Python\dibimbing\final_project\models\preprocessing\preprocessor.joblib
+2025-12-04 09:44:36 - sentiment_analysis - INFO - Preprocessor loaded from: D:\Python\dibimbing\final_project\models\tfidf\tfidf_vectorizer.joblib
+2025-12-04 09:44:36 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-04 09:44:46 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-04 09:44:46 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-04 09:44:46 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-04 09:45:03 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-04 09:45:03 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-04 09:45:03 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-04 09:45:40 - sentiment_analysis - INFO - Received input text : input_text='i hate modi'
+2025-12-04 09:45:40 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-04 09:45:40 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-04 09:45:40 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-04 09:45:40 - sentiment_analysis - INFO - Sentiment Analysis with Input : i hate modi (0)
+2025-12-04 09:52:29 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-04 09:52:29 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-04 09:52:29 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-04 09:54:37 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:54:37 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:54:42 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 09:54:43 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 09:54:43 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 09:54:43 - sentiment_analysis - INFO - Run 4276c72e2ee84c90ba09cad6e52417f5 score: 0.8893047800208628
+2025-12-04 09:54:43 - sentiment_analysis - INFO - Run c12c5ff9554f46f891bd78ab66296527 score: 0.7141805240228263
+2025-12-04 09:54:43 - sentiment_analysis - INFO - Run b0c99cdc99ef4ef89728f3a49a42c40f score: 0.6707369454500829
+2025-12-04 09:54:43 - sentiment_analysis - INFO - Run bcf497fe895d48d1a3479369b863433a score: 0.45582008958704057
+2025-12-04 09:54:43 - sentiment_analysis - INFO - Best run ID: 4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 09:54:43 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-04 09:54:43 - sentiment_analysis - INFO - Preprocessor loaded from: D:\Python\dibimbing\final_project\models\preprocessing\preprocessor.joblib
+2025-12-04 09:54:44 - sentiment_analysis - INFO - Preprocessor loaded from: D:\Python\dibimbing\final_project\models\tfidf\tfidf_vectorizer.joblib
+2025-12-04 09:54:44 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-04 09:55:20 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:55:20 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:55:25 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:55:25 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:55:25 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:55:25 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:55:25 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:55:25 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:55:25 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:55:25 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:55:25 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:55:25 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:55:26 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 09:55:27 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 09:55:27 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 09:55:27 - sentiment_analysis - INFO - Run 4276c72e2ee84c90ba09cad6e52417f5 score: 0.8893047800208628
+2025-12-04 09:55:27 - sentiment_analysis - INFO - Run c12c5ff9554f46f891bd78ab66296527 score: 0.7141805240228263
+2025-12-04 09:55:27 - sentiment_analysis - INFO - Run b0c99cdc99ef4ef89728f3a49a42c40f score: 0.6707369454500829
+2025-12-04 09:55:27 - sentiment_analysis - INFO - Run bcf497fe895d48d1a3479369b863433a score: 0.45582008958704057
+2025-12-04 09:55:27 - sentiment_analysis - INFO - Best run ID: 4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 09:55:27 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-04 09:55:27 - sentiment_analysis - INFO - Preprocessor loaded from: D:\Python\dibimbing\final_project\models\preprocessing\preprocessor.joblib
+2025-12-04 09:55:27 - sentiment_analysis - INFO - Preprocessor loaded from: D:\Python\dibimbing\final_project\models\tfidf\tfidf_vectorizer.joblib
+2025-12-04 09:55:27 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-04 09:55:31 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-04 09:55:31 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-04 09:55:31 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-04 09:55:43 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-04 09:55:43 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-04 09:55:43 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-04 09:56:14 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-04 09:56:14 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-04 09:56:14 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-04 09:56:38 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:56:38 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:56:43 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:56:43 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:56:43 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:56:43 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:56:43 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:56:43 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 09:56:43 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:56:43 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:56:43 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:56:43 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:56:43 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:56:43 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 09:56:44 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 09:56:45 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 09:56:45 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 09:56:45 - sentiment_analysis - INFO - Run 4276c72e2ee84c90ba09cad6e52417f5 score: 0.8893047800208628
+2025-12-04 09:56:45 - sentiment_analysis - INFO - Run c12c5ff9554f46f891bd78ab66296527 score: 0.7141805240228263
+2025-12-04 09:56:45 - sentiment_analysis - INFO - Run b0c99cdc99ef4ef89728f3a49a42c40f score: 0.6707369454500829
+2025-12-04 09:56:45 - sentiment_analysis - INFO - Run bcf497fe895d48d1a3479369b863433a score: 0.45582008958704057
+2025-12-04 09:56:45 - sentiment_analysis - INFO - Best run ID: 4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 09:56:45 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-04 09:56:45 - sentiment_analysis - INFO - Preprocessor loaded from: D:\Python\dibimbing\final_project\models\preprocessing\preprocessor.joblib
+2025-12-04 09:56:45 - sentiment_analysis - INFO - Preprocessor loaded from: D:\Python\dibimbing\final_project\models\tfidf\tfidf_vectorizer.joblib
+2025-12-04 09:56:45 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-04 09:57:33 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-04 09:57:33 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-04 09:57:33 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-04 09:59:32 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-04 09:59:32 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-04 09:59:32 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-04 10:37:14 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-04 10:37:14 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-04 10:37:14 - sentiment_analysis - INFO - Preprocessing completed successfully.

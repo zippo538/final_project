@@ -11,4 +11,6 @@ services:
       - .:/app
     environment:
       - PYTHONUNBUFFERED=1
+      - MLFLOW_TRACKING_URI=file:/app/mlruns
+      - MLFLOW_ARTIFACT_URI=file:/app/mlruns
 

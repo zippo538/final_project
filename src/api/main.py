@@ -1,6 +1,8 @@
 from fastapi import FastAPI, HTTPException
 import mlflow
 from mlflow.tracking import MlflowClient
+from mlflow.entities.model_registry import ModelVersion
+from typing import List
 import pandas as pd
 import os
 from src.utils.config import config
@@ -80,6 +82,8 @@ def load_production_model(model_name:str = None) -> tuple[str, ModelInfo]:
         Tuple containing model path and model info
     """
     client = MlflowClient()
+    mlflow.set_tracking_uri('sqlite:///mlflow.db')
+    
     
     # Get experiment
     experiment = client.get_experiment_by_name(config.get("mlflow.experiment_name"))
@@ -87,6 +91,20 @@ def load_production_model(model_name:str = None) -> tuple[str, ModelInfo]:
         raise ValueError("No experiment found")
     
     logger.info(f"Found experiment with ID: {experiment.experiment_id}")
+    
+    #get latest client version 
+    production_versions : List[ModelVersion] = client.get_latest_versions(
+        name=model_name,
+        stages=["Production"]
+    )
+    if not production_versions:
+            raise ValueError(f"No model found in 'Production' stage for name: {model_name}")
+    
+    logger.info(f"Found Production version: {production_versions[0]}")
+    
+    version_object = production_versions[0]
+    run_id = version_object.run_id
+    
     
     # Get all runs
     runs = client.search_runs(
@@ -121,16 +139,29 @@ def load_production_model(model_name:str = None) -> tuple[str, ModelInfo]:
     
     # Try to load model by last version
     try:
+        logger.info("Trying to load model from last version")
         version = client.search_model_versions(f"name='{model_name}'")
         latest_version = max(version, key=lambda x:int(x.version))
         last_version_number = latest_version.version
         model = mlflow.sklearn.load_model(f"models:/{model_name}/{last_version_number}")
     except Exception as e : 
         logger.error(f"Error load model last version : {e}")
-        try : 
+        try :
+            logger.info("Trying to load model from Production") 
             model = mlflow.sklearn.load_model(f"models:/{model_name}/Production")
         except Exception as e : 
             logger.error(f"Error load model with production : {e}")
+            # try local system
+            try : 
+                logger.info("Trying to load model from local system")
+                local_path = os.path.join("mlruns",experiment.experiment_id,"models",f"m-{run_id}","artifacts","")
+                if not os.path.exists(local_path):
+                    raise ValueError(f"Local path does not exist {local_path}")
+                model = mlflow.pyfunc.load_model(local_path)
+            except Exception as e:
+                logger.error(f"Error load model local system : {e}")
+               
+                    
     
     # Create model info
     metrics = ModelMetrics(

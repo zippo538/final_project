@@ -1028,3 +1028,544 @@ Name: count, dtype: int64
 2025-12-04 06:47:06 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
 2025-12-04 06:47:06 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
 2025-12-04 06:47:06 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value
+2025-12-04 10:45:55 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 10:45:55 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 10:46:23 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 10:46:25 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 10:46:25 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 10:46:25 - sentiment_analysis - INFO - Run 4276c72e2ee84c90ba09cad6e52417f5 score: 0.8893047800208628
+2025-12-04 10:46:25 - sentiment_analysis - INFO - Run c12c5ff9554f46f891bd78ab66296527 score: 0.7141805240228263
+2025-12-04 10:46:25 - sentiment_analysis - INFO - Run b0c99cdc99ef4ef89728f3a49a42c40f score: 0.6707369454500829
+2025-12-04 10:46:25 - sentiment_analysis - INFO - Run bcf497fe895d48d1a3479369b863433a score: 0.45582008958704057
+2025-12-04 10:46:25 - sentiment_analysis - INFO - Best run ID: 4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 10:46:25 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 10:46:25 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 10:46:25 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value
+2025-12-04 11:01:18 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 11:01:18 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 11:01:50 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 11:01:52 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 11:01:52 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 11:01:52 - sentiment_analysis - INFO - Run 4276c72e2ee84c90ba09cad6e52417f5 score: 0.8893047800208628
+2025-12-04 11:01:52 - sentiment_analysis - INFO - Run c12c5ff9554f46f891bd78ab66296527 score: 0.7141805240228263
+2025-12-04 11:01:52 - sentiment_analysis - INFO - Run b0c99cdc99ef4ef89728f3a49a42c40f score: 0.6707369454500829
+2025-12-04 11:01:52 - sentiment_analysis - INFO - Run bcf497fe895d48d1a3479369b863433a score: 0.45582008958704057
+2025-12-04 11:01:52 - sentiment_analysis - INFO - Best run ID: 4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 11:01:53 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:01:53 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:01:53 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value
+2025-12-04 11:22:59 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 11:22:59 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 11:23:04 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 11:23:11 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 11:23:11 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 11:23:11 - sentiment_analysis - INFO - Run 4276c72e2ee84c90ba09cad6e52417f5 score: 0.8893047800208628
+2025-12-04 11:23:11 - sentiment_analysis - INFO - Run c12c5ff9554f46f891bd78ab66296527 score: 0.7141805240228263
+2025-12-04 11:23:11 - sentiment_analysis - INFO - Run b0c99cdc99ef4ef89728f3a49a42c40f score: 0.6707369454500829
+2025-12-04 11:23:11 - sentiment_analysis - INFO - Run bcf497fe895d48d1a3479369b863433a score: 0.45582008958704057
+2025-12-04 11:23:11 - sentiment_analysis - INFO - Best run ID: 4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 11:23:12 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:23:12 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:23:12 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value
+2025-12-04 11:28:41 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 11:28:41 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 11:28:46 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 11:28:51 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 11:28:53 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 11:28:53 - sentiment_analysis - INFO - Run 4276c72e2ee84c90ba09cad6e52417f5 score: 0.8893047800208628
+2025-12-04 11:28:53 - sentiment_analysis - INFO - Run c12c5ff9554f46f891bd78ab66296527 score: 0.7141805240228263
+2025-12-04 11:28:53 - sentiment_analysis - INFO - Run b0c99cdc99ef4ef89728f3a49a42c40f score: 0.6707369454500829
+2025-12-04 11:28:53 - sentiment_analysis - INFO - Run bcf497fe895d48d1a3479369b863433a score: 0.45582008958704057
+2025-12-04 11:28:53 - sentiment_analysis - INFO - Best run ID: 4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 11:28:55 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:28:55 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:28:55 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value
+2025-12-04 11:34:12 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 11:34:12 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 11:34:16 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 11:34:17 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 11:34:17 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 11:34:17 - sentiment_analysis - INFO - Run 4276c72e2ee84c90ba09cad6e52417f5 score: 0.8893047800208628
+2025-12-04 11:34:17 - sentiment_analysis - INFO - Run c12c5ff9554f46f891bd78ab66296527 score: 0.7141805240228263
+2025-12-04 11:34:17 - sentiment_analysis - INFO - Run b0c99cdc99ef4ef89728f3a49a42c40f score: 0.6707369454500829
+2025-12-04 11:34:17 - sentiment_analysis - INFO - Run bcf497fe895d48d1a3479369b863433a score: 0.45582008958704057
+2025-12-04 11:34:17 - sentiment_analysis - INFO - Best run ID: 4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 11:34:17 - sentiment_analysis - INFO - Trying to load model from last version
+2025-12-04 11:34:17 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:34:17 - sentiment_analysis - INFO - Trying to load model from Production
+2025-12-04 11:34:17 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:34:17 - sentiment_analysis - INFO - Tryting to load model from local system
+2025-12-04 11:34:17 - sentiment_analysis - ERROR - Error load model local system : Local path does not exist mlruns/1/models/1
+2025-12-04 11:34:17 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value
+2025-12-04 11:34:31 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 11:34:31 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 11:34:34 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 11:34:35 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 11:34:35 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 11:34:35 - sentiment_analysis - INFO - Run 4276c72e2ee84c90ba09cad6e52417f5 score: 0.8893047800208628
+2025-12-04 11:34:35 - sentiment_analysis - INFO - Run c12c5ff9554f46f891bd78ab66296527 score: 0.7141805240228263
+2025-12-04 11:34:35 - sentiment_analysis - INFO - Run b0c99cdc99ef4ef89728f3a49a42c40f score: 0.6707369454500829
+2025-12-04 11:34:35 - sentiment_analysis - INFO - Run bcf497fe895d48d1a3479369b863433a score: 0.45582008958704057
+2025-12-04 11:34:35 - sentiment_analysis - INFO - Best run ID: 4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 11:34:35 - sentiment_analysis - INFO - Trying to load model from last version
+2025-12-04 11:34:35 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:34:35 - sentiment_analysis - INFO - Trying to load model from Production
+2025-12-04 11:34:35 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:34:35 - sentiment_analysis - INFO - Tryting to load model from local system
+2025-12-04 11:34:35 - sentiment_analysis - ERROR - Error load model local system : Local path does not exist mlruns/1/models/1
+2025-12-04 11:34:35 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value
+2025-12-04 11:41:49 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 11:41:49 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 11:42:08 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 11:42:14 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 11:42:14 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 11:42:14 - sentiment_analysis - INFO - Run 4276c72e2ee84c90ba09cad6e52417f5 score: 0.8893047800208628
+2025-12-04 11:42:14 - sentiment_analysis - INFO - Run c12c5ff9554f46f891bd78ab66296527 score: 0.7141805240228263
+2025-12-04 11:42:14 - sentiment_analysis - INFO - Run b0c99cdc99ef4ef89728f3a49a42c40f score: 0.6707369454500829
+2025-12-04 11:42:14 - sentiment_analysis - INFO - Run bcf497fe895d48d1a3479369b863433a score: 0.45582008958704057
+2025-12-04 11:42:14 - sentiment_analysis - INFO - Best run ID: 4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 11:42:14 - sentiment_analysis - INFO - Trying to load model from last version
+2025-12-04 11:42:14 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:42:14 - sentiment_analysis - INFO - Trying to load model from Production
+2025-12-04 11:42:14 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:42:14 - sentiment_analysis - INFO - Tryting to load model from local system
+2025-12-04 11:42:14 - sentiment_analysis - ERROR - Error load model local system : Local path does not exist mlruns/1/models/1
+2025-12-04 11:42:14 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value
+2025-12-04 11:42:48 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 11:42:48 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 11:42:52 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 11:42:53 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 11:42:53 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 11:42:53 - sentiment_analysis - INFO - Run 4276c72e2ee84c90ba09cad6e52417f5 score: 0.8893047800208628
+2025-12-04 11:42:53 - sentiment_analysis - INFO - Run c12c5ff9554f46f891bd78ab66296527 score: 0.7141805240228263
+2025-12-04 11:42:53 - sentiment_analysis - INFO - Run b0c99cdc99ef4ef89728f3a49a42c40f score: 0.6707369454500829
+2025-12-04 11:42:53 - sentiment_analysis - INFO - Run bcf497fe895d48d1a3479369b863433a score: 0.45582008958704057
+2025-12-04 11:42:53 - sentiment_analysis - INFO - Best run ID: 4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 11:42:53 - sentiment_analysis - INFO - Trying to load model from last version
+2025-12-04 11:42:53 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:42:53 - sentiment_analysis - INFO - Trying to load model from Production
+2025-12-04 11:42:53 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:42:53 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-04 11:42:53 - sentiment_analysis - ERROR - Error load model local system : Local path does not exist mlruns/1/models/1
+2025-12-04 11:42:53 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value
+2025-12-04 11:48:56 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 11:48:56 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 11:49:00 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 11:49:01 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 11:49:01 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 11:49:01 - sentiment_analysis - INFO - Run 4276c72e2ee84c90ba09cad6e52417f5 score: 0.8893047800208628
+2025-12-04 11:49:01 - sentiment_analysis - INFO - Run c12c5ff9554f46f891bd78ab66296527 score: 0.7141805240228263
+2025-12-04 11:49:01 - sentiment_analysis - INFO - Run b0c99cdc99ef4ef89728f3a49a42c40f score: 0.6707369454500829
+2025-12-04 11:49:01 - sentiment_analysis - INFO - Run bcf497fe895d48d1a3479369b863433a score: 0.45582008958704057
+2025-12-04 11:49:01 - sentiment_analysis - INFO - Best run ID: 4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 11:49:01 - sentiment_analysis - INFO - Trying to load model from last version
+2025-12-04 11:49:01 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:49:01 - sentiment_analysis - INFO - Trying to load model from Production
+2025-12-04 11:49:01 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:49:01 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-04 11:49:01 - sentiment_analysis - ERROR - Error load model local system : No such file or directory: '/app/mlruns/1/models/MLmodel'
+2025-12-04 11:49:01 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value
+2025-12-04 11:50:48 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 11:50:48 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 11:50:52 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 11:50:53 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 11:50:53 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764815254394, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764815389788, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='4276c72e2ee84c90ba09cad6e52417f5', run_link=None, source='models:/m-ce364854f2814ed7ab1b39029ce1af28', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-04 11:50:53 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 11:50:53 - sentiment_analysis - INFO - Run 4276c72e2ee84c90ba09cad6e52417f5 score: 0.8893047800208628
+2025-12-04 11:50:53 - sentiment_analysis - INFO - Run c12c5ff9554f46f891bd78ab66296527 score: 0.7141805240228263
+2025-12-04 11:50:53 - sentiment_analysis - INFO - Run b0c99cdc99ef4ef89728f3a49a42c40f score: 0.6707369454500829
+2025-12-04 11:50:53 - sentiment_analysis - INFO - Run bcf497fe895d48d1a3479369b863433a score: 0.45582008958704057
+2025-12-04 11:50:53 - sentiment_analysis - INFO - Best run ID: 4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 11:50:53 - sentiment_analysis - INFO - Trying to load model from last version
+2025-12-04 11:50:53 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:50:53 - sentiment_analysis - INFO - Trying to load model from Production
+2025-12-04 11:50:53 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:50:53 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-04 11:50:53 - sentiment_analysis - ERROR - Error load model local system : No such file or directory: '/app/mlruns/1/models/MLmodel'
+2025-12-04 11:50:53 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value
+2025-12-04 11:50:55 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 11:50:55 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 11:50:59 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 11:51:00 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 11:51:00 - sentiment_analysis - INFO - Found Production version: [<ModelVersion: aliases=[], creation_timestamp=1764815254394, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764815389788, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='4276c72e2ee84c90ba09cad6e52417f5', run_link=None, source='models:/m-ce364854f2814ed7ab1b39029ce1af28', status='READY', status_message=None, tags={}, user_id=None, version=1>]
+2025-12-04 11:51:00 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 11:51:00 - sentiment_analysis - INFO - Run 4276c72e2ee84c90ba09cad6e52417f5 score: 0.8893047800208628
+2025-12-04 11:51:00 - sentiment_analysis - INFO - Run c12c5ff9554f46f891bd78ab66296527 score: 0.7141805240228263
+2025-12-04 11:51:00 - sentiment_analysis - INFO - Run b0c99cdc99ef4ef89728f3a49a42c40f score: 0.6707369454500829
+2025-12-04 11:51:00 - sentiment_analysis - INFO - Run bcf497fe895d48d1a3479369b863433a score: 0.45582008958704057
+2025-12-04 11:51:00 - sentiment_analysis - INFO - Best run ID: 4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 11:51:00 - sentiment_analysis - INFO - Trying to load model from last version
+2025-12-04 11:51:00 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:51:00 - sentiment_analysis - INFO - Trying to load model from Production
+2025-12-04 11:51:00 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:51:00 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-04 11:51:00 - sentiment_analysis - ERROR - Error load model local system : No such file or directory: '/app/mlruns/1/models/MLmodel'
+2025-12-04 11:51:00 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value
+2025-12-04 11:51:25 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 11:51:25 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 11:51:29 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 11:51:29 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 11:51:30 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764815254394, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764815389788, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='4276c72e2ee84c90ba09cad6e52417f5', run_link=None, source='models:/m-ce364854f2814ed7ab1b39029ce1af28', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-04 11:51:30 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 11:51:30 - sentiment_analysis - INFO - Run 4276c72e2ee84c90ba09cad6e52417f5 score: 0.8893047800208628
+2025-12-04 11:51:30 - sentiment_analysis - INFO - Run c12c5ff9554f46f891bd78ab66296527 score: 0.7141805240228263
+2025-12-04 11:51:30 - sentiment_analysis - INFO - Run b0c99cdc99ef4ef89728f3a49a42c40f score: 0.6707369454500829
+2025-12-04 11:51:30 - sentiment_analysis - INFO - Run bcf497fe895d48d1a3479369b863433a score: 0.45582008958704057
+2025-12-04 11:51:30 - sentiment_analysis - INFO - Best run ID: 4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 11:51:30 - sentiment_analysis - INFO - Trying to load model from last version
+2025-12-04 11:51:30 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:51:30 - sentiment_analysis - INFO - Trying to load model from Production
+2025-12-04 11:51:30 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:51:30 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-04 11:51:30 - sentiment_analysis - ERROR - Error load model local system : Local path does not exist mlruns/1/models/4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 11:51:30 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value
+2025-12-04 11:53:30 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 11:53:30 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 11:53:33 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 11:53:34 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 11:53:34 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764815254394, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764815389788, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='4276c72e2ee84c90ba09cad6e52417f5', run_link=None, source='models:/m-ce364854f2814ed7ab1b39029ce1af28', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-04 11:53:34 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 11:53:34 - sentiment_analysis - INFO - Run 4276c72e2ee84c90ba09cad6e52417f5 score: 0.8893047800208628
+2025-12-04 11:53:34 - sentiment_analysis - INFO - Run c12c5ff9554f46f891bd78ab66296527 score: 0.7141805240228263
+2025-12-04 11:53:34 - sentiment_analysis - INFO - Run b0c99cdc99ef4ef89728f3a49a42c40f score: 0.6707369454500829
+2025-12-04 11:53:34 - sentiment_analysis - INFO - Run bcf497fe895d48d1a3479369b863433a score: 0.45582008958704057
+2025-12-04 11:53:34 - sentiment_analysis - INFO - Best run ID: 4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 11:53:34 - sentiment_analysis - INFO - Trying to load model from last version
+2025-12-04 11:53:34 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:53:34 - sentiment_analysis - INFO - Trying to load model from Production
+2025-12-04 11:53:34 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:53:34 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-04 11:53:34 - sentiment_analysis - ERROR - Error load model local system : Local path does not exist mlruns/1/models/4276c72e2ee84c90ba09cad6e52417f5/artifacts
+2025-12-04 11:53:34 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value
+2025-12-04 11:56:22 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 11:56:22 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 11:56:26 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 11:56:26 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 11:56:26 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764815254394, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764815389788, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='4276c72e2ee84c90ba09cad6e52417f5', run_link=None, source='models:/m-ce364854f2814ed7ab1b39029ce1af28', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-04 11:56:26 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 11:56:26 - sentiment_analysis - INFO - Run 4276c72e2ee84c90ba09cad6e52417f5 score: 0.8893047800208628
+2025-12-04 11:56:26 - sentiment_analysis - INFO - Run c12c5ff9554f46f891bd78ab66296527 score: 0.7141805240228263
+2025-12-04 11:56:26 - sentiment_analysis - INFO - Run b0c99cdc99ef4ef89728f3a49a42c40f score: 0.6707369454500829
+2025-12-04 11:56:26 - sentiment_analysis - INFO - Run bcf497fe895d48d1a3479369b863433a score: 0.45582008958704057
+2025-12-04 11:56:26 - sentiment_analysis - INFO - Best run ID: 4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 11:56:26 - sentiment_analysis - INFO - Trying to load model from last version
+2025-12-04 11:56:27 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:56:27 - sentiment_analysis - INFO - Trying to load model from Production
+2025-12-04 11:56:27 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:56:27 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-04 11:56:27 - sentiment_analysis - ERROR - Error load model local system : Local path does not exist mlruns/m-1/models/4276c72e2ee84c90ba09cad6e52417f5/artifacts
+2025-12-04 11:56:27 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value
+2025-12-04 11:56:55 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 11:56:55 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 11:56:59 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 11:56:59 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 11:57:00 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764815254394, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764815389788, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='4276c72e2ee84c90ba09cad6e52417f5', run_link=None, source='models:/m-ce364854f2814ed7ab1b39029ce1af28', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-04 11:57:00 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 11:57:00 - sentiment_analysis - INFO - Run 4276c72e2ee84c90ba09cad6e52417f5 score: 0.8893047800208628
+2025-12-04 11:57:00 - sentiment_analysis - INFO - Run c12c5ff9554f46f891bd78ab66296527 score: 0.7141805240228263
+2025-12-04 11:57:00 - sentiment_analysis - INFO - Run b0c99cdc99ef4ef89728f3a49a42c40f score: 0.6707369454500829
+2025-12-04 11:57:00 - sentiment_analysis - INFO - Run bcf497fe895d48d1a3479369b863433a score: 0.45582008958704057
+2025-12-04 11:57:00 - sentiment_analysis - INFO - Best run ID: 4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 11:57:00 - sentiment_analysis - INFO - Trying to load model from last version
+2025-12-04 11:57:00 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:57:00 - sentiment_analysis - INFO - Trying to load model from Production
+2025-12-04 11:57:00 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:57:00 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-04 11:57:00 - sentiment_analysis - ERROR - Error load model local system : Local path does not exist mlruns/experiment.experiment_id/models/m-4276c72e2ee84c90ba09cad6e52417f5/artifacts
+2025-12-04 11:57:00 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value
+2025-12-04 11:57:24 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 11:57:24 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 11:57:28 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 11:57:29 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 11:57:29 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764815254394, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764815389788, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='4276c72e2ee84c90ba09cad6e52417f5', run_link=None, source='models:/m-ce364854f2814ed7ab1b39029ce1af28', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-04 11:57:29 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 11:57:29 - sentiment_analysis - INFO - Run 4276c72e2ee84c90ba09cad6e52417f5 score: 0.8893047800208628
+2025-12-04 11:57:29 - sentiment_analysis - INFO - Run c12c5ff9554f46f891bd78ab66296527 score: 0.7141805240228263
+2025-12-04 11:57:29 - sentiment_analysis - INFO - Run b0c99cdc99ef4ef89728f3a49a42c40f score: 0.6707369454500829
+2025-12-04 11:57:29 - sentiment_analysis - INFO - Run bcf497fe895d48d1a3479369b863433a score: 0.45582008958704057
+2025-12-04 11:57:29 - sentiment_analysis - INFO - Best run ID: 4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 11:57:29 - sentiment_analysis - INFO - Trying to load model from last version
+2025-12-04 11:57:29 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:57:29 - sentiment_analysis - INFO - Trying to load model from Production
+2025-12-04 11:57:30 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 11:57:30 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-04 11:57:30 - sentiment_analysis - ERROR - Error load model local system : Local path does not exist mlruns/1/models/m-4276c72e2ee84c90ba09cad6e52417f5/artifacts
+2025-12-04 11:57:30 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value
+2025-12-04 18:58:19 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 18:58:19 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 18:58:21 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-04 18:58:21 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-04 18:58:36 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-04 18:58:36 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-04 18:58:37 - sentiment_analysis - INFO - Started pipeline run with ID: 6085aea107964cb9baf53649b4e2ceb4
+2025-12-04 18:58:37 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-04 18:58:37 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-04 18:58:37 - sentiment_analysis - INFO - Loading data from csv
+2025-12-04 18:58:38 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-04 18:58:38 - sentiment_analysis - INFO - Validate Data
+2025-12-04 18:58:38 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-04 18:58:38 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-04 18:58:38 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-04 18:58:38 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-04 18:58:38 - sentiment_analysis - INFO - Validate Data
+2025-12-04 18:58:38 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-04 18:58:38 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-04 18:58:38 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-04 18:58:38 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-04 18:58:38 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-04 18:58:38 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-04 18:58:38 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-04 18:58:39 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-04 18:58:50 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-04 18:58:50 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-04 18:58:50 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-04 18:58:50 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-04 18:58:53 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-04 18:58:53 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-04 18:59:04 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-04 18:59:04 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-04 18:59:04 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-04 18:59:53 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-04 18:59:53 - sentiment_analysis - INFO - Step 3: Training and evaluating models
+2025-12-04 18:59:53 - sentiment_analysis - INFO - MLflow setup completed successfully
+2025-12-04 18:59:53 - sentiment_analysis - INFO - Initialized ModelTrainer with experiment: sentiment_analysis_modi_category
+2025-12-04 18:59:53 - sentiment_analysis - INFO - Starting training of all models
+2025-12-04 18:59:53 - sentiment_analysis - INFO - Training logistic_regression model
+2025-12-04 18:59:53 - sentiment_analysis - INFO - Creating model of type: logistic_regression
+2025-12-04 18:59:53 - sentiment_analysis - INFO - Successfully created logistic_regression model
+2025-12-04 19:00:10 - sentiment_analysis - INFO - Completed training logistic_regression model
+2025-12-04 19:00:10 - sentiment_analysis - INFO - Metrics: {'accuracy_score': 0.8887832116340431, 'precision': 0.8899058403226763, 'recall': 0.8887832116340431, 'f1_score': 0.8886577657673639}
+2025-12-04 19:00:10 - sentiment_analysis - INFO - Training naive_bayes model
+2025-12-04 19:00:10 - sentiment_analysis - INFO - Creating model of type: naive_bayes
+2025-12-04 19:00:10 - sentiment_analysis - INFO - Successfully created naive_bayes model
+2025-12-04 19:00:15 - sentiment_analysis - INFO - Completed training naive_bayes model
+2025-12-04 19:00:15 - sentiment_analysis - INFO - Metrics: {'accuracy_score': 0.713321470209241, 'precision': 0.7483496622236433, 'recall': 0.713321470209241, 'f1_score': 0.7135567220508208}
+2025-12-04 19:00:15 - sentiment_analysis - INFO - Training knn_classifier model
+2025-12-04 19:00:15 - sentiment_analysis - INFO - Creating model of type: knn_classifier
+2025-12-04 19:00:15 - sentiment_analysis - INFO - Successfully created knn_classifier model
+2025-12-04 19:02:08 - sentiment_analysis - INFO - Completed training knn_classifier model
+2025-12-04 19:02:08 - sentiment_analysis - INFO - Metrics: {'accuracy_score': 0.4552985212002209, 'precision': 0.6501199732828465, 'recall': 0.4552985212002209, 'f1_score': 0.392716629991197}
+2025-12-04 19:02:08 - sentiment_analysis - INFO - Training random_forest_classifier model
+2025-12-04 19:02:08 - sentiment_analysis - INFO - Creating model of type: random_forest_classifier
+2025-12-04 19:02:08 - sentiment_analysis - INFO - Successfully created random_forest_classifier model
+2025-12-04 19:02:35 - sentiment_analysis - INFO - Completed training random_forest_classifier model
+2025-12-04 19:02:35 - sentiment_analysis - INFO - Metrics: {'accuracy_score': 0.6594772043934466, 'precision': 0.7023370262609724, 'recall': 0.6594772043934466, 'f1_score': 0.6552222361233001}
+2025-12-04 19:02:35 - sentiment_analysis - INFO - Selecting best model
+2025-12-04 19:02:35 - sentiment_analysis - INFO - Selected logistic_regression as best model
+2025-12-04 19:02:35 - sentiment_analysis - INFO - Best model metrics: {'accuracy_score': 0.8887832116340431, 'precision': 0.8899058403226763, 'recall': 0.8887832116340431, 'f1_score': 0.8886577657673639}
+2025-12-04 19:02:35 - sentiment_analysis - INFO - Completed training all models
+2025-12-04 19:02:35 - sentiment_analysis - INFO - Pipeline execution completed successfully
+2025-12-04 12:03:03 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 12:03:03 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 12:03:07 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 12:03:08 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 12:03:08 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764849610312, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764849755646, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='b3e33f6057a34ccdb88db4b6f4587030', run_link=None, source='models:/m-f4e2051992e04f99894c231c7dad7b23', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-04 12:03:08 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 12:03:08 - sentiment_analysis - INFO - Run b3e33f6057a34ccdb88db4b6f4587030 score: 0.8887832116340431
+2025-12-04 12:03:08 - sentiment_analysis - INFO - Run bce0ce372e05421ab5da2e799338c144 score: 0.713321470209241
+2025-12-04 12:03:08 - sentiment_analysis - INFO - Run 8fc0881101684a76957628d16b5cf9e6 score: 0.6594772043934466
+2025-12-04 12:03:08 - sentiment_analysis - INFO - Run cd93504b46a04bd1ab350cd3d43ee2ba score: 0.4552985212002209
+2025-12-04 12:03:08 - sentiment_analysis - INFO - Best run ID: b3e33f6057a34ccdb88db4b6f4587030
+2025-12-04 12:03:08 - sentiment_analysis - INFO - Trying to load model from last version
+2025-12-04 12:03:08 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-f4e2051992e04f99894c231c7dad7b23/artifacts/.'
+2025-12-04 12:03:08 - sentiment_analysis - INFO - Trying to load model from Production
+2025-12-04 12:03:08 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-f4e2051992e04f99894c231c7dad7b23/artifacts/.'
+2025-12-04 12:03:08 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-04 12:03:08 - sentiment_analysis - ERROR - Error load model local system : Local path does not exist mlruns/1/models/m-b3e33f6057a34ccdb88db4b6f4587030/artifacts
+2025-12-04 12:03:08 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value
+2025-12-04 12:10:33 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 12:10:33 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 12:10:41 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 12:10:42 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 12:10:42 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764849610312, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764849755646, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='b3e33f6057a34ccdb88db4b6f4587030', run_link=None, source='models:/m-f4e2051992e04f99894c231c7dad7b23', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-04 12:10:42 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 12:10:42 - sentiment_analysis - INFO - Run b3e33f6057a34ccdb88db4b6f4587030 score: 0.8887832116340431
+2025-12-04 12:10:42 - sentiment_analysis - INFO - Run bce0ce372e05421ab5da2e799338c144 score: 0.713321470209241
+2025-12-04 12:10:42 - sentiment_analysis - INFO - Run 8fc0881101684a76957628d16b5cf9e6 score: 0.6594772043934466
+2025-12-04 12:10:42 - sentiment_analysis - INFO - Run cd93504b46a04bd1ab350cd3d43ee2ba score: 0.4552985212002209
+2025-12-04 12:10:42 - sentiment_analysis - INFO - Best run ID: b3e33f6057a34ccdb88db4b6f4587030
+2025-12-04 12:10:42 - sentiment_analysis - INFO - Trying to load model from last version
+2025-12-04 12:10:42 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-f4e2051992e04f99894c231c7dad7b23/artifacts/.'
+2025-12-04 12:10:42 - sentiment_analysis - INFO - Trying to load model from Production
+2025-12-04 12:10:42 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-f4e2051992e04f99894c231c7dad7b23/artifacts/.'
+2025-12-04 12:10:42 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-04 12:10:42 - sentiment_analysis - ERROR - Error load model local system : Local path does not exist mlruns/1/models/m-b3e33f6057a34ccdb88db4b6f4587030/artifacts
+2025-12-04 12:10:42 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value
+2025-12-04 19:11:37 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 19:11:37 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 19:11:41 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-04 19:11:41 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-04 19:11:57 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-04 19:11:57 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-04 19:11:58 - sentiment_analysis - INFO - Started pipeline run with ID: 5f077f7c34fc4b49ae1dfca299035f1a
+2025-12-04 19:11:58 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-04 19:11:58 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-04 19:11:58 - sentiment_analysis - INFO - Loading data from csv
+2025-12-04 19:11:58 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-04 19:11:58 - sentiment_analysis - INFO - Validate Data
+2025-12-04 19:11:58 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-04 19:11:58 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-04 19:11:58 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-04 19:11:58 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-04 19:11:58 - sentiment_analysis - INFO - Validate Data
+2025-12-04 19:11:58 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-04 19:11:58 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-04 19:11:58 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-04 19:11:59 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-04 19:11:59 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-04 19:11:59 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-04 19:11:59 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-04 19:11:59 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-04 19:12:11 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-04 19:12:11 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-04 19:12:11 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-04 19:12:11 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-04 19:12:13 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-04 19:12:13 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-04 19:12:21 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-04 19:12:21 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-04 19:12:21 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-04 19:13:08 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-04 19:13:08 - sentiment_analysis - INFO - Step 3: Training and evaluating models
+2025-12-04 19:13:08 - sentiment_analysis - INFO - MLflow setup completed successfully
+2025-12-04 19:13:08 - sentiment_analysis - INFO - Initialized ModelTrainer with experiment: sentiment_analysis_modi_category
+2025-12-04 19:13:08 - sentiment_analysis - INFO - Starting training of all models
+2025-12-04 19:13:08 - sentiment_analysis - INFO - Training logistic_regression model
+2025-12-04 19:13:08 - sentiment_analysis - INFO - Creating model of type: logistic_regression
+2025-12-04 19:13:08 - sentiment_analysis - INFO - Successfully created logistic_regression model
+2025-12-04 19:13:24 - sentiment_analysis - INFO - Completed training logistic_regression model
+2025-12-04 19:13:24 - sentiment_analysis - INFO - Metrics: {'accuracy_score': 0.8887832116340431, 'precision': 0.8898733874696324, 'recall': 0.8887832116340431, 'f1_score': 0.8886336416789392}
+2025-12-04 19:13:24 - sentiment_analysis - INFO - Training naive_bayes model
+2025-12-04 19:13:24 - sentiment_analysis - INFO - Creating model of type: naive_bayes
+2025-12-04 19:13:24 - sentiment_analysis - INFO - Successfully created naive_bayes model
+2025-12-04 19:13:29 - sentiment_analysis - INFO - Completed training naive_bayes model
+2025-12-04 19:13:29 - sentiment_analysis - INFO - Metrics: {'accuracy_score': 0.712953304289133, 'precision': 0.748406038440818, 'recall': 0.712953304289133, 'f1_score': 0.7132603558256544}
+2025-12-04 19:13:29 - sentiment_analysis - INFO - Training knn_classifier model
+2025-12-04 19:13:29 - sentiment_analysis - INFO - Creating model of type: knn_classifier
+2025-12-04 19:13:29 - sentiment_analysis - INFO - Successfully created knn_classifier model
+2025-12-04 19:15:20 - sentiment_analysis - INFO - Completed training knn_classifier model
+2025-12-04 19:15:20 - sentiment_analysis - INFO - Metrics: {'accuracy_score': 0.45477695281340125, 'precision': 0.6501147494439645, 'recall': 0.45477695281340125, 'f1_score': 0.39175902756434644}
+2025-12-04 19:15:20 - sentiment_analysis - INFO - Training random_forest_classifier model
+2025-12-04 19:15:20 - sentiment_analysis - INFO - Creating model of type: random_forest_classifier
+2025-12-04 19:15:20 - sentiment_analysis - INFO - Successfully created random_forest_classifier model
+2025-12-04 19:15:48 - sentiment_analysis - INFO - Completed training random_forest_classifier model
+2025-12-04 19:15:48 - sentiment_analysis - INFO - Metrics: {'accuracy_score': 0.6683745474627232, 'precision': 0.7159803352551005, 'recall': 0.6683745474627232, 'f1_score': 0.6644800065326136}
+2025-12-04 19:15:48 - sentiment_analysis - INFO - Selecting best model
+2025-12-04 19:15:48 - sentiment_analysis - INFO - Selected logistic_regression as best model
+2025-12-04 19:15:48 - sentiment_analysis - INFO - Best model metrics: {'accuracy_score': 0.8887832116340431, 'precision': 0.8898733874696324, 'recall': 0.8887832116340431, 'f1_score': 0.8886336416789392}
+2025-12-04 19:15:48 - sentiment_analysis - INFO - Completed training all models
+2025-12-04 19:15:48 - sentiment_analysis - INFO - Pipeline execution completed successfully
+2025-12-04 12:48:40 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 12:48:40 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 12:49:12 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 12:49:13 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 12:49:13 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764850403729, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764850548298, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='1ce0608746314ff7a4619d97ebb414db', run_link=None, source='models:/m-2e502065283a418f95daa0c668c45867', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-04 12:49:14 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 12:49:14 - sentiment_analysis - INFO - Run 1ce0608746314ff7a4619d97ebb414db score: 0.8887832116340431
+2025-12-04 12:49:14 - sentiment_analysis - INFO - Run 7806c10d4b8a4897b8310f39df0d0aac score: 0.712953304289133
+2025-12-04 12:49:14 - sentiment_analysis - INFO - Run 690f948af9454845bcc6cd1e346a5caa score: 0.6683745474627232
+2025-12-04 12:49:14 - sentiment_analysis - INFO - Run 1e077f35e9b24e84bc77042524aade76 score: 0.45477695281340125
+2025-12-04 12:49:14 - sentiment_analysis - INFO - Best run ID: 1ce0608746314ff7a4619d97ebb414db
+2025-12-04 12:49:14 - sentiment_analysis - INFO - Trying to load model from last version
+2025-12-04 12:49:14 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-2e502065283a418f95daa0c668c45867/artifacts/.'
+2025-12-04 12:49:14 - sentiment_analysis - INFO - Trying to load model from Production
+2025-12-04 12:49:14 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-2e502065283a418f95daa0c668c45867/artifacts/.'
+2025-12-04 12:49:14 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-04 12:49:14 - sentiment_analysis - ERROR - Error load model local system : Local path does not exist mlruns/1/models/m-1ce0608746314ff7a4619d97ebb414db/artifacts
+2025-12-04 12:49:14 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value
+2025-12-04 12:50:05 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 12:50:05 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 12:51:07 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 12:51:08 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 12:51:08 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764850403729, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764850548298, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='1ce0608746314ff7a4619d97ebb414db', run_link=None, source='models:/m-2e502065283a418f95daa0c668c45867', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-04 12:51:08 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 12:51:08 - sentiment_analysis - INFO - Run 1ce0608746314ff7a4619d97ebb414db score: 0.8887832116340431
+2025-12-04 12:51:08 - sentiment_analysis - INFO - Run 7806c10d4b8a4897b8310f39df0d0aac score: 0.712953304289133
+2025-12-04 12:51:08 - sentiment_analysis - INFO - Run 690f948af9454845bcc6cd1e346a5caa score: 0.6683745474627232
+2025-12-04 12:51:08 - sentiment_analysis - INFO - Run 1e077f35e9b24e84bc77042524aade76 score: 0.45477695281340125
+2025-12-04 12:51:08 - sentiment_analysis - INFO - Best run ID: 1ce0608746314ff7a4619d97ebb414db
+2025-12-04 12:51:08 - sentiment_analysis - INFO - Trying to load model from last version
+2025-12-04 12:51:08 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-2e502065283a418f95daa0c668c45867/artifacts/.'
+2025-12-04 12:51:08 - sentiment_analysis - INFO - Trying to load model from Production
+2025-12-04 12:51:08 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-2e502065283a418f95daa0c668c45867/artifacts/.'
+2025-12-04 12:51:08 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-04 12:51:08 - sentiment_analysis - ERROR - Error load model local system : Local path does not exist mlruns/1/models/m-1ce0608746314ff7a4619d97ebb414db/artifacts
+2025-12-04 12:51:08 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value
+2025-12-04 12:52:49 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 12:52:49 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 12:52:54 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 12:52:54 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 12:52:55 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764850403729, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764850548298, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='1ce0608746314ff7a4619d97ebb414db', run_link=None, source='models:/m-2e502065283a418f95daa0c668c45867', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-04 12:52:55 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 12:52:55 - sentiment_analysis - INFO - Run 1ce0608746314ff7a4619d97ebb414db score: 0.8887832116340431
+2025-12-04 12:52:55 - sentiment_analysis - INFO - Run 7806c10d4b8a4897b8310f39df0d0aac score: 0.712953304289133
+2025-12-04 12:52:55 - sentiment_analysis - INFO - Run 690f948af9454845bcc6cd1e346a5caa score: 0.6683745474627232
+2025-12-04 12:52:55 - sentiment_analysis - INFO - Run 1e077f35e9b24e84bc77042524aade76 score: 0.45477695281340125
+2025-12-04 12:52:55 - sentiment_analysis - INFO - Best run ID: 1ce0608746314ff7a4619d97ebb414db
+2025-12-04 12:52:55 - sentiment_analysis - INFO - Trying to load model from last version
+2025-12-04 12:52:55 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-2e502065283a418f95daa0c668c45867/artifacts/.'
+2025-12-04 12:52:55 - sentiment_analysis - INFO - Trying to load model from Production
+2025-12-04 12:52:55 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-2e502065283a418f95daa0c668c45867/artifacts/.'
+2025-12-04 12:52:55 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-04 12:52:55 - sentiment_analysis - ERROR - Error load model local system : Local path does not exist mlruns/1/models/m-1ce0608746314ff7a4619d97ebb414db/artifacts
+2025-12-04 12:52:55 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value
+2025-12-04 12:54:22 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 12:54:22 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 12:54:33 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 12:54:34 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 12:54:34 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764850403729, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764850548298, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='1ce0608746314ff7a4619d97ebb414db', run_link=None, source='models:/m-2e502065283a418f95daa0c668c45867', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-04 12:54:34 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 12:54:34 - sentiment_analysis - INFO - Run 1ce0608746314ff7a4619d97ebb414db score: 0.8887832116340431
+2025-12-04 12:54:34 - sentiment_analysis - INFO - Run 7806c10d4b8a4897b8310f39df0d0aac score: 0.712953304289133
+2025-12-04 12:54:34 - sentiment_analysis - INFO - Run 690f948af9454845bcc6cd1e346a5caa score: 0.6683745474627232
+2025-12-04 12:54:34 - sentiment_analysis - INFO - Run 1e077f35e9b24e84bc77042524aade76 score: 0.45477695281340125
+2025-12-04 12:54:34 - sentiment_analysis - INFO - Best run ID: 1ce0608746314ff7a4619d97ebb414db
+2025-12-04 12:54:34 - sentiment_analysis - INFO - Trying to load model from last version
+2025-12-04 12:54:34 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-2e502065283a418f95daa0c668c45867/artifacts/.'
+2025-12-04 12:54:34 - sentiment_analysis - INFO - Trying to load model from Production
+2025-12-04 12:54:34 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-2e502065283a418f95daa0c668c45867/artifacts/.'
+2025-12-04 12:54:34 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-04 12:54:34 - sentiment_analysis - ERROR - Error load model local system : Local path does not exist mlruns/1/models/m-1ce0608746314ff7a4619d97ebb414db/artifacts/
+2025-12-04 12:54:34 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value
+2025-12-04 12:55:44 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 12:55:44 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 12:55:48 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 12:55:49 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 12:55:49 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764850403729, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764850548298, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='1ce0608746314ff7a4619d97ebb414db', run_link=None, source='models:/m-2e502065283a418f95daa0c668c45867', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-04 12:55:49 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 12:55:49 - sentiment_analysis - INFO - Run 1ce0608746314ff7a4619d97ebb414db score: 0.8887832116340431
+2025-12-04 12:55:49 - sentiment_analysis - INFO - Run 7806c10d4b8a4897b8310f39df0d0aac score: 0.712953304289133
+2025-12-04 12:55:49 - sentiment_analysis - INFO - Run 690f948af9454845bcc6cd1e346a5caa score: 0.6683745474627232
+2025-12-04 12:55:49 - sentiment_analysis - INFO - Run 1e077f35e9b24e84bc77042524aade76 score: 0.45477695281340125
+2025-12-04 12:55:49 - sentiment_analysis - INFO - Best run ID: 1ce0608746314ff7a4619d97ebb414db
+2025-12-04 12:55:49 - sentiment_analysis - INFO - Trying to load model from last version
+2025-12-04 12:55:49 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-2e502065283a418f95daa0c668c45867/artifacts/.'
+2025-12-04 12:55:49 - sentiment_analysis - INFO - Trying to load model from Production
+2025-12-04 12:55:49 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-2e502065283a418f95daa0c668c45867/artifacts/.'
+2025-12-04 12:55:49 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-04 12:55:49 - sentiment_analysis - ERROR - Error load model local system : Local path does not exist mlruns/1/models/m-1ce0608746314ff7a4619d97ebb414db/artifacts/
+2025-12-04 12:55:49 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value

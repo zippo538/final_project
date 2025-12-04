@@ -9,7 +9,8 @@ paths:
   preprocessing_path: "models/preprocessing"
 
   # folder output model
-  model_dir: "models/"
+  model_preprocess: "models/preprocessing/preprocessor.joblib"
+  model_tfidf: "models/tfidf/tfidf_vectorizer.joblib"
 
 # ==========================================
 # FEATURE CONFIGURATION
@@ -25,9 +26,30 @@ mlflow:
   tracking_uri: "sqlite:///mlflow.db"
   experiment_name: "sentiment_analysis_modi_category"
   artifact_path: "model"
+  best_model : "sentiment_analysis_logistic_regression_model"
 
 # ==========================================
 # GENERAL EXPERIMENT SETTINGS
 # ==========================================
 experiment:
   name: "sentiment_analysis_modi_category"
+
+prompt :
+  predictor_prompt : |
+    Context:
+    {{ context }}
+    You are a helpful and friendly assistant. 
+    Please provide a concise and general answer to the following question:
+
+    {% if sentiment == 0 %}
+    I'm sorry, I cannot help with that.
+    {% else %}
+    answer the question based on the input below
+    {% endif %}
+
+
+    User Question:
+    {{ input }}
+    output :
+      
+

@@ -65,8 +65,7 @@ class TextPreprocessor(BaseEstimator, TransformerMixin):
 
             if self.target_column in df.columns:
                 df[self.target_column] = df[self.target_column].astype(int)
-            
-            print(df[self.target_column].value_counts())
+                print(df[self.target_column].value_counts())
             logger.info("Preprocessing completed successfully.")
             return df
 
@@ -84,7 +83,8 @@ class TextPreprocessor(BaseEstimator, TransformerMixin):
         return df
 
     def _normalize_text(self, text: str) -> str:
-        text = text.replace("\n", " ").lower()
+        text = text.replace("\n", " ")
+        text = text.lower() 
         text = re.sub(r"[_-]", " ", text)
         return text
 

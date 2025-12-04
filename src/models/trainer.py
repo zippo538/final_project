@@ -71,11 +71,6 @@ class ModelTrainer :
                     mlflow.log_params(model.get_params())
                     mlflow.log_metrics(metrics)
                     
-                    # Log feature importance if available
-                    if hasattr(model, 'feature_importances_'):
-                        feature_importance = dict(zip(X_train.columns, model.feature_importances_))
-                        mlflow.log_params({"feature_importance": str(feature_importance)})
-                    
                     # Log model
                     mlflow.sklearn.log_model(
                         model,

@@ -5,3 +5,4 @@ __pycache__/
 # research/mlflow.db
 mlruns/
 models/
+logs/

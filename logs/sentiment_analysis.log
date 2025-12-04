@@ -1011,3 +1011,20 @@ Name: count, dtype: int64
 2025-12-04 10:37:14 - sentiment_analysis - INFO - Starting preprocessing...
 2025-12-04 10:37:14 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
 2025-12-04 10:37:14 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-04 11:00:48 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 11:00:48 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 11:01:10 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-04 11:01:10 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 06:46:31 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-04 06:46:31 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-04 06:47:04 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-04 06:47:06 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-04 06:47:06 - sentiment_analysis - INFO - Found 6 runs
+2025-12-04 06:47:06 - sentiment_analysis - INFO - Run 4276c72e2ee84c90ba09cad6e52417f5 score: 0.8893047800208628
+2025-12-04 06:47:06 - sentiment_analysis - INFO - Run c12c5ff9554f46f891bd78ab66296527 score: 0.7141805240228263
+2025-12-04 06:47:06 - sentiment_analysis - INFO - Run b0c99cdc99ef4ef89728f3a49a42c40f score: 0.6707369454500829
+2025-12-04 06:47:06 - sentiment_analysis - INFO - Run bcf497fe895d48d1a3479369b863433a score: 0.45582008958704057
+2025-12-04 06:47:06 - sentiment_analysis - INFO - Best run ID: 4276c72e2ee84c90ba09cad6e52417f5
+2025-12-04 06:47:06 - sentiment_analysis - ERROR - Error load model last version : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 06:47:06 - sentiment_analysis - ERROR - Error load model with production : No such file or directory: 'D:/Python/dibimbing/final_project/mlruns/1/models/m-ce364854f2814ed7ab1b39029ce1af28/artifacts/.'
+2025-12-04 06:47:06 - sentiment_analysis - ERROR - FATAL ERROR during startup: cannot access local variable 'model' where it is not associated with a value

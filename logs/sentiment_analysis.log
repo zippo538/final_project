@@ -383,3 +383,1290 @@
 2025-12-05 04:31:12 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
 2025-12-05 04:31:12 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
 2025-12-05 04:31:12 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-05 04:44:36 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 04:44:36 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 04:44:41 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 04:44:42 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 04:44:42 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764850403729, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764850548298, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='1ce0608746314ff7a4619d97ebb414db', run_link=None, source='models:/m-2e502065283a418f95daa0c668c45867', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-05 04:44:42 - sentiment_analysis - INFO - Found 6 runs
+2025-12-05 04:44:42 - sentiment_analysis - INFO - Run 1ce0608746314ff7a4619d97ebb414db score: 0.8887832116340431
+2025-12-05 04:44:42 - sentiment_analysis - INFO - Run 7806c10d4b8a4897b8310f39df0d0aac score: 0.712953304289133
+2025-12-05 04:44:42 - sentiment_analysis - INFO - Run 690f948af9454845bcc6cd1e346a5caa score: 0.6683745474627232
+2025-12-05 04:44:42 - sentiment_analysis - INFO - Run 1e077f35e9b24e84bc77042524aade76 score: 0.45477695281340125
+2025-12-05 04:44:42 - sentiment_analysis - INFO - Best run ID: 1ce0608746314ff7a4619d97ebb414db
+2025-12-05 04:44:42 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-05 04:44:43 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 04:44:43 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-05 04:44:43 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-05 04:44:43 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-05 17:03:25 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-05 17:03:25 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 17:03:27 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-05 17:03:27 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 17:03:28 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-05 17:03:28 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 17:03:29 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-05 17:03:29 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 17:03:37 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-05 17:03:37 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:03:40 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:03:40 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 17:03:44 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-05 17:03:44 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:04:32 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:04:37 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:04:37 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764850403729, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764850548298, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='1ce0608746314ff7a4619d97ebb414db', run_link=None, source='models:/m-2e502065283a418f95daa0c668c45867', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-05 10:04:37 - sentiment_analysis - INFO - Found 6 runs
+2025-12-05 10:04:37 - sentiment_analysis - INFO - Run 1ce0608746314ff7a4619d97ebb414db score: 0.8887832116340431
+2025-12-05 10:04:37 - sentiment_analysis - INFO - Run 7806c10d4b8a4897b8310f39df0d0aac score: 0.712953304289133
+2025-12-05 10:04:37 - sentiment_analysis - INFO - Run 690f948af9454845bcc6cd1e346a5caa score: 0.6683745474627232
+2025-12-05 10:04:37 - sentiment_analysis - INFO - Run 1e077f35e9b24e84bc77042524aade76 score: 0.45477695281340125
+2025-12-05 10:04:37 - sentiment_analysis - INFO - Best run ID: 1ce0608746314ff7a4619d97ebb414db
+2025-12-05 10:04:38 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-05 10:04:43 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 10:04:43 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-05 10:04:43 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-05 10:04:43 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-05 10:04:45 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:04:45 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:04:52 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:04:53 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:04:53 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764850403729, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764850548298, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='1ce0608746314ff7a4619d97ebb414db', run_link=None, source='models:/m-2e502065283a418f95daa0c668c45867', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-05 10:04:53 - sentiment_analysis - INFO - Found 6 runs
+2025-12-05 10:04:53 - sentiment_analysis - INFO - Run 1ce0608746314ff7a4619d97ebb414db score: 0.8887832116340431
+2025-12-05 10:04:53 - sentiment_analysis - INFO - Run 7806c10d4b8a4897b8310f39df0d0aac score: 0.712953304289133
+2025-12-05 10:04:53 - sentiment_analysis - INFO - Run 690f948af9454845bcc6cd1e346a5caa score: 0.6683745474627232
+2025-12-05 10:04:53 - sentiment_analysis - INFO - Run 1e077f35e9b24e84bc77042524aade76 score: 0.45477695281340125
+2025-12-05 10:04:53 - sentiment_analysis - INFO - Best run ID: 1ce0608746314ff7a4619d97ebb414db
+2025-12-05 10:04:53 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-05 10:04:54 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 10:04:54 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-05 10:04:54 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-05 10:04:54 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-05 10:09:32 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:09:32 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:09:36 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:09:37 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:09:37 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764850403729, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764850548298, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='1ce0608746314ff7a4619d97ebb414db', run_link=None, source='models:/m-2e502065283a418f95daa0c668c45867', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-05 10:09:37 - sentiment_analysis - INFO - Found 6 runs
+2025-12-05 10:09:37 - sentiment_analysis - INFO - Run 1ce0608746314ff7a4619d97ebb414db score: 0.8887832116340431
+2025-12-05 10:09:37 - sentiment_analysis - INFO - Run 7806c10d4b8a4897b8310f39df0d0aac score: 0.712953304289133
+2025-12-05 10:09:37 - sentiment_analysis - INFO - Run 690f948af9454845bcc6cd1e346a5caa score: 0.6683745474627232
+2025-12-05 10:09:37 - sentiment_analysis - INFO - Run 1e077f35e9b24e84bc77042524aade76 score: 0.45477695281340125
+2025-12-05 10:09:37 - sentiment_analysis - INFO - Best run ID: 1ce0608746314ff7a4619d97ebb414db
+2025-12-05 10:09:37 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-05 10:09:38 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 10:09:38 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-05 10:09:38 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-05 10:09:38 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-05 10:09:51 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:09:51 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:09:55 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:09:56 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:09:56 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764850403729, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764850548298, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='1ce0608746314ff7a4619d97ebb414db', run_link=None, source='models:/m-2e502065283a418f95daa0c668c45867', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-05 10:09:56 - sentiment_analysis - INFO - Found 6 runs
+2025-12-05 10:09:56 - sentiment_analysis - INFO - Run 1ce0608746314ff7a4619d97ebb414db score: 0.8887832116340431
+2025-12-05 10:09:56 - sentiment_analysis - INFO - Run 7806c10d4b8a4897b8310f39df0d0aac score: 0.712953304289133
+2025-12-05 10:09:56 - sentiment_analysis - INFO - Run 690f948af9454845bcc6cd1e346a5caa score: 0.6683745474627232
+2025-12-05 10:09:56 - sentiment_analysis - INFO - Run 1e077f35e9b24e84bc77042524aade76 score: 0.45477695281340125
+2025-12-05 10:09:56 - sentiment_analysis - INFO - Best run ID: 1ce0608746314ff7a4619d97ebb414db
+2025-12-05 10:09:56 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-05 10:09:56 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 10:09:56 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-05 10:09:57 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-05 10:09:57 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-05 10:11:57 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:11:57 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:12:01 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:12:02 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:12:03 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764850403729, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764850548298, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='1ce0608746314ff7a4619d97ebb414db', run_link=None, source='models:/m-2e502065283a418f95daa0c668c45867', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-05 10:12:03 - sentiment_analysis - INFO - Found 6 runs
+2025-12-05 10:12:03 - sentiment_analysis - INFO - Run 1ce0608746314ff7a4619d97ebb414db score: 0.8887832116340431
+2025-12-05 10:12:03 - sentiment_analysis - INFO - Run 7806c10d4b8a4897b8310f39df0d0aac score: 0.712953304289133
+2025-12-05 10:12:03 - sentiment_analysis - INFO - Run 690f948af9454845bcc6cd1e346a5caa score: 0.6683745474627232
+2025-12-05 10:12:03 - sentiment_analysis - INFO - Run 1e077f35e9b24e84bc77042524aade76 score: 0.45477695281340125
+2025-12-05 10:12:03 - sentiment_analysis - INFO - Best run ID: 1ce0608746314ff7a4619d97ebb414db
+2025-12-05 10:12:03 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-05 10:12:03 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 10:12:03 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-05 10:12:04 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-05 10:12:04 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-05 10:12:14 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:12:14 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:12:18 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:12:19 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:12:19 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764850403729, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764850548298, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='1ce0608746314ff7a4619d97ebb414db', run_link=None, source='models:/m-2e502065283a418f95daa0c668c45867', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-05 10:12:19 - sentiment_analysis - INFO - Found 6 runs
+2025-12-05 10:12:19 - sentiment_analysis - INFO - Run 1ce0608746314ff7a4619d97ebb414db score: 0.8887832116340431
+2025-12-05 10:12:19 - sentiment_analysis - INFO - Run 7806c10d4b8a4897b8310f39df0d0aac score: 0.712953304289133
+2025-12-05 10:12:19 - sentiment_analysis - INFO - Run 690f948af9454845bcc6cd1e346a5caa score: 0.6683745474627232
+2025-12-05 10:12:19 - sentiment_analysis - INFO - Run 1e077f35e9b24e84bc77042524aade76 score: 0.45477695281340125
+2025-12-05 10:12:19 - sentiment_analysis - INFO - Best run ID: 1ce0608746314ff7a4619d97ebb414db
+2025-12-05 10:12:19 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-05 10:12:20 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 10:12:20 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-05 10:12:20 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-05 10:12:20 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-05 10:12:33 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:12:33 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:12:37 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:12:38 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:12:38 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764850403729, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764850548298, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='1ce0608746314ff7a4619d97ebb414db', run_link=None, source='models:/m-2e502065283a418f95daa0c668c45867', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-05 10:12:38 - sentiment_analysis - INFO - Found 6 runs
+2025-12-05 10:12:38 - sentiment_analysis - INFO - Run 1ce0608746314ff7a4619d97ebb414db score: 0.8887832116340431
+2025-12-05 10:12:38 - sentiment_analysis - INFO - Run 7806c10d4b8a4897b8310f39df0d0aac score: 0.712953304289133
+2025-12-05 10:12:38 - sentiment_analysis - INFO - Run 690f948af9454845bcc6cd1e346a5caa score: 0.6683745474627232
+2025-12-05 10:12:38 - sentiment_analysis - INFO - Run 1e077f35e9b24e84bc77042524aade76 score: 0.45477695281340125
+2025-12-05 10:12:38 - sentiment_analysis - INFO - Best run ID: 1ce0608746314ff7a4619d97ebb414db
+2025-12-05 10:12:38 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-05 10:12:39 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 10:12:39 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-05 10:12:39 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-05 10:12:39 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-05 10:14:54 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:14:54 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:14:58 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:14:59 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:14:59 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764850403729, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764850548298, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='1ce0608746314ff7a4619d97ebb414db', run_link=None, source='models:/m-2e502065283a418f95daa0c668c45867', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-05 10:14:59 - sentiment_analysis - INFO - Found 6 runs
+2025-12-05 10:14:59 - sentiment_analysis - INFO - Run 1ce0608746314ff7a4619d97ebb414db score: 0.8887832116340431
+2025-12-05 10:14:59 - sentiment_analysis - INFO - Run 7806c10d4b8a4897b8310f39df0d0aac score: 0.712953304289133
+2025-12-05 10:14:59 - sentiment_analysis - INFO - Run 690f948af9454845bcc6cd1e346a5caa score: 0.6683745474627232
+2025-12-05 10:14:59 - sentiment_analysis - INFO - Run 1e077f35e9b24e84bc77042524aade76 score: 0.45477695281340125
+2025-12-05 10:14:59 - sentiment_analysis - INFO - Best run ID: 1ce0608746314ff7a4619d97ebb414db
+2025-12-05 10:14:59 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-05 10:14:59 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 10:14:59 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-05 10:15:00 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-05 10:15:00 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-05 10:17:39 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:17:39 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:17:42 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:17:43 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:17:43 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764850403729, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764850548298, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='1ce0608746314ff7a4619d97ebb414db', run_link=None, source='models:/m-2e502065283a418f95daa0c668c45867', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-05 10:17:43 - sentiment_analysis - INFO - Found 6 runs
+2025-12-05 10:17:43 - sentiment_analysis - INFO - Run 1ce0608746314ff7a4619d97ebb414db score: 0.8887832116340431
+2025-12-05 10:17:43 - sentiment_analysis - INFO - Run 7806c10d4b8a4897b8310f39df0d0aac score: 0.712953304289133
+2025-12-05 10:17:43 - sentiment_analysis - INFO - Run 690f948af9454845bcc6cd1e346a5caa score: 0.6683745474627232
+2025-12-05 10:17:43 - sentiment_analysis - INFO - Run 1e077f35e9b24e84bc77042524aade76 score: 0.45477695281340125
+2025-12-05 10:17:43 - sentiment_analysis - INFO - Best run ID: 1ce0608746314ff7a4619d97ebb414db
+2025-12-05 10:17:43 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-05 10:17:44 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 10:17:44 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-05 10:17:44 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-05 10:17:44 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-05 10:17:46 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:17:46 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:17:49 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:17:50 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:17:50 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764850403729, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764850548298, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='1ce0608746314ff7a4619d97ebb414db', run_link=None, source='models:/m-2e502065283a418f95daa0c668c45867', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-05 10:17:50 - sentiment_analysis - INFO - Found 6 runs
+2025-12-05 10:17:50 - sentiment_analysis - INFO - Run 1ce0608746314ff7a4619d97ebb414db score: 0.8887832116340431
+2025-12-05 10:17:50 - sentiment_analysis - INFO - Run 7806c10d4b8a4897b8310f39df0d0aac score: 0.712953304289133
+2025-12-05 10:17:50 - sentiment_analysis - INFO - Run 690f948af9454845bcc6cd1e346a5caa score: 0.6683745474627232
+2025-12-05 10:17:50 - sentiment_analysis - INFO - Run 1e077f35e9b24e84bc77042524aade76 score: 0.45477695281340125
+2025-12-05 10:17:50 - sentiment_analysis - INFO - Best run ID: 1ce0608746314ff7a4619d97ebb414db
+2025-12-05 10:17:50 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-05 10:17:51 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 10:17:51 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-05 10:17:51 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-05 10:17:51 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-05 10:18:10 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:18:10 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:18:14 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:18:14 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:18:15 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764850403729, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764850548298, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='1ce0608746314ff7a4619d97ebb414db', run_link=None, source='models:/m-2e502065283a418f95daa0c668c45867', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-05 10:18:15 - sentiment_analysis - INFO - Found 6 runs
+2025-12-05 10:18:15 - sentiment_analysis - INFO - Run 1ce0608746314ff7a4619d97ebb414db score: 0.8887832116340431
+2025-12-05 10:18:15 - sentiment_analysis - INFO - Run 7806c10d4b8a4897b8310f39df0d0aac score: 0.712953304289133
+2025-12-05 10:18:15 - sentiment_analysis - INFO - Run 690f948af9454845bcc6cd1e346a5caa score: 0.6683745474627232
+2025-12-05 10:18:15 - sentiment_analysis - INFO - Run 1e077f35e9b24e84bc77042524aade76 score: 0.45477695281340125
+2025-12-05 10:18:15 - sentiment_analysis - INFO - Best run ID: 1ce0608746314ff7a4619d97ebb414db
+2025-12-05 10:18:15 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-05 10:18:15 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 10:18:15 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-05 10:18:16 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-05 10:18:16 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-05 10:18:20 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:18:20 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:18:23 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:18:24 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:18:24 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764850403729, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764850548298, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='1ce0608746314ff7a4619d97ebb414db', run_link=None, source='models:/m-2e502065283a418f95daa0c668c45867', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-05 10:18:24 - sentiment_analysis - INFO - Found 6 runs
+2025-12-05 10:18:24 - sentiment_analysis - INFO - Run 1ce0608746314ff7a4619d97ebb414db score: 0.8887832116340431
+2025-12-05 10:18:24 - sentiment_analysis - INFO - Run 7806c10d4b8a4897b8310f39df0d0aac score: 0.712953304289133
+2025-12-05 10:18:24 - sentiment_analysis - INFO - Run 690f948af9454845bcc6cd1e346a5caa score: 0.6683745474627232
+2025-12-05 10:18:24 - sentiment_analysis - INFO - Run 1e077f35e9b24e84bc77042524aade76 score: 0.45477695281340125
+2025-12-05 10:18:24 - sentiment_analysis - INFO - Best run ID: 1ce0608746314ff7a4619d97ebb414db
+2025-12-05 10:18:24 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-05 10:18:25 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 10:18:25 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-05 10:18:25 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-05 10:18:25 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-05 10:18:37 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:18:37 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:18:39 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:18:40 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:18:40 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764850403729, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764850548298, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='1ce0608746314ff7a4619d97ebb414db', run_link=None, source='models:/m-2e502065283a418f95daa0c668c45867', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-05 10:18:40 - sentiment_analysis - INFO - Found 6 runs
+2025-12-05 10:18:40 - sentiment_analysis - INFO - Run 1ce0608746314ff7a4619d97ebb414db score: 0.8887832116340431
+2025-12-05 10:18:40 - sentiment_analysis - INFO - Run 7806c10d4b8a4897b8310f39df0d0aac score: 0.712953304289133
+2025-12-05 10:18:40 - sentiment_analysis - INFO - Run 690f948af9454845bcc6cd1e346a5caa score: 0.6683745474627232
+2025-12-05 10:18:40 - sentiment_analysis - INFO - Run 1e077f35e9b24e84bc77042524aade76 score: 0.45477695281340125
+2025-12-05 10:18:40 - sentiment_analysis - INFO - Best run ID: 1ce0608746314ff7a4619d97ebb414db
+2025-12-05 10:18:40 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-05 10:18:41 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 10:18:41 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-05 10:18:42 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-05 10:18:42 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-05 10:19:20 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:19:20 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:19:24 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:19:25 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:19:25 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764850403729, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764850548298, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='1ce0608746314ff7a4619d97ebb414db', run_link=None, source='models:/m-2e502065283a418f95daa0c668c45867', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-05 10:19:25 - sentiment_analysis - INFO - Found 6 runs
+2025-12-05 10:19:25 - sentiment_analysis - INFO - Run 1ce0608746314ff7a4619d97ebb414db score: 0.8887832116340431
+2025-12-05 10:19:25 - sentiment_analysis - INFO - Run 7806c10d4b8a4897b8310f39df0d0aac score: 0.712953304289133
+2025-12-05 10:19:25 - sentiment_analysis - INFO - Run 690f948af9454845bcc6cd1e346a5caa score: 0.6683745474627232
+2025-12-05 10:19:25 - sentiment_analysis - INFO - Run 1e077f35e9b24e84bc77042524aade76 score: 0.45477695281340125
+2025-12-05 10:19:25 - sentiment_analysis - INFO - Best run ID: 1ce0608746314ff7a4619d97ebb414db
+2025-12-05 10:19:25 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-05 10:19:26 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 10:19:26 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-05 10:19:26 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-05 10:19:26 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-05 10:21:54 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:21:54 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:21:58 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:21:59 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:21:59 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764850403729, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764850548298, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='1ce0608746314ff7a4619d97ebb414db', run_link=None, source='models:/m-2e502065283a418f95daa0c668c45867', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-05 10:21:59 - sentiment_analysis - INFO - Found 6 runs
+2025-12-05 10:21:59 - sentiment_analysis - INFO - Run 1ce0608746314ff7a4619d97ebb414db score: 0.8887832116340431
+2025-12-05 10:21:59 - sentiment_analysis - INFO - Run 7806c10d4b8a4897b8310f39df0d0aac score: 0.712953304289133
+2025-12-05 10:21:59 - sentiment_analysis - INFO - Run 690f948af9454845bcc6cd1e346a5caa score: 0.6683745474627232
+2025-12-05 10:21:59 - sentiment_analysis - INFO - Run 1e077f35e9b24e84bc77042524aade76 score: 0.45477695281340125
+2025-12-05 10:21:59 - sentiment_analysis - INFO - Best run ID: 1ce0608746314ff7a4619d97ebb414db
+2025-12-05 10:21:59 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-05 10:22:00 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 10:22:00 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-05 10:22:01 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-05 10:22:01 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-05 10:22:12 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:22:12 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:22:16 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:22:17 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:22:17 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764850403729, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764850548298, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_model', params=None, run_id='1ce0608746314ff7a4619d97ebb414db', run_link=None, source='models:/m-2e502065283a418f95daa0c668c45867', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-05 10:22:17 - sentiment_analysis - INFO - Found 6 runs
+2025-12-05 10:22:17 - sentiment_analysis - INFO - Run 1ce0608746314ff7a4619d97ebb414db score: 0.8887832116340431
+2025-12-05 10:22:17 - sentiment_analysis - INFO - Run 7806c10d4b8a4897b8310f39df0d0aac score: 0.712953304289133
+2025-12-05 10:22:17 - sentiment_analysis - INFO - Run 690f948af9454845bcc6cd1e346a5caa score: 0.6683745474627232
+2025-12-05 10:22:17 - sentiment_analysis - INFO - Run 1e077f35e9b24e84bc77042524aade76 score: 0.45477695281340125
+2025-12-05 10:22:17 - sentiment_analysis - INFO - Best run ID: 1ce0608746314ff7a4619d97ebb414db
+2025-12-05 10:22:17 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-05 10:22:18 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 10:22:18 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-05 10:22:18 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-05 10:22:18 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_model and preprocessor loaded successfully
+2025-12-05 17:22:26 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-05 17:22:26 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 17:22:28 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-05 17:22:28 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-05 17:22:41 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-05 17:22:41 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-05 17:22:41 - sentiment_analysis - INFO - Started pipeline run with ID: b4e4074e6c674b4e8f8372e8bb37e765
+2025-12-05 17:22:41 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-05 17:22:41 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-05 17:22:41 - sentiment_analysis - INFO - Loading data from csv
+2025-12-05 17:22:42 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-05 17:22:42 - sentiment_analysis - INFO - Validate Data
+2025-12-05 17:22:42 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 17:22:42 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 17:22:42 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 17:22:42 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 17:22:42 - sentiment_analysis - INFO - Validate Data
+2025-12-05 17:22:42 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 17:22:42 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 17:22:42 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 17:22:42 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 17:22:42 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-05 17:22:42 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 17:22:42 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-05 17:22:42 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-05 17:22:55 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-05 17:22:55 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 17:22:55 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-05 17:22:55 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-05 17:22:57 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-05 17:22:57 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-05 17:23:05 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-05 17:23:06 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-05 17:23:06 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-05 17:23:56 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 17:23:56 - sentiment_analysis - INFO - Step 3: Training and evaluating models
+2025-12-05 17:23:56 - sentiment_analysis - INFO - MLflow setup completed successfully
+2025-12-05 17:23:56 - sentiment_analysis - INFO - Initialized ModelTrainer with experiment: sentiment_analysis_modi_category
+2025-12-05 17:23:56 - sentiment_analysis - INFO - Startedd all Tuning models
+2025-12-05 17:23:56 - sentiment_analysis - ERROR - Error Hypertuning Model : 'ModelTrainer' object has no attribute 'tune_model_with_optuna'
+2025-12-05 17:23:56 - sentiment_analysis - ERROR - Pipeline execution failed: No best model selected. Train models first.
+2025-12-05 10:25:47 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:25:47 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:25:52 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:25:53 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:25:53 - sentiment_analysis - ERROR - FATAL ERROR during startup: Registered Model with name=sentiment_analysis_logistic_regression_model not found
+2025-12-05 17:26:12 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-05 17:26:12 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 17:26:13 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-05 17:26:13 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-05 17:26:37 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-05 17:26:37 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-05 17:26:39 - sentiment_analysis - INFO - Started pipeline run with ID: 056d4958cbf5414c9ef1599fafcbe040
+2025-12-05 17:26:39 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-05 17:26:39 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-05 17:26:39 - sentiment_analysis - INFO - Loading data from csv
+2025-12-05 17:26:41 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-05 17:26:41 - sentiment_analysis - INFO - Validate Data
+2025-12-05 17:26:42 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 17:26:42 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 17:26:42 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 17:26:42 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 17:26:42 - sentiment_analysis - INFO - Validate Data
+2025-12-05 17:26:42 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 17:26:42 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 17:26:42 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 17:26:42 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 17:26:43 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-05 17:26:43 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 17:26:43 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-05 17:26:43 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-05 17:26:54 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-05 17:26:54 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 17:26:54 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-05 17:26:54 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-05 17:26:57 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-05 17:26:57 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-05 17:27:04 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-05 17:27:05 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-05 17:27:05 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-05 17:27:51 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 17:27:51 - sentiment_analysis - INFO - Step 3: Training and evaluating models
+2025-12-05 17:27:51 - sentiment_analysis - INFO - MLflow setup completed successfully
+2025-12-05 17:27:51 - sentiment_analysis - INFO - Initialized ModelTrainer with experiment: sentiment_analysis_modi_category
+2025-12-05 17:27:51 - sentiment_analysis - INFO - Startedd all Tuning models
+2025-12-05 17:27:51 - sentiment_analysis - ERROR - Error Hypertuning Model : 'ModelTrainer' object has no attribute 'tune_model_with_optuna'
+2025-12-05 17:27:51 - sentiment_analysis - ERROR - Pipeline execution failed: No best model selected. Train models first.
+2025-12-05 10:49:35 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:49:35 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:49:39 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:49:40 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:49:40 - sentiment_analysis - ERROR - FATAL ERROR during startup: Registered Model with name=sentiment_analysis_logistic_regression_model not found
+2025-12-05 10:50:04 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:50:04 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:50:08 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:50:09 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:50:09 - sentiment_analysis - ERROR - FATAL ERROR during startup: Registered Model with name=sentiment_analysis_logistic_regression_model not found
+2025-12-05 10:50:56 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:50:56 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:51:00 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:51:01 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:51:01 - sentiment_analysis - ERROR - FATAL ERROR during startup: Registered Model with name=sentiment_analysis_logistic_regression_model not found
+2025-12-05 17:51:48 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-05 17:51:48 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 17:51:49 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-05 17:51:49 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-05 17:52:04 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-05 17:52:04 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-05 17:52:05 - sentiment_analysis - INFO - Started pipeline run with ID: e53221e318064566bed24d6570fa2557
+2025-12-05 17:52:05 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-05 17:52:05 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-05 17:52:05 - sentiment_analysis - INFO - Loading data from csv
+2025-12-05 17:52:06 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-05 17:52:06 - sentiment_analysis - INFO - Validate Data
+2025-12-05 17:52:06 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 17:52:06 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 17:52:06 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 17:52:06 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 17:52:06 - sentiment_analysis - INFO - Validate Data
+2025-12-05 17:52:06 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 17:52:06 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 17:52:06 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 17:52:06 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 17:52:06 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-05 17:52:06 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 17:52:06 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-05 17:52:06 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-05 17:52:19 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-05 17:52:19 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 17:52:19 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-05 17:52:19 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-05 17:52:22 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-05 17:52:22 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-05 17:52:29 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-05 17:52:30 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-05 17:52:30 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-05 17:53:26 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 17:53:26 - sentiment_analysis - INFO - Step 3: Training and evaluating models
+2025-12-05 17:53:26 - sentiment_analysis - INFO - MLflow setup completed successfully
+2025-12-05 17:53:26 - sentiment_analysis - INFO - Initialized ModelTrainer with experiment: sentiment_analysis_modi_category
+2025-12-05 17:53:26 - sentiment_analysis - INFO - Startedd all Tuning models
+2025-12-05 17:53:26 - sentiment_analysis - ERROR - Error Hypertuning Model : ModelFactory.create_model() got an unexpected keyword argument 'params_override'
+2025-12-05 17:53:26 - sentiment_analysis - ERROR - Pipeline execution failed: No best model selected. Train models first.
+2025-12-05 10:54:54 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:54:54 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:54:58 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:54:59 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:54:59 - sentiment_analysis - ERROR - FATAL ERROR during startup: Registered Model with name=sentiment_analysis_logistic_regression_model not found
+2025-12-05 10:55:01 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:55:01 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:55:05 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 17:55:06 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-05 17:55:06 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:55:06 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:55:06 - sentiment_analysis - ERROR - FATAL ERROR during startup: Registered Model with name=sentiment_analysis_logistic_regression_model not found
+2025-12-05 17:55:07 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-05 17:55:07 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-05 17:55:24 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-05 17:55:24 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-05 17:55:25 - sentiment_analysis - INFO - Started pipeline run with ID: 9b303a8fc6064820a21ce6f0492d3950
+2025-12-05 17:55:25 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-05 17:55:25 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-05 17:55:25 - sentiment_analysis - INFO - Loading data from csv
+2025-12-05 17:55:26 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-05 17:55:26 - sentiment_analysis - INFO - Validate Data
+2025-12-05 17:55:26 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 17:55:26 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 17:55:26 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 17:55:26 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 17:55:26 - sentiment_analysis - INFO - Validate Data
+2025-12-05 17:55:26 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 17:55:26 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 17:55:26 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 17:55:26 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 17:55:26 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-05 17:55:26 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 17:55:26 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-05 17:55:26 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-05 17:55:38 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-05 17:55:38 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 17:55:38 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-05 17:55:38 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-05 17:55:41 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-05 17:55:41 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-05 17:55:48 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-05 17:55:48 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-05 17:55:48 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-05 17:56:36 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 17:56:36 - sentiment_analysis - INFO - Step 3: Training and evaluating models
+2025-12-05 17:56:36 - sentiment_analysis - INFO - MLflow setup completed successfully
+2025-12-05 17:56:36 - sentiment_analysis - INFO - Initialized ModelTrainer with experiment: sentiment_analysis_modi_category
+2025-12-05 17:56:36 - sentiment_analysis - INFO - Startedd all Tuning models
+2025-12-05 17:56:36 - sentiment_analysis - ERROR - Error Hypertuning Model : ModelFactory.create_model() got an unexpected keyword argument 'params_override'
+2025-12-05 17:56:36 - sentiment_analysis - ERROR - Pipeline execution failed: No best model selected. Train models first.
+2025-12-05 10:57:13 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:57:13 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:57:17 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:57:18 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:57:18 - sentiment_analysis - ERROR - FATAL ERROR during startup: Registered Model with name=sentiment_analysis_logistic_regression_model not found
+2025-12-05 10:57:41 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:57:41 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:57:44 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:57:45 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:57:45 - sentiment_analysis - ERROR - FATAL ERROR during startup: Registered Model with name=sentiment_analysis_logistic_regression_model not found
+2025-12-05 10:58:56 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 10:58:56 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 10:59:00 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 10:59:00 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 10:59:00 - sentiment_analysis - ERROR - FATAL ERROR during startup: Registered Model with name=sentiment_analysis_logistic_regression_model not found
+2025-12-05 17:59:07 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-05 17:59:07 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 17:59:08 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-05 17:59:08 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-05 17:59:26 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-05 17:59:26 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-05 17:59:27 - sentiment_analysis - INFO - Started pipeline run with ID: 34b0645edf25499c96867008ef7965be
+2025-12-05 17:59:27 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-05 17:59:27 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-05 17:59:27 - sentiment_analysis - INFO - Loading data from csv
+2025-12-05 17:59:27 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-05 17:59:27 - sentiment_analysis - INFO - Validate Data
+2025-12-05 17:59:27 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 17:59:27 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 17:59:27 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 17:59:27 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 17:59:27 - sentiment_analysis - INFO - Validate Data
+2025-12-05 17:59:28 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 17:59:28 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 17:59:28 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 17:59:28 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 17:59:28 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-05 17:59:28 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 17:59:28 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-05 17:59:28 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-05 17:59:40 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-05 17:59:40 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 17:59:40 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-05 17:59:40 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-05 17:59:43 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-05 17:59:43 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-05 17:59:50 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-05 17:59:50 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-05 17:59:50 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-05 18:00:37 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 18:00:37 - sentiment_analysis - INFO - Step 3: Training and evaluating models
+2025-12-05 18:00:37 - sentiment_analysis - INFO - MLflow setup completed successfully
+2025-12-05 18:00:37 - sentiment_analysis - INFO - Initialized ModelTrainer with experiment: sentiment_analysis_modi_category
+2025-12-05 18:00:37 - sentiment_analysis - INFO - Startedd all Tuning models
+2025-12-05 18:00:37 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:00:46 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:01:01 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:01:09 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:01:13 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:01:24 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:01:29 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:01:37 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:01:43 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:01:58 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:02:12 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:02:14 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:02:19 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:02:24 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:02:30 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:02:37 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:02:44 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:02:51 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:02:56 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:03:02 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:03:09 - sentiment_analysis - INFO - Best params for logistic_regression: {'C': 6.741855795320788, 'solver': 'liblinear', 'max_iter': 408}
+2025-12-05 18:03:09 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:03:14 - sentiment_analysis - ERROR - Error Hypertuning Model : Run with UUID 34b0645edf25499c96867008ef7965be is already active. To start a new run, first end the current run with mlflow.end_run(). To start a nested run, call start_run with nested=True
+2025-12-05 18:03:14 - sentiment_analysis - ERROR - Pipeline execution failed: No best model selected. Train models first.
+2025-12-05 11:04:28 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 11:04:28 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 11:04:32 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 11:04:33 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 11:04:33 - sentiment_analysis - ERROR - FATAL ERROR during startup: Registered Model with name=sentiment_analysis_logistic_regression_model not found
+2025-12-05 18:04:55 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-05 18:04:55 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 18:04:56 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-05 18:04:56 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-05 18:05:10 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-05 18:05:10 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-05 18:05:11 - sentiment_analysis - INFO - Started pipeline run with ID: ebbbd94ab3354c84b707d324490b18b5
+2025-12-05 18:05:11 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-05 18:05:11 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-05 18:05:11 - sentiment_analysis - INFO - Loading data from csv
+2025-12-05 18:05:11 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-05 18:05:11 - sentiment_analysis - INFO - Validate Data
+2025-12-05 18:05:11 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 18:05:11 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 18:05:11 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 18:05:11 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 18:05:11 - sentiment_analysis - INFO - Validate Data
+2025-12-05 18:05:11 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 18:05:11 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 18:05:11 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 18:05:11 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 18:05:12 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-05 18:05:12 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 18:05:12 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-05 18:05:12 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-05 18:05:23 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-05 18:05:23 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 18:05:23 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-05 18:05:23 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-05 18:05:26 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-05 18:05:26 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-05 18:05:33 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-05 18:05:33 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-05 18:05:33 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-05 18:06:19 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 18:06:19 - sentiment_analysis - INFO - Step 3: Training and evaluating models
+2025-12-05 18:06:19 - sentiment_analysis - INFO - MLflow setup completed successfully
+2025-12-05 18:06:19 - sentiment_analysis - INFO - Initialized ModelTrainer with experiment: sentiment_analysis_modi_category
+2025-12-05 18:06:19 - sentiment_analysis - INFO - Startedd all Tuning models
+2025-12-05 18:06:19 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:06:28 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:06:34 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:06:41 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:06:58 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:07:15 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:07:23 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:07:30 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:07:40 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:07:46 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:07:52 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:07:55 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:08:03 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:08:08 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:08:14 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:08:21 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:08:27 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:08:34 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:08:36 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:08:42 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:08:47 - sentiment_analysis - INFO - Best params for logistic_regression: {'C': 7.946174210409908, 'solver': 'liblinear', 'max_iter': 157}
+2025-12-05 18:08:47 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:08:54 - sentiment_analysis - ERROR - Error Hypertuning Model : [Errno 2] No such file or directory: 'sentiment_analysis_logistic_regression_optuna_best'
+2025-12-05 18:08:54 - sentiment_analysis - ERROR - Pipeline execution failed: No best model selected. Train models first.
+2025-12-05 11:10:36 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 11:10:36 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 11:10:40 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 11:10:41 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 11:10:41 - sentiment_analysis - ERROR - FATAL ERROR during startup: Registered Model with name=sentiment_analysis_logistic_regression_model not found
+2025-12-05 18:10:56 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-05 18:10:56 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 18:10:57 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-05 18:10:57 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-05 18:11:11 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-05 18:11:11 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-05 18:11:12 - sentiment_analysis - INFO - Started pipeline run with ID: f7ac90bd24db44bfaf7c5e591cfd3daf
+2025-12-05 18:11:12 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-05 18:11:12 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-05 18:11:12 - sentiment_analysis - INFO - Loading data from csv
+2025-12-05 18:11:12 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-05 18:11:12 - sentiment_analysis - INFO - Validate Data
+2025-12-05 18:11:12 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 18:11:12 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 18:11:12 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 18:11:12 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 18:11:12 - sentiment_analysis - INFO - Validate Data
+2025-12-05 18:11:12 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 18:11:13 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 18:11:13 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 18:11:13 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 18:11:13 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-05 18:11:13 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 18:11:13 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-05 18:11:13 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-05 18:11:25 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-05 18:11:25 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 18:11:25 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-05 18:11:25 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-05 18:11:28 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-05 18:11:28 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-05 18:11:37 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-05 18:11:37 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-05 18:11:37 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-05 18:12:26 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 18:12:26 - sentiment_analysis - INFO - Step 3: Training and evaluating models
+2025-12-05 18:12:26 - sentiment_analysis - INFO - MLflow setup completed successfully
+2025-12-05 18:12:26 - sentiment_analysis - INFO - Initialized ModelTrainer with experiment: sentiment_analysis_modi_category
+2025-12-05 18:12:26 - sentiment_analysis - INFO - Startedd all Tuning models
+2025-12-05 18:12:26 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:12:33 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:12:38 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:12:44 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:12:57 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:13:06 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:13:14 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:13:30 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:13:42 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:13:50 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:13:55 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:13:59 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:14:06 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:14:11 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:14:18 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:14:26 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 11:14:30 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 11:14:30 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 11:14:34 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 11:14:35 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 11:14:35 - sentiment_analysis - ERROR - FATAL ERROR during startup: Registered Model with name=sentiment_analysis_logistic_regression_model not found
+2025-12-05 18:14:40 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-05 18:14:40 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 18:14:41 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-05 18:14:41 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-05 18:14:56 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-05 18:14:56 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-05 18:14:56 - sentiment_analysis - INFO - Started pipeline run with ID: e52d24f5278c434c95a50b77fa519edd
+2025-12-05 18:14:56 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-05 18:14:56 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-05 18:14:56 - sentiment_analysis - INFO - Loading data from csv
+2025-12-05 18:14:57 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-05 18:14:57 - sentiment_analysis - INFO - Validate Data
+2025-12-05 18:14:57 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 18:14:57 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 18:14:57 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 18:14:57 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 18:14:57 - sentiment_analysis - INFO - Validate Data
+2025-12-05 18:14:57 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 18:14:57 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 18:14:57 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 18:14:57 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 18:14:57 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-05 18:14:57 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 18:14:57 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-05 18:14:57 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-05 18:15:09 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-05 18:15:09 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 18:15:09 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-05 18:15:09 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-05 18:15:11 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-05 18:15:11 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-05 18:15:18 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-05 18:15:19 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-05 18:15:19 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-05 18:16:04 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 18:16:04 - sentiment_analysis - INFO - Step 3: Training and evaluating models
+2025-12-05 18:16:04 - sentiment_analysis - INFO - MLflow setup completed successfully
+2025-12-05 18:16:04 - sentiment_analysis - INFO - Initialized ModelTrainer with experiment: sentiment_analysis_modi_category
+2025-12-05 18:16:04 - sentiment_analysis - INFO - Startedd all Tuning models
+2025-12-05 18:16:04 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:16:10 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:16:14 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:16:20 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:16:25 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:16:42 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:16:50 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:17:00 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:17:04 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:17:10 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:17:18 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:17:24 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:17:31 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:17:37 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:17:43 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:17:50 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:17:56 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:18:03 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:18:09 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:18:14 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:18:22 - sentiment_analysis - INFO - Best params for logistic_regression: {'C': 7.203685429147148, 'solver': 'liblinear', 'max_iter': 487}
+2025-12-05 18:18:22 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:18:33 - sentiment_analysis - ERROR - Error Hypertuning Model : 'ModelTrainer' object has no attribute 'self'
+2025-12-05 18:18:33 - sentiment_analysis - ERROR - Pipeline execution failed: No best model selected. Train models first.
+2025-12-05 11:22:17 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 11:22:17 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 18:22:19 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-05 18:22:19 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 18:22:20 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-05 18:22:20 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-05 11:22:22 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 11:22:22 - sentiment_analysis - ERROR - FATAL ERROR during startup: (sqlite3.OperationalError) disk I/O error
+[SQL: SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite~_%' ESCAPE '~' ORDER BY name]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-05 18:22:37 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-05 18:22:37 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-05 18:22:38 - sentiment_analysis - INFO - Started pipeline run with ID: 562d6f481b904b0e9b8effce7782ea37
+2025-12-05 18:22:38 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-05 18:22:38 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-05 18:22:38 - sentiment_analysis - INFO - Loading data from csv
+2025-12-05 18:22:38 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-05 18:22:38 - sentiment_analysis - INFO - Validate Data
+2025-12-05 18:22:38 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 18:22:38 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 18:22:38 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 18:22:38 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 18:22:38 - sentiment_analysis - INFO - Validate Data
+2025-12-05 18:22:38 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 18:22:38 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 18:22:38 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 18:22:38 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 18:22:38 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-05 18:22:38 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 18:22:38 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-05 18:22:38 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-05 18:22:50 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-05 18:22:50 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 18:22:50 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-05 18:22:50 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-05 18:22:53 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-05 18:22:53 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-05 18:23:00 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-05 18:23:00 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-05 18:23:00 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-05 18:23:46 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 18:23:46 - sentiment_analysis - INFO - Step 3: Training and evaluating models
+2025-12-05 18:23:46 - sentiment_analysis - INFO - MLflow setup completed successfully
+2025-12-05 18:23:46 - sentiment_analysis - INFO - Initialized ModelTrainer with experiment: sentiment_analysis_modi_category
+2025-12-05 18:23:46 - sentiment_analysis - INFO - Startedd all Tuning models
+2025-12-05 18:23:46 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:23:52 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:24:06 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:24:12 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:24:20 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:24:28 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:24:35 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:24:49 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:24:55 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:24:58 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:25:07 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:25:14 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:25:21 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:25:27 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:25:31 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:25:37 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:25:43 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:25:49 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:25:59 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:26:04 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:26:06 - sentiment_analysis - INFO - Best params for logistic_regression: {'C': 7.860972220927746, 'solver': 'liblinear', 'max_iter': 334}
+2025-12-05 18:26:06 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:26:17 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:26:17 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:26:17 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:26:17 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:26:17 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:26:17 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:26:17 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:26:17 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:26:17 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:26:17 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:26:17 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:26:18 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:26:18 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:26:18 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:26:18 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:26:18 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:26:18 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:26:18 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:26:18 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:26:18 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:26:18 - sentiment_analysis - INFO - Best params for naive_bayes: {'alpha': 0.4422887497873566}
+2025-12-05 18:26:18 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:26:23 - sentiment_analysis - INFO - Creating model knn_classifier
+2025-12-05 18:28:08 - sentiment_analysis - INFO - Creating model knn_classifier
+2025-12-05 18:29:52 - sentiment_analysis - INFO - Creating model knn_classifier
+2025-12-05 18:31:38 - sentiment_analysis - INFO - Creating model knn_classifier
+2025-12-05 18:33:21 - sentiment_analysis - INFO - Creating model knn_classifier
+2025-12-05 18:35:02 - sentiment_analysis - INFO - Creating model knn_classifier
+2025-12-05 18:47:55 - sentiment_analysis - INFO - Creating model knn_classifier
+2025-12-05 18:49:54 - sentiment_analysis - INFO - Creating model knn_classifier
+2025-12-05 18:51:42 - sentiment_analysis - INFO - Creating model knn_classifier
+2025-12-05 11:52:43 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 11:52:43 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 11:52:47 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 11:52:48 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 11:52:48 - sentiment_analysis - ERROR - FATAL ERROR during startup: Registered Model with name=sentiment_analysis_logistic_regression_model not found
+2025-12-05 11:52:57 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 11:52:57 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 18:53:02 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-05 18:53:02 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 18:53:03 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-05 18:53:03 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-05 11:53:03 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 11:53:04 - sentiment_analysis - ERROR - FATAL ERROR during startup: (sqlite3.OperationalError) disk I/O error
+[SQL: SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite~_%' ESCAPE '~' ORDER BY name]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-05 18:53:19 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-05 18:53:19 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-05 18:53:20 - sentiment_analysis - INFO - Started pipeline run with ID: 2f8553fc609449299deaf3d6e866d2f5
+2025-12-05 18:53:20 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-05 18:53:20 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-05 18:53:20 - sentiment_analysis - INFO - Loading data from csv
+2025-12-05 18:53:20 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-05 18:53:20 - sentiment_analysis - INFO - Validate Data
+2025-12-05 18:53:20 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 18:53:20 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 18:53:20 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 18:53:20 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 18:53:20 - sentiment_analysis - INFO - Validate Data
+2025-12-05 18:53:20 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 18:53:20 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 18:53:20 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 18:53:20 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 18:53:21 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-05 18:53:21 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 18:53:21 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-05 18:53:21 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-05 18:53:33 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-05 18:53:33 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 18:53:33 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-05 18:53:33 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-05 18:53:36 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-05 18:53:36 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-05 18:53:43 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-05 18:53:44 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-05 18:53:44 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-05 18:54:34 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 18:54:34 - sentiment_analysis - INFO - Step 3: Training and evaluating models
+2025-12-05 18:54:34 - sentiment_analysis - INFO - MLflow setup completed successfully
+2025-12-05 18:54:34 - sentiment_analysis - INFO - Initialized ModelTrainer with experiment: sentiment_analysis_modi_category
+2025-12-05 18:54:34 - sentiment_analysis - INFO - Startedd all Tuning models
+2025-12-05 18:54:34 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:54:44 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:54:59 - sentiment_analysis - INFO - Best params for logistic_regression: {'C': 17.57455054013177, 'solver': 'liblinear', 'max_iter': 318}
+2025-12-05 18:54:59 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 18:55:14 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:55:14 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:55:14 - sentiment_analysis - INFO - Best params for naive_bayes: {'alpha': 0.5624157799721654}
+2025-12-05 18:55:14 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 18:55:20 - sentiment_analysis - INFO - Creating model knn_classifier
+2025-12-05 18:57:10 - sentiment_analysis - INFO - Creating model knn_classifier
+2025-12-05 18:58:52 - sentiment_analysis - INFO - Best params for knn_classifier: {'n_neighbors': 28, 'weights': 'distance', 'metric': 'euclidean'}
+2025-12-05 18:58:52 - sentiment_analysis - INFO - Creating model knn_classifier
+2025-12-05 19:00:52 - sentiment_analysis - INFO - Creating model random_forest_classifier
+2025-12-05 19:01:25 - sentiment_analysis - INFO - Creating model random_forest_classifier
+2025-12-05 19:01:44 - sentiment_analysis - INFO - Best params for random_forest_classifier: {'n_estimators': 287, 'max_depth': 3, 'min_samples_split': 8, 'min_samples_leaf': 3}
+2025-12-05 19:01:44 - sentiment_analysis - INFO - Creating model random_forest_classifier
+2025-12-05 19:02:22 - sentiment_analysis - INFO - Selecting best model
+2025-12-05 19:02:22 - sentiment_analysis - ERROR - Error selecting best model: Registered Model with name=sentiment_analysis_logistic_regression_model not found
+2025-12-05 19:02:22 - sentiment_analysis - ERROR - Error Hypertuning Model : Registered Model with name=sentiment_analysis_logistic_regression_model not found
+2025-12-05 19:02:23 - sentiment_analysis - INFO - Pipeline execution completed successfully
+2025-12-05 12:05:06 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 12:05:06 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 19:05:08 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-05 19:05:08 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 19:05:09 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-05 19:05:09 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-05 12:05:11 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 12:05:12 - sentiment_analysis - ERROR - FATAL ERROR during startup: (sqlite3.OperationalError) disk I/O error
+[SQL: SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite~_%' ESCAPE '~' ORDER BY name]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-05 19:05:13 - sentiment_analysis - ERROR - Error setting up MLflow: registered_models
+2025-12-05 19:05:13 - sentiment_analysis - ERROR - Pipeline execution failed: registered_models
+2025-12-05 12:05:49 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 12:05:49 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 19:05:52 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-05 19:05:52 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 19:05:53 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-05 19:05:53 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-05 12:05:55 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 12:05:55 - sentiment_analysis - ERROR - FATAL ERROR during startup: (sqlite3.OperationalError) disk I/O error
+[SQL: PRAGMA main.table_info("tags")]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-05 19:05:56 - sentiment_analysis - ERROR - Error setting up MLflow: (sqlite3.OperationalError) table registered_models already exists
+[SQL: 
+CREATE TABLE registered_models (
+	name VARCHAR(256) NOT NULL, 
+	creation_time BIGINT, 
+	last_updated_time BIGINT, 
+	description VARCHAR(5000), 
+	CONSTRAINT registered_model_pk PRIMARY KEY (name), 
+	UNIQUE (name)
+)
+
+]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-05 19:05:56 - sentiment_analysis - ERROR - Pipeline execution failed: (sqlite3.OperationalError) table registered_models already exists
+[SQL: 
+CREATE TABLE registered_models (
+	name VARCHAR(256) NOT NULL, 
+	creation_time BIGINT, 
+	last_updated_time BIGINT, 
+	description VARCHAR(5000), 
+	CONSTRAINT registered_model_pk PRIMARY KEY (name), 
+	UNIQUE (name)
+)
+
+]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-05 19:06:34 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-05 19:06:34 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 19:06:35 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-05 19:06:49 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-05 19:06:49 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-05 19:06:50 - sentiment_analysis - INFO - Started pipeline run with ID: 55b93c8ef9bc48c59c1ee9e7f2fe4337
+2025-12-05 19:06:50 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-05 19:06:50 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-05 19:06:50 - sentiment_analysis - INFO - Loading data from csv
+2025-12-05 19:06:51 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-05 19:06:51 - sentiment_analysis - INFO - Validate Data
+2025-12-05 19:06:51 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 19:06:51 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 19:06:51 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 19:06:51 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 19:06:51 - sentiment_analysis - INFO - Validate Data
+2025-12-05 19:06:51 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 19:06:51 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 19:06:51 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 19:06:51 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 19:06:51 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-05 19:06:51 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 19:06:51 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-05 19:06:51 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-05 19:07:03 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-05 19:07:03 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 19:07:03 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-05 19:07:03 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-05 19:07:06 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-05 19:07:06 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-05 19:07:13 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-05 19:07:13 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-05 19:07:13 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-05 19:08:00 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 19:08:00 - sentiment_analysis - INFO - Step 3: Training and evaluating models
+2025-12-05 19:08:00 - sentiment_analysis - INFO - MLflow setup completed successfully
+2025-12-05 19:08:00 - sentiment_analysis - INFO - Initialized ModelTrainer with experiment: sentiment_analysis_modi_category
+2025-12-05 19:08:00 - sentiment_analysis - INFO - Startedd all Tuning models
+2025-12-05 19:08:00 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 19:08:08 - sentiment_analysis - INFO - Best params for logistic_regression: {'C': 7.307385986837962, 'solver': 'saga', 'max_iter': 363}
+2025-12-05 19:08:08 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 19:08:22 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 19:08:22 - sentiment_analysis - INFO - Best params for naive_bayes: {'alpha': 1.1104645060173632}
+2025-12-05 19:08:22 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 19:08:28 - sentiment_analysis - INFO - Creating model knn_classifier
+2025-12-05 19:10:22 - sentiment_analysis - INFO - Best params for knn_classifier: {'n_neighbors': 20, 'weights': 'uniform', 'metric': 'euclidean'}
+2025-12-05 19:10:22 - sentiment_analysis - INFO - Creating model knn_classifier
+2025-12-05 19:12:18 - sentiment_analysis - INFO - Creating model random_forest_classifier
+2025-12-05 19:13:24 - sentiment_analysis - INFO - Best params for random_forest_classifier: {'n_estimators': 259, 'max_depth': 7, 'min_samples_split': 6, 'min_samples_leaf': 4}
+2025-12-05 19:13:24 - sentiment_analysis - INFO - Creating model random_forest_classifier
+2025-12-05 19:14:36 - sentiment_analysis - INFO - Selecting best model
+2025-12-05 19:14:36 - sentiment_analysis - INFO - Selected logistic_regression as best model
+2025-12-05 19:14:36 - sentiment_analysis - INFO - Best model metrics: {'accuracy_score': 0.8912376511014297, 'precision': 0.8923133552680658, 'recall': 0.8912376511014297, 'f1_score': 0.8910438471567469}
+2025-12-05 19:14:36 - sentiment_analysis - INFO - Completed training all Tuning models
+2025-12-05 19:14:36 - sentiment_analysis - INFO - Pipeline execution completed successfully
+2025-12-05 12:17:04 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 12:17:04 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 12:17:09 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 12:17:10 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 12:17:10 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764936502429, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764936876495, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_optuna_best', params=None, run_id='f1403f740fb4422087b8e232aec69821', run_link=None, source='models:/m-74937b48545b4e4bb0af7475ecd94e5b', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-05 12:17:10 - sentiment_analysis - INFO - Found 6 runs
+2025-12-05 12:17:10 - sentiment_analysis - INFO - Run f1403f740fb4422087b8e232aec69821 score: 0.8912376511014297
+2025-12-05 12:17:10 - sentiment_analysis - INFO - Run 00f1cf590ecd4fc081d93f745ad98d97 score: 0.7262379579063631
+2025-12-05 12:17:10 - sentiment_analysis - INFO - Run bb7576cd7d31479294813f5b87799c45 score: 0.711480640608701
+2025-12-05 12:17:10 - sentiment_analysis - INFO - Run 144e20a266a9404ab0c2bd702804ad9e score: 0.43357673191384916
+2025-12-05 12:17:10 - sentiment_analysis - INFO - Best run ID: f1403f740fb4422087b8e232aec69821
+2025-12-05 12:17:10 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-05 12:17:13 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 12:17:13 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-05 12:17:13 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-05 12:17:13 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2025-12-05 12:18:30 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 12:18:30 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 19:18:34 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-05 19:18:34 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 12:18:34 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 12:18:35 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 12:18:35 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764936502429, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764936876495, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_optuna_best', params=None, run_id='f1403f740fb4422087b8e232aec69821', run_link=None, source='models:/m-74937b48545b4e4bb0af7475ecd94e5b', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-05 12:18:35 - sentiment_analysis - INFO - Found 6 runs
+2025-12-05 12:18:35 - sentiment_analysis - INFO - Run f1403f740fb4422087b8e232aec69821 score: 0.8912376511014297
+2025-12-05 12:18:35 - sentiment_analysis - INFO - Run 00f1cf590ecd4fc081d93f745ad98d97 score: 0.7262379579063631
+2025-12-05 12:18:35 - sentiment_analysis - INFO - Run bb7576cd7d31479294813f5b87799c45 score: 0.711480640608701
+2025-12-05 12:18:35 - sentiment_analysis - INFO - Run 144e20a266a9404ab0c2bd702804ad9e score: 0.43357673191384916
+2025-12-05 12:18:35 - sentiment_analysis - INFO - Best run ID: f1403f740fb4422087b8e232aec69821
+2025-12-05 12:18:35 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-05 19:18:35 - sentiment_analysis - INFO - Deleted existing MLflow database
+2025-12-05 19:18:35 - sentiment_analysis - INFO - Starting pipeline execution
+2025-12-05 12:18:36 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 12:18:36 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-05 12:18:36 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-05 12:18:36 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2025-12-05 19:18:49 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-12-05 19:18:49 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2025-12-05 19:18:50 - sentiment_analysis - INFO - Started pipeline run with ID: 2352c89d8d3846a28dfd8bd710218f67
+2025-12-05 19:18:50 - sentiment_analysis - INFO - Step 1: Loading data
+2025-12-05 19:18:50 - sentiment_analysis - INFO - Intialized Data loader : D:\Python\dibimbing\final_project\artifacts\Twitter_Data.csv
+2025-12-05 19:18:50 - sentiment_analysis - INFO - Loading data from csv
+2025-12-05 19:18:50 - sentiment_analysis - INFO - Data Successfully Load
+2025-12-05 19:18:50 - sentiment_analysis - INFO - Validate Data
+2025-12-05 19:18:50 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 19:18:50 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 19:18:50 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 19:18:50 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 19:18:50 - sentiment_analysis - INFO - Validate Data
+2025-12-05 19:18:50 - sentiment_analysis - INFO - Missing Value has been remove
+2025-12-05 19:18:50 - sentiment_analysis - INFO - - Duplicate text only: 3
+2025-12-05 19:18:50 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2025-12-05 19:18:51 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2025-12-05 19:18:51 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2025-12-05 19:18:51 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 19:18:51 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-05 19:18:51 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-05 19:19:03 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-05 19:19:03 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 19:19:03 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2025-12-05 19:19:03 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2025-12-05 19:19:05 - sentiment_analysis - INFO - Encoding target labels...
+2025-12-05 19:19:06 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2025-12-05 19:19:12 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2025-12-05 19:19:13 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2025-12-05 19:19:13 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2025-12-05 19:20:00 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2025-12-05 19:20:00 - sentiment_analysis - INFO - Step 3: Training and evaluating models
+2025-12-05 19:20:00 - sentiment_analysis - INFO - MLflow setup completed successfully
+2025-12-05 19:20:00 - sentiment_analysis - INFO - Initialized ModelTrainer with experiment: sentiment_analysis_modi_category
+2025-12-05 19:20:00 - sentiment_analysis - INFO - Startedd all Tuning models
+2025-12-05 19:20:00 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 19:20:17 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 19:20:36 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 19:20:42 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 19:20:48 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 19:20:55 - sentiment_analysis - INFO - Best params for logistic_regression: {'C': 10.062278223780979, 'solver': 'liblinear', 'max_iter': 315}
+2025-12-05 19:20:55 - sentiment_analysis - INFO - Creating model logistic_regression
+2025-12-05 19:21:09 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 19:21:09 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 19:21:09 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 19:21:09 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 19:21:09 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 19:21:09 - sentiment_analysis - INFO - Best params for naive_bayes: {'alpha': 0.595168728812509}
+2025-12-05 19:21:09 - sentiment_analysis - INFO - Creating model naive_bayes
+2025-12-05 19:21:14 - sentiment_analysis - INFO - Creating model knn_classifier
+2025-12-05 19:23:14 - sentiment_analysis - INFO - Creating model knn_classifier
+2025-12-05 19:25:01 - sentiment_analysis - INFO - Creating model knn_classifier
+2025-12-05 19:26:48 - sentiment_analysis - INFO - Creating model knn_classifier
+2025-12-05 19:28:33 - sentiment_analysis - INFO - Creating model knn_classifier
+2025-12-05 19:30:25 - sentiment_analysis - INFO - Best params for knn_classifier: {'n_neighbors': 1, 'weights': 'uniform', 'metric': 'euclidean'}
+2025-12-05 19:30:25 - sentiment_analysis - INFO - Creating model knn_classifier
+2025-12-05 19:32:36 - sentiment_analysis - INFO - Creating model random_forest_classifier
+2025-12-05 19:32:44 - sentiment_analysis - INFO - Creating model random_forest_classifier
+2025-12-05 19:32:57 - sentiment_analysis - INFO - Creating model random_forest_classifier
+2025-12-05 19:33:27 - sentiment_analysis - INFO - Creating model random_forest_classifier
+2025-12-05 19:33:55 - sentiment_analysis - INFO - Creating model random_forest_classifier
+2025-12-05 19:34:49 - sentiment_analysis - INFO - Best params for random_forest_classifier: {'n_estimators': 117, 'max_depth': 12, 'min_samples_split': 5, 'min_samples_leaf': 1}
+2025-12-05 19:34:49 - sentiment_analysis - INFO - Creating model random_forest_classifier
+2025-12-05 19:35:49 - sentiment_analysis - INFO - Selecting best model
+2025-12-05 19:35:49 - sentiment_analysis - INFO - Selected logistic_regression as best model
+2025-12-05 19:35:49 - sentiment_analysis - INFO - Best model metrics: {'accuracy_score': 0.8991532183837516, 'precision': 0.9003704816745798, 'recall': 0.8991532183837516, 'f1_score': 0.8990491273143513}
+2025-12-05 19:35:49 - sentiment_analysis - INFO - Completed training all Tuning models
+2025-12-05 19:35:49 - sentiment_analysis - INFO - Pipeline execution completed successfully
+2025-12-05 12:38:38 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-05 12:38:38 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-05 12:38:44 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-05 12:38:45 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-05 12:38:45 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764937268784, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764938149332, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_optuna_best', params=None, run_id='5c55f512398d4de1aa952a50e58c94f3', run_link=None, source='models:/m-4d6eddef6d03492ebcda476b335a5f5c', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-05 12:38:45 - sentiment_analysis - INFO - Found 6 runs
+2025-12-05 12:38:45 - sentiment_analysis - INFO - Run 5c55f512398d4de1aa952a50e58c94f3 score: 0.8991532183837516
+2025-12-05 12:38:45 - sentiment_analysis - INFO - Run 8368ec131e4b4ca4abb2fe17308f7d6f score: 0.7208075105847702
+2025-12-05 12:38:45 - sentiment_analysis - INFO - Run 8b0049dced8d472faa284f147bf634d0 score: 0.7089648401546297
+2025-12-05 12:38:45 - sentiment_analysis - INFO - Run fc5847b5a4db462cbb29cd79bace8330 score: 0.4575995582008959
+2025-12-05 12:38:45 - sentiment_analysis - INFO - Best run ID: 5c55f512398d4de1aa952a50e58c94f3
+2025-12-05 12:38:45 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-05 12:38:46 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-05 12:38:46 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-05 12:38:46 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-05 12:38:46 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully

@@ -1,5 +1,5 @@
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
-
+import optuna
 from typing import Dict, Any, List, Tuple
 import numpy as np
 import pandas as pd
@@ -12,6 +12,7 @@ class ModelTrainer :
         
         self.experiment_name = experiment_name
         self.models_info = {}
+        self.tuned_info = {}
         self.best_model = None
         self.setup_mlflow()
         logger.info(f"Initialized ModelTrainer with experiment: {experiment_name}")
@@ -129,9 +130,11 @@ class ModelTrainer :
         try:
             logger.info("Selecting best model")
             
+            
             best_score = -1
             best_model_type = None
             
+                
             for model_type, model_info in self.models_info.items():
                 # Calculate combined score (average of recall and f1)
                 metrics = model_info['metrics']
@@ -146,7 +149,7 @@ class ModelTrainer :
                 
                 # Transition best model to production in MLflow
                 client = mlflow.tracking.MlflowClient()
-                model_name = f"sentiment_analysis_{best_model_type}_model"
+                model_name = f"sentiment_analysis_{best_model_type}_optuna_best"
                 
                 latest_versions = client.get_latest_versions(model_name)
                 if latest_versions:
@@ -174,7 +177,69 @@ class ModelTrainer :
         """Get metrics for all trained models"""
         return {model_type: info['metrics'] 
                 for model_type, info in self.models_info.items()}
+    
+    def tune_with_optuna(self, model_type: str, X_train, y_train, X_test, y_test, n_trials=20):
+        def objective(trial):
+            params = ModelFactory.get_hyperparameter_space(trial, model_type)
+
+            model = ModelFactory.create_model_hypertuning(model_type, params_override=params)
+            model.fit(X_train, y_train)
+
+            preds = model.predict(X_test)
+            metrics = self._calculate_metrics(y_test, preds)
+
+            return metrics["accuracy_score"]
+
+        study = optuna.create_study(direction="maximize")
+        study.optimize(objective, n_trials=n_trials)
+
+        best_params = study.best_params
+        logger.info(f"Best params for {model_type}: {best_params}")
+
+        # Train ulang model dengan best params
+        final_model = ModelFactory.create_model_hypertuning(model_type, params_override=best_params)
+        final_model.fit(X_train, y_train)
+        y_pred = final_model.predict(X_test)
+
+        # Evaluate
+        metrics = self._calculate_metrics(y_test, y_pred)
+
+        # Log ke MLflow
+        with mlflow.start_run(run_name=f"{model_type}_optuna",nested=True) as run:
+            mlflow.log_params(best_params)
+            mlflow.log_metrics(metrics)
+            mlflow.sklearn.log_model(final_model,
+                                     model_type, 
+                                     registered_model_name= f"sentiment_analysis_{model_type}_optuna_best")
+        
+        # Store model info
+        model_info = {
+            'model': final_model,
+            'metrics': metrics,
+            'run_id': run.info.run_id
+        }
+        self.models_info[model_type] = model_info
+
+        return model_info
+    
+    def tune_all_models(self, X_train, y_train, X_test, y_test, n_trials=20):
+        try : 
+            logger.info("Startedd all Tuning models")
             
+            for model_type in ModelFactory.get_model_config().keys():
+                self.models_info[model_type] = self.tune_with_optuna(
+                    model_type,
+                    X_train, y_train,
+                    X_test, y_test,
+                    n_trials=n_trials
+                )
+            self._select_best_model()
+                
+            logger.info("Completed training all Tuning models")
+                
+            return self.models_info
+        except Exception as e:
+            logger.error(f"Error Hypertuning Model : {e}")
     
     
         

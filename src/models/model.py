@@ -48,6 +48,39 @@ class ModelFactory:
     },
                 
 }
+# Optuna
+    @staticmethod
+    def get_hyperparameter_space(trial, model_type: str) -> Dict[str, Any]:
+
+        if model_type == "logistic_regression":
+            return {
+                "C": trial.suggest_float("C", 0.01, 20.0),
+                "solver": trial.suggest_categorical("solver", ["liblinear", "saga"]),
+                "max_iter": trial.suggest_int("max_iter", 100, 500)
+            }
+
+        elif model_type == "naive_bayes":
+            return {
+                "alpha": trial.suggest_float("alpha", 0.1, 2.0)
+            }
+
+        elif model_type == "knn_classifier":
+            return {
+                "n_neighbors": trial.suggest_int("n_neighbors", 1, 30),
+                "weights": trial.suggest_categorical("weights", ["uniform", "distance"]),
+                "metric": trial.suggest_categorical("metric", ["euclidean", "manhattan"])
+            }
+
+        elif model_type == "random_forest_classifier":
+            return {
+                "n_estimators": trial.suggest_int("n_estimators", 50, 300),
+                "max_depth": trial.suggest_int("max_depth", 3, 15),
+                "min_samples_split": trial.suggest_int("min_samples_split", 2, 10),
+                "min_samples_leaf": trial.suggest_int("min_samples_leaf", 1, 5)
+            }
+
+        else:
+            raise ValueError(f"No hyperparameter space for model: {model_type}")
         
     @classmethod
     def create_model(cls, model_type: str) -> Any:
@@ -83,5 +116,27 @@ class ModelFactory:
             
         except Exception as e:
             logger.error(f"Error creating model: {str(e)}")
+            raise
+        
+    @classmethod
+    def create_model_hypertuning(cls, model_type: str, params_override: Dict[str, Any] = None):
+        """Create model with default OR overridden parameters"""
+        try:
+            logger.info(f"Creating model {model_type}")
+
+            config = cls.get_model_config()
+            if model_type not in config:
+                raise ValueError(f"Invalid model type: {model_type}")
+
+            model_class = config[model_type]["class"]
+            params = config[model_type]["params"].copy()
+
+            if params_override:
+                params.update(params_override)
+
+            return model_class(**params)
+
+        except Exception as e:
+            logger.error(f"Error creating model: {e}")
             raise
         

@@ -114,11 +114,12 @@ def run_pipeline():
             trainer = ModelTrainer(experiment_name)
             
             # Train all models (will create nested runs)
-            results = trainer.train_all_models(
+            results = trainer.tune_all_models(
                 X_train=X_res,
                 y_train=y_res,
                 X_test=X_test,
-                y_test=y_test
+                y_test=y_test,
+                n_trials=5
             )
             
             # 4. Log best model info

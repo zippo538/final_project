@@ -26,7 +26,7 @@ mlflow:
   tracking_uri: "sqlite:///mlflow.db"
   experiment_name: "sentiment_analysis_modi_category"
   artifact_path: "model"
-  best_model : "sentiment_analysis_logistic_regression_model"
+  best_model: "sentiment_analysis_logistic_regression_optuna_best"
 
 # ==========================================
 # GENERAL EXPERIMENT SETTINGS
@@ -34,8 +34,82 @@ mlflow:
 experiment:
   name: "sentiment_analysis_modi_category"
 
-prompt :
-  predictor_prompt : |
+# ============================================
+# Model Configuration
+# ============================================
+models:
+  Logistic_regression:
+    enabled: true
+    default_params:
+      C: 1.0
+      solver: "lbfgs"
+      max_iter: 300
+
+    optuna_params:
+      C:
+        low: 0.1
+        high: 10.0
+        log: true
+      solver:
+        choices: ["liblinear", "lbfgs", "saga"]
+      max_iter:
+        low: 100
+        high: 500
+
+  Naive_bayes:
+    enabled: true
+    default_params:
+      alpha: 1.0
+
+    optuna_params:
+      alpha:
+        low: 0.1
+        high: 1.0
+
+  KNN_classifier:
+    enabled: true
+    default_params:
+      n_neighbors: 5
+      weights: "distance"
+      metric: "euclidean"
+
+    optuna_params:
+      n_neighbors:
+        low: 3
+        high: 15
+      weights:
+        choices: ["uniform", "distance"]
+      metric:
+        choices: ["euclidean", "manhattan"]
+
+  Random_forest_classifier:
+    enabled: true
+    default_params:
+      n_estimators: 150
+      max_depth: 10
+      min_samples_split: 2
+      min_samples_leaf: 1
+
+    optuna_params:
+      n_estimators:
+        low: 100
+        high: 300
+      max_depth:
+        low: 6
+        high: 20
+      min_samples_split:
+        low: 2
+        high: 10
+      min_samples_leaf:
+        low: 1
+        high: 4
+
+# ============================================
+# Template Prompt
+# ============================================
+
+prompt:
+  predictor_prompt: |
     Context:
     {{ context }}
     You are a helpful and friendly assistant. 
@@ -51,5 +125,3 @@ prompt :
     User Question:
     {{ input }}
     output :
-      
-

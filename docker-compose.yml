@@ -9,6 +9,7 @@ services:
       - "8000:8000"
     volumes:
       - .:/app
+      - ./mlruns:/app/mlruns
     environment:
       - PYTHONUNBUFFERED=1
       - MLFLOW_TRACKING_URI=file:/app/mlruns

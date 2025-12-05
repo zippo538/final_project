@@ -28,8 +28,7 @@ def ask_chatbot(message:str)-> str :
 
 def main():
     st.set_page_config(page_title="Chatbot Sentiment Analysis Narenda Modi", page_icon="🤖")
-    st.title("🤖 Response Sentiment for Prime Minister Narendra Modi (FastAPI + Sreamlit)")
-    st.markdown("Connected with FastAPI.")
+    st.title("🤖 General Sentiment for Prime Minister Narendra Modi (FastAPI + Sreamlit)")
 
     # Init session state for chat history
     if "messages" not in st.session_state:

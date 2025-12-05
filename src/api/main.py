@@ -81,8 +81,13 @@ def load_production_model(model_name:str = None) -> tuple[str, ModelInfo]:
     Returns:
         Tuple containing model path and model info
     """
+    print("Tracking URI:", mlflow.get_tracking_uri())
     client = MlflowClient()
-    mlflow.set_tracking_uri('sqlite:///mlflow.db')
+    
+    #search model version
+    model_versions = client.search_model_versions(f"name='{model_name}'")
+    for v in model_versions:
+        print("Version:", v.version, "Artifact:", v.source)
     
     
     # Get experiment
@@ -136,32 +141,21 @@ def load_production_model(model_name:str = None) -> tuple[str, ModelInfo]:
     # Get model path
     run_id = best_run.info.run_id
     logger.info(f"Best run ID: {run_id}")
+    version = client.search_model_versions(f"name='{model_name}'")
+    latest_version = max(version, key=lambda x:int(x.version))
+    artifact_uri = latest_version.source.split("models:/")[1]
     
-    # Try to load model by last version
-    try:
-        logger.info("Trying to load model from last version")
-        version = client.search_model_versions(f"name='{model_name}'")
-        latest_version = max(version, key=lambda x:int(x.version))
-        last_version_number = latest_version.version
-        model = mlflow.sklearn.load_model(f"models:/{model_name}/{last_version_number}")
-    except Exception as e : 
-        logger.error(f"Error load model last version : {e}")
-        try :
-            logger.info("Trying to load model from Production") 
-            model = mlflow.sklearn.load_model(f"models:/{model_name}/Production")
-        except Exception as e : 
-            logger.error(f"Error load model with production : {e}")
-            # try local system
-            try : 
-                logger.info("Trying to load model from local system")
-                local_path = os.path.join("mlruns",experiment.experiment_id,"models",f"m-{run_id}","artifacts","")
-                if not os.path.exists(local_path):
-                    raise ValueError(f"Local path does not exist {local_path}")
-                model = mlflow.pyfunc.load_model(local_path)
-            except Exception as e:
-                logger.error(f"Error load model local system : {e}")
-               
-                    
+    print(f"uri artifact : {artifact_uri}")
+    
+    # Try to load model 
+    try : 
+        logger.info("Trying to load model from local system")
+        local_path = os.path.join("mlruns",experiment.experiment_id,"models",artifact_uri,"artifacts")
+        if not os.path.exists(local_path):
+            raise ValueError(f"Local path does not exist {local_path}")
+        model = mlflow.pyfunc.load_model(local_path)
+    except Exception as e:
+        logger.error(f"Error load model local system : {e}")
     
     # Create model info
     metrics = ModelMetrics(

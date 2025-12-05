@@ -1,9 +1,9 @@
-.env
+**/*.env
+**/*.model
+**/__pycache__/
 research/mlruns
-mlflow.db
-__pycache__/
+**/*.log
 # research/mlflow.db
 mlruns/
 models/
-logs/
-logs/sentiment_analysis.log
+mlflow.db

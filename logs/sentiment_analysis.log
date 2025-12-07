@@ -562,3 +562,108 @@
 2025-12-07 12:02:36 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
 2025-12-07 12:02:37 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
 2025-12-07 12:02:37 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2025-12-07 12:02:49 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-07 12:02:49 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-07 12:02:49 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-07 12:03:00 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-07 12:03:00 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-07 12:03:00 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-07 12:03:13 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-07 12:03:13 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-07 12:03:13 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-07 12:03:20 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-07 12:03:20 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-07 12:03:20 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-07 21:45:57 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-07 21:45:57 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-07 21:46:16 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-07 21:46:18 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-07 21:46:18 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764937268784, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764938149332, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_optuna_best', params=None, run_id='5c55f512398d4de1aa952a50e58c94f3', run_link=None, source='models:/m-4d6eddef6d03492ebcda476b335a5f5c', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-07 21:46:18 - sentiment_analysis - INFO - Found 6 runs
+2025-12-07 21:46:18 - sentiment_analysis - INFO - Run 5c55f512398d4de1aa952a50e58c94f3 score: 0.8991532183837516
+2025-12-07 21:46:18 - sentiment_analysis - INFO - Run 8368ec131e4b4ca4abb2fe17308f7d6f score: 0.7208075105847702
+2025-12-07 21:46:18 - sentiment_analysis - INFO - Run 8b0049dced8d472faa284f147bf634d0 score: 0.7089648401546297
+2025-12-07 21:46:18 - sentiment_analysis - INFO - Run fc5847b5a4db462cbb29cd79bace8330 score: 0.4575995582008959
+2025-12-07 21:46:18 - sentiment_analysis - INFO - Best run ID: 5c55f512398d4de1aa952a50e58c94f3
+2025-12-07 21:46:18 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-07 21:46:21 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-07 21:46:21 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-07 21:46:21 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-07 21:46:21 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2025-12-07 21:56:25 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-07 21:56:25 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-07 21:56:44 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-07 21:56:46 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-07 21:56:46 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764937268784, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764938149332, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_optuna_best', params=None, run_id='5c55f512398d4de1aa952a50e58c94f3', run_link=None, source='models:/m-4d6eddef6d03492ebcda476b335a5f5c', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-07 21:56:46 - sentiment_analysis - INFO - Found 6 runs
+2025-12-07 21:56:46 - sentiment_analysis - INFO - Run 5c55f512398d4de1aa952a50e58c94f3 score: 0.8991532183837516
+2025-12-07 21:56:46 - sentiment_analysis - INFO - Run 8368ec131e4b4ca4abb2fe17308f7d6f score: 0.7208075105847702
+2025-12-07 21:56:46 - sentiment_analysis - INFO - Run 8b0049dced8d472faa284f147bf634d0 score: 0.7089648401546297
+2025-12-07 21:56:46 - sentiment_analysis - INFO - Run fc5847b5a4db462cbb29cd79bace8330 score: 0.4575995582008959
+2025-12-07 21:56:46 - sentiment_analysis - INFO - Best run ID: 5c55f512398d4de1aa952a50e58c94f3
+2025-12-07 21:56:46 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-07 21:56:49 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-07 21:56:49 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-07 21:56:49 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-07 21:56:49 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2025-12-07 21:56:52 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-07 21:56:52 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-07 21:56:55 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-07 21:56:56 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-07 21:56:56 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764937268784, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764938149332, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_optuna_best', params=None, run_id='5c55f512398d4de1aa952a50e58c94f3', run_link=None, source='models:/m-4d6eddef6d03492ebcda476b335a5f5c', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-07 21:56:56 - sentiment_analysis - INFO - Found 6 runs
+2025-12-07 21:56:56 - sentiment_analysis - INFO - Run 5c55f512398d4de1aa952a50e58c94f3 score: 0.8991532183837516
+2025-12-07 21:56:56 - sentiment_analysis - INFO - Run 8368ec131e4b4ca4abb2fe17308f7d6f score: 0.7208075105847702
+2025-12-07 21:56:56 - sentiment_analysis - INFO - Run 8b0049dced8d472faa284f147bf634d0 score: 0.7089648401546297
+2025-12-07 21:56:56 - sentiment_analysis - INFO - Run fc5847b5a4db462cbb29cd79bace8330 score: 0.4575995582008959
+2025-12-07 21:56:56 - sentiment_analysis - INFO - Best run ID: 5c55f512398d4de1aa952a50e58c94f3
+2025-12-07 21:56:56 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-07 21:56:57 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-07 21:56:57 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-07 21:56:57 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-07 21:56:57 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2025-12-07 21:57:32 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-07 21:57:32 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-07 21:57:36 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-07 21:57:37 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-07 21:57:37 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764937268784, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764938149332, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_optuna_best', params=None, run_id='5c55f512398d4de1aa952a50e58c94f3', run_link=None, source='models:/m-4d6eddef6d03492ebcda476b335a5f5c', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-07 21:57:37 - sentiment_analysis - INFO - Found 6 runs
+2025-12-07 21:57:37 - sentiment_analysis - INFO - Run 5c55f512398d4de1aa952a50e58c94f3 score: 0.8991532183837516
+2025-12-07 21:57:37 - sentiment_analysis - INFO - Run 8368ec131e4b4ca4abb2fe17308f7d6f score: 0.7208075105847702
+2025-12-07 21:57:37 - sentiment_analysis - INFO - Run 8b0049dced8d472faa284f147bf634d0 score: 0.7089648401546297
+2025-12-07 21:57:37 - sentiment_analysis - INFO - Run fc5847b5a4db462cbb29cd79bace8330 score: 0.4575995582008959
+2025-12-07 21:57:37 - sentiment_analysis - INFO - Best run ID: 5c55f512398d4de1aa952a50e58c94f3
+2025-12-07 21:57:37 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-07 21:57:38 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-07 21:57:38 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-07 21:57:38 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-07 21:57:38 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2025-12-07 21:57:43 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-07 21:57:43 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-07 21:57:48 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-07 21:57:49 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-07 21:57:49 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764937268784, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764938149332, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_optuna_best', params=None, run_id='5c55f512398d4de1aa952a50e58c94f3', run_link=None, source='models:/m-4d6eddef6d03492ebcda476b335a5f5c', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-07 21:57:49 - sentiment_analysis - INFO - Found 6 runs
+2025-12-07 21:57:49 - sentiment_analysis - INFO - Run 5c55f512398d4de1aa952a50e58c94f3 score: 0.8991532183837516
+2025-12-07 21:57:49 - sentiment_analysis - INFO - Run 8368ec131e4b4ca4abb2fe17308f7d6f score: 0.7208075105847702
+2025-12-07 21:57:49 - sentiment_analysis - INFO - Run 8b0049dced8d472faa284f147bf634d0 score: 0.7089648401546297
+2025-12-07 21:57:49 - sentiment_analysis - INFO - Run fc5847b5a4db462cbb29cd79bace8330 score: 0.4575995582008959
+2025-12-07 21:57:49 - sentiment_analysis - INFO - Best run ID: 5c55f512398d4de1aa952a50e58c94f3
+2025-12-07 21:57:49 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-07 21:57:50 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-07 21:57:50 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-07 21:57:50 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-07 21:57:50 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2025-12-07 21:58:56 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-07 21:58:56 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-07 21:59:00 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-07 21:59:00 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-07 21:59:00 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764937268784, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764938149332, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_optuna_best', params=None, run_id='5c55f512398d4de1aa952a50e58c94f3', run_link=None, source='models:/m-4d6eddef6d03492ebcda476b335a5f5c', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-07 21:59:01 - sentiment_analysis - INFO - Found 6 runs
+2025-12-07 21:59:01 - sentiment_analysis - INFO - Run 5c55f512398d4de1aa952a50e58c94f3 score: 0.8991532183837516
+2025-12-07 21:59:01 - sentiment_analysis - INFO - Run 8368ec131e4b4ca4abb2fe17308f7d6f score: 0.7208075105847702
+2025-12-07 21:59:01 - sentiment_analysis - INFO - Run 8b0049dced8d472faa284f147bf634d0 score: 0.7089648401546297
+2025-12-07 21:59:01 - sentiment_analysis - INFO - Run fc5847b5a4db462cbb29cd79bace8330 score: 0.4575995582008959
+2025-12-07 21:59:01 - sentiment_analysis - INFO - Best run ID: 5c55f512398d4de1aa952a50e58c94f3
+2025-12-07 21:59:01 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-07 21:59:01 - sentiment_analysis - ERROR - FATAL ERROR during startup: module 'datetime' has no attribute 'now'

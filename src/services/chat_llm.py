@@ -20,7 +20,6 @@ load_dotenv()
 
 
 
-chat_message_store = InMemoryChatMessageStore()
 
 @component
 class GroqLLM:
@@ -139,8 +138,7 @@ class ChatHistoryPipeline:
         return res["prompt_builder"]["prompt"]
 
         
-chat_history_pipeline = ChatHistoryPipeline(chat_message_store=chat_message_store)
-            
+
     
     
         

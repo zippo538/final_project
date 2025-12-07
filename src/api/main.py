@@ -1,12 +1,15 @@
-from fastapi import FastAPI, HTTPException
 import mlflow
-from mlflow.tracking import MlflowClient
-from mlflow.entities.model_registry import ModelVersion
-from typing import List
 import pandas as pd
 import os
+from fastapi import FastAPI, HTTPException
+from mlflow.tracking import MlflowClient
+from typing import List
+from mlflow.entities.model_registry import ModelVersion
 from src.utils.config import config
 from datetime import datetime
+from src.services.store_history import chat_store
+
+
 from src.utils.logger import default_logger as logger
 from src.data.data_preprocess import TextPreprocessor
 from src.api.schemas import (
@@ -18,8 +21,7 @@ from src.api.schemas import (
     LLMResponse
 )
 from src.services.chat_services import ChatLLMService
-from src.api.chat_llm import PipelineCategory, ChatHistoryPipeline, chat_message_store
-import pickle
+from src.services.chat_llm import PipelineCategory, ChatHistoryPipeline
 
 app = FastAPI(
     title="Chat Sentiment Analysis Prediction API",
@@ -225,28 +227,18 @@ async def predict(request: SentimentAnalysisRequest):
 async def chat_llm(request : LLMRequest):
     
     sentiment = predict_sentiment(request.user_message)
-    context = ""
     predictor_pipeline = PipelineCategory()
-    chat_history_pipeline =  ChatHistoryPipeline(chat_message_store)
-    chat_service = ChatLLMService(predictor_pipeline,chat_history_pipeline)
+    chat_history_pipeline =  ChatHistoryPipeline(chat_store)
+    chat_service = ChatLLMService(predictor_pipeline,chat_history_pipeline,chat_store)
     
-    response = chat_service.process_chat(request.user_message,sentiment,context)
+    response,history = chat_service.process_chat(request.user_message,sentiment)
     
+    print(history)
     return LLMResponse(
         sentiment=sentiment,
         llm_answer=response
     )
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
 
 @app.get("/health")
 async def health_check():

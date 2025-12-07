@@ -1,0 +1,81 @@
+2025-12-06 02:03:25 - sentiment_analysis - INFO - Loading configuration from config/config.yaml
+2025-12-06 02:03:26 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-06 02:03:57 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2025-12-06 02:03:59 - sentiment_analysis - INFO - Found experiment with ID: 1
+2025-12-06 02:03:59 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1764937268784, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1764938149332, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_optuna_best', params=None, run_id='5c55f512398d4de1aa952a50e58c94f3', run_link=None, source='models:/m-4d6eddef6d03492ebcda476b335a5f5c', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2025-12-06 02:03:59 - sentiment_analysis - INFO - Found 6 runs
+2025-12-06 02:03:59 - sentiment_analysis - INFO - Run 5c55f512398d4de1aa952a50e58c94f3 score: 0.8991532183837516
+2025-12-06 02:03:59 - sentiment_analysis - INFO - Run 8368ec131e4b4ca4abb2fe17308f7d6f score: 0.7208075105847702
+2025-12-06 02:03:59 - sentiment_analysis - INFO - Run 8b0049dced8d472faa284f147bf634d0 score: 0.7089648401546297
+2025-12-06 02:03:59 - sentiment_analysis - INFO - Run fc5847b5a4db462cbb29cd79bace8330 score: 0.4575995582008959
+2025-12-06 02:03:59 - sentiment_analysis - INFO - Best run ID: 5c55f512398d4de1aa952a50e58c94f3
+2025-12-06 02:03:59 - sentiment_analysis - INFO - Trying to load model from local system
+2025-12-06 02:04:07 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2025-12-06 02:04:07 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/preprocessing/preprocessor.joblib
+2025-12-06 02:04:07 - sentiment_analysis - INFO - Preprocessor loaded from: /app/models/tfidf/tfidf_vectorizer.joblib
+2025-12-06 02:04:07 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2025-12-06 09:04:09 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2025-12-06 09:04:09 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2025-12-06 02:34:24 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-06 02:34:24 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-06 02:34:24 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-06 02:34:36 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-06 02:34:36 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-06 02:34:36 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-06 02:34:45 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-06 02:34:45 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-06 02:34:45 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-06 02:34:53 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-06 02:34:53 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-06 02:34:53 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-06 02:37:07 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-06 02:37:07 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-06 02:37:07 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-06 02:38:51 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-06 02:38:51 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-06 02:38:51 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-06 02:39:06 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-06 02:39:06 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-06 02:39:06 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-06 02:39:11 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-06 02:39:11 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-06 02:39:11 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-06 02:39:22 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-06 02:39:22 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-06 02:39:22 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-06 02:39:31 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-06 02:39:31 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-06 02:39:31 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-06 02:39:49 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-06 02:39:49 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-06 02:39:49 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-06 02:40:04 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-06 02:40:04 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-06 02:40:04 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-06 02:40:15 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-06 02:40:15 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-06 02:40:15 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-06 02:40:59 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-06 02:40:59 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-06 02:40:59 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-06 02:41:21 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-06 02:41:21 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-06 02:41:21 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-06 02:41:34 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-06 02:41:34 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-06 02:41:34 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-06 02:50:41 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-06 02:50:41 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-06 02:50:41 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-06 02:51:00 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-06 02:51:00 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-06 02:51:00 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-06 02:51:26 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-06 02:51:26 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-06 02:51:26 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-06 02:51:50 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-06 02:51:50 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-06 02:51:50 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2025-12-06 02:52:24 - sentiment_analysis - INFO - Starting preprocessing...
+2025-12-06 02:52:24 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2025-12-06 02:52:24 - sentiment_analysis - INFO - Preprocessing completed successfully.

@@ -1,4 +1,4 @@
-# Final Project — Machine Learning Pipeline with FastAPI Deployment
+# Final Project Dibimbing AI/ML 7 — Machine Learning Pipeline with FastAPI Deployment
 
 This repository contains the implementation of a complete Machine Learning workflow, including data preprocessing, model training with hyperparameter tuning, experiment tracking using MLflow, and deployment via FastAPI inside Docker. The project is structured for modularity, scalability, and production readiness.
 

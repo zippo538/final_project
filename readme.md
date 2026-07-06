@@ -1,4 +1,5 @@
 # Final Project Dibimbing AI/ML 7 — Machine Learning Pipeline with FastAPI Deployment
+Using python **3.12**
 
 This repository contains the implementation of a complete Machine Learning workflow, including data preprocessing, model training with hyperparameter tuning, experiment tracking using MLflow, and deployment via FastAPI inside Docker. The project is structured for modularity, scalability, and production readiness.
 
@@ -121,7 +122,7 @@ docker run -d -p 8000:8000 -NAME myfastapi myfastpi:latest
 Start MLflow UI:
 
 ```bash
-mlflow ui --host 0.0.0.0 --port 5000
+mlflow ui --backend-store-uri sqlite:///mlflow.db
 ```
 
 View experiments at:

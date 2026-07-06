@@ -24,3 +24,1040 @@
 2025-12-08 05:57:39 - sentiment_analysis - INFO - Best run ID: 5c55f512398d4de1aa952a50e58c94f3
 2025-12-08 05:57:39 - sentiment_analysis - INFO - Trying to load model from local system
 2025-12-08 05:57:43 - sentiment_analysis - ERROR - FATAL ERROR during startup: module 'datetime' has no attribute 'now'
+2026-07-05 18:50:07 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 18:50:07 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 18:50:09 - sentiment_analysis - INFO - Starting pipeline execution
+2026-07-05 18:50:26 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2026-07-05 18:50:26 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2026-07-05 18:50:27 - sentiment_analysis - INFO - Started pipeline run with ID: b8327fa00ca4431689719a79e89cc7ef
+2026-07-05 18:50:27 - sentiment_analysis - INFO - Step 1: Loading data
+2026-07-05 18:50:27 - sentiment_analysis - INFO - Intialized Data loader : D:\chatbot_NarendraModi\artifacts\Twitter_Data.csv
+2026-07-05 18:50:27 - sentiment_analysis - INFO - Loading data from csv
+2026-07-05 18:50:27 - sentiment_analysis - INFO - Data Successfully Load
+2026-07-05 18:50:27 - sentiment_analysis - INFO - Validate Data
+2026-07-05 18:50:27 - sentiment_analysis - INFO - Missing Value has been remove
+2026-07-05 18:50:27 - sentiment_analysis - INFO - - Duplicate text only: 3
+2026-07-05 18:50:27 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2026-07-05 18:50:27 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2026-07-05 18:50:27 - sentiment_analysis - INFO - Validate Data
+2026-07-05 18:50:27 - sentiment_analysis - INFO - Missing Value has been remove
+2026-07-05 18:50:28 - sentiment_analysis - INFO - - Duplicate text only: 3
+2026-07-05 18:50:28 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2026-07-05 18:50:28 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2026-07-05 18:50:28 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2026-07-05 18:50:28 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-05 18:50:28 - sentiment_analysis - INFO - Starting preprocessing...
+2026-07-05 18:50:28 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2026-07-05 18:50:39 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2026-07-05 18:50:39 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2026-07-05 18:50:39 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2026-07-05 18:50:39 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2026-07-05 18:50:41 - sentiment_analysis - INFO - Encoding target labels...
+2026-07-05 18:50:41 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2026-07-05 18:50:47 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2026-07-05 18:50:47 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2026-07-05 18:50:47 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2026-07-05 18:51:42 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2026-07-05 18:51:42 - sentiment_analysis - INFO - Step 3: Training and evaluating models
+2026-07-05 18:51:42 - sentiment_analysis - INFO - MLflow setup completed successfully
+2026-07-05 18:51:42 - sentiment_analysis - INFO - Initialized ModelTrainer with experiment: sentiment_analysis_modi_category
+2026-07-05 18:51:42 - sentiment_analysis - INFO - Startedd all Tuning models
+2026-07-05 18:51:42 - sentiment_analysis - INFO - Creating model logistic_regression
+2026-07-05 18:51:51 - sentiment_analysis - INFO - Creating model logistic_regression
+2026-07-05 18:51:58 - sentiment_analysis - INFO - Creating model logistic_regression
+2026-07-05 18:52:03 - sentiment_analysis - INFO - Creating model logistic_regression
+2026-07-05 18:52:08 - sentiment_analysis - INFO - Creating model logistic_regression
+2026-07-05 18:52:14 - sentiment_analysis - INFO - Best params for logistic_regression: {'C': 4.38902860950449, 'solver': 'liblinear', 'max_iter': 391}
+2026-07-05 18:52:14 - sentiment_analysis - INFO - Creating model logistic_regression
+2026-07-05 18:52:24 - sentiment_analysis - INFO - Creating model naive_bayes
+2026-07-05 18:52:24 - sentiment_analysis - INFO - Creating model naive_bayes
+2026-07-05 18:52:24 - sentiment_analysis - INFO - Creating model naive_bayes
+2026-07-05 18:52:24 - sentiment_analysis - INFO - Creating model naive_bayes
+2026-07-05 18:52:24 - sentiment_analysis - INFO - Creating model naive_bayes
+2026-07-05 18:52:24 - sentiment_analysis - INFO - Best params for naive_bayes: {'alpha': 1.0378387523777926}
+2026-07-05 18:52:24 - sentiment_analysis - INFO - Creating model naive_bayes
+2026-07-05 18:52:28 - sentiment_analysis - INFO - Creating model knn_classifier
+2026-07-05 18:54:04 - sentiment_analysis - INFO - Creating model knn_classifier
+2026-07-05 18:55:36 - sentiment_analysis - INFO - Creating model knn_classifier
+2026-07-05 18:57:34 - sentiment_analysis - INFO - Creating model knn_classifier
+2026-07-05 18:59:10 - sentiment_analysis - INFO - Creating model knn_classifier
+2026-07-05 19:00:45 - sentiment_analysis - INFO - Best params for knn_classifier: {'n_neighbors': 23, 'weights': 'distance', 'metric': 'euclidean'}
+2026-07-05 19:00:45 - sentiment_analysis - INFO - Creating model knn_classifier
+2026-07-05 19:03:26 - sentiment_analysis - INFO - Creating model random_forest_classifier
+2026-07-05 19:03:45 - sentiment_analysis - INFO - Creating model random_forest_classifier
+2026-07-05 19:05:22 - sentiment_analysis - INFO - Creating model random_forest_classifier
+2026-07-05 19:05:50 - sentiment_analysis - INFO - Creating model random_forest_classifier
+2026-07-05 19:06:06 - sentiment_analysis - INFO - Creating model random_forest_classifier
+2026-07-05 19:06:18 - sentiment_analysis - INFO - Best params for random_forest_classifier: {'n_estimators': 280, 'max_depth': 10, 'min_samples_split': 4, 'min_samples_leaf': 5}
+2026-07-05 19:06:18 - sentiment_analysis - INFO - Creating model random_forest_classifier
+2026-07-05 19:08:00 - sentiment_analysis - INFO - Selecting best model
+2026-07-05 19:08:00 - sentiment_analysis - INFO - Selected logistic_regression as best model
+2026-07-05 19:08:00 - sentiment_analysis - INFO - Best model metrics: {'accuracy_score': 0.898723691476959, 'precision': 0.9002962312616973, 'recall': 0.898723691476959, 'f1_score': 0.8984816992977667}
+2026-07-05 19:08:00 - sentiment_analysis - INFO - Completed training all Tuning models
+2026-07-05 19:08:01 - sentiment_analysis - INFO - Pipeline execution completed successfully
+2026-07-05 19:22:08 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 19:22:08 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 19:22:14 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-05 19:22:15 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-05 19:22:15 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1783252344129, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1783253280652, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_optuna_best', params=None, run_id='76858e6b68cd45e99a27f2754f67f2e5', run_link=None, source='models:/m-c2712eeeb55e46849a3783b9794645a2', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2026-07-05 19:22:15 - sentiment_analysis - INFO - Found 6 runs
+2026-07-05 19:22:15 - sentiment_analysis - INFO - Run 76858e6b68cd45e99a27f2754f67f2e5 score: 0.898723691476959
+2026-07-05 19:22:15 - sentiment_analysis - INFO - Run 414a46c141e541809b17225a7a5a1a78 score: 0.7398600969503589
+2026-07-05 19:22:15 - sentiment_analysis - INFO - Run a7c8a72c04884b5484a60bc9815cfd70 score: 0.7117874455421244
+2026-07-05 19:22:15 - sentiment_analysis - INFO - Run cc7b0d4cf66d4ff5b52b7ade6791ad75 score: 0.44419218261029636
+2026-07-05 19:22:15 - sentiment_analysis - INFO - Best run ID: 76858e6b68cd45e99a27f2754f67f2e5
+2026-07-05 19:22:15 - sentiment_analysis - INFO - Trying to load model from local system
+2026-07-05 19:22:17 - sentiment_analysis - ERROR - FATAL ERROR during startup: module 'datetime' has no attribute 'now'
+2026-07-05 19:23:37 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 19:23:37 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 19:23:41 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-05 19:23:42 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-05 19:23:42 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1783252344129, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1783253280652, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_optuna_best', params=None, run_id='76858e6b68cd45e99a27f2754f67f2e5', run_link=None, source='models:/m-c2712eeeb55e46849a3783b9794645a2', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2026-07-05 19:23:42 - sentiment_analysis - INFO - Found 6 runs
+2026-07-05 19:23:42 - sentiment_analysis - INFO - Run 76858e6b68cd45e99a27f2754f67f2e5 score: 0.898723691476959
+2026-07-05 19:23:42 - sentiment_analysis - INFO - Run 414a46c141e541809b17225a7a5a1a78 score: 0.7398600969503589
+2026-07-05 19:23:42 - sentiment_analysis - INFO - Run a7c8a72c04884b5484a60bc9815cfd70 score: 0.7117874455421244
+2026-07-05 19:23:42 - sentiment_analysis - INFO - Run cc7b0d4cf66d4ff5b52b7ade6791ad75 score: 0.44419218261029636
+2026-07-05 19:23:42 - sentiment_analysis - INFO - Best run ID: 76858e6b68cd45e99a27f2754f67f2e5
+2026-07-05 19:23:42 - sentiment_analysis - INFO - Trying to load model from local system
+2026-07-05 19:23:44 - sentiment_analysis - ERROR - FATAL ERROR during startup: 1 validation error for ModelInfo
+load_timestamp
+  Input should be a valid string [type=string_type, input_value=<module 'datetime' from '...tbot\\Lib\\datetime.py'>, input_type=module]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-07-05 19:23:47 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 19:23:47 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 19:23:51 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-05 19:23:52 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-05 19:23:52 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1783252344129, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1783253280652, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_optuna_best', params=None, run_id='76858e6b68cd45e99a27f2754f67f2e5', run_link=None, source='models:/m-c2712eeeb55e46849a3783b9794645a2', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2026-07-05 19:23:52 - sentiment_analysis - INFO - Found 6 runs
+2026-07-05 19:23:52 - sentiment_analysis - INFO - Run 76858e6b68cd45e99a27f2754f67f2e5 score: 0.898723691476959
+2026-07-05 19:23:52 - sentiment_analysis - INFO - Run 414a46c141e541809b17225a7a5a1a78 score: 0.7398600969503589
+2026-07-05 19:23:52 - sentiment_analysis - INFO - Run a7c8a72c04884b5484a60bc9815cfd70 score: 0.7117874455421244
+2026-07-05 19:23:52 - sentiment_analysis - INFO - Run cc7b0d4cf66d4ff5b52b7ade6791ad75 score: 0.44419218261029636
+2026-07-05 19:23:52 - sentiment_analysis - INFO - Best run ID: 76858e6b68cd45e99a27f2754f67f2e5
+2026-07-05 19:23:52 - sentiment_analysis - INFO - Trying to load model from local system
+2026-07-05 19:23:54 - sentiment_analysis - ERROR - FATAL ERROR during startup: 1 validation error for ModelInfo
+load_timestamp
+  Input should be a valid string [type=string_type, input_value=<module 'datetime' from '...tbot\\Lib\\datetime.py'>, input_type=module]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-07-05 19:26:10 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 19:26:10 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 19:26:14 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-05 19:26:15 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-05 19:26:15 - sentiment_analysis - INFO - Found Production version: <ModelVersion: aliases=[], creation_timestamp=1783252344129, current_stage='Production', deployment_job_state=None, description=None, last_updated_timestamp=1783253280652, metrics=None, model_id=None, name='sentiment_analysis_logistic_regression_optuna_best', params=None, run_id='76858e6b68cd45e99a27f2754f67f2e5', run_link=None, source='models:/m-c2712eeeb55e46849a3783b9794645a2', status='READY', status_message=None, tags={}, user_id=None, version=1>
+2026-07-05 19:26:15 - sentiment_analysis - INFO - Found 6 runs
+2026-07-05 19:26:15 - sentiment_analysis - INFO - Run 76858e6b68cd45e99a27f2754f67f2e5 score: 0.898723691476959
+2026-07-05 19:26:15 - sentiment_analysis - INFO - Run 414a46c141e541809b17225a7a5a1a78 score: 0.7398600969503589
+2026-07-05 19:26:15 - sentiment_analysis - INFO - Run a7c8a72c04884b5484a60bc9815cfd70 score: 0.7117874455421244
+2026-07-05 19:26:15 - sentiment_analysis - INFO - Run cc7b0d4cf66d4ff5b52b7ade6791ad75 score: 0.44419218261029636
+2026-07-05 19:26:15 - sentiment_analysis - INFO - Best run ID: 76858e6b68cd45e99a27f2754f67f2e5
+2026-07-05 19:26:15 - sentiment_analysis - INFO - Trying to load model from local system
+2026-07-05 19:26:17 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-05 19:26:17 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-05 19:26:17 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-05 19:26:17 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-05 19:48:02 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 19:48:02 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 19:48:02 - sentiment_analysis - INFO - Deleted existing MLflow database
+2026-07-05 19:48:02 - sentiment_analysis - INFO - Starting pipeline execution
+2026-07-05 19:48:17 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2026-07-05 19:48:17 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2026-07-05 19:48:17 - sentiment_analysis - INFO - Started pipeline run with ID: ca1bf5c9527f420ebc05d27225e764ea
+2026-07-05 19:48:17 - sentiment_analysis - INFO - Step 1: Loading data
+2026-07-05 19:48:17 - sentiment_analysis - INFO - Intialized Data loader : D:\chatbot_NarendraModi\artifacts\Twitter_Data.csv
+2026-07-05 19:48:17 - sentiment_analysis - INFO - Loading data from csv
+2026-07-05 19:48:17 - sentiment_analysis - INFO - Data Successfully Load
+2026-07-05 19:48:17 - sentiment_analysis - INFO - Validate Data
+2026-07-05 19:48:17 - sentiment_analysis - INFO - Missing Value has been remove
+2026-07-05 19:48:17 - sentiment_analysis - INFO - - Duplicate text only: 3
+2026-07-05 19:48:17 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2026-07-05 19:48:17 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2026-07-05 19:48:17 - sentiment_analysis - INFO - Validate Data
+2026-07-05 19:48:17 - sentiment_analysis - INFO - Missing Value has been remove
+2026-07-05 19:48:17 - sentiment_analysis - INFO - - Duplicate text only: 3
+2026-07-05 19:48:17 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2026-07-05 19:48:18 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2026-07-05 19:48:18 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2026-07-05 19:48:18 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-05 19:48:18 - sentiment_analysis - INFO - Starting preprocessing...
+2026-07-05 19:48:18 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2026-07-05 19:48:29 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2026-07-05 19:48:29 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2026-07-05 19:48:29 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2026-07-05 19:48:29 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2026-07-05 19:48:32 - sentiment_analysis - INFO - Encoding target labels...
+2026-07-05 19:48:32 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2026-07-05 19:48:37 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2026-07-05 19:48:38 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2026-07-05 19:48:38 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2026-07-05 19:49:27 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2026-07-05 19:49:27 - sentiment_analysis - INFO - Step 3: Training and evaluating models
+2026-07-05 19:49:27 - sentiment_analysis - INFO - MLflow setup completed successfully
+2026-07-05 19:49:27 - sentiment_analysis - INFO - Initialized ModelTrainer with experiment: sentiment_analysis_modi_category
+2026-07-05 19:49:27 - sentiment_analysis - INFO - Startedd all Tuning models
+2026-07-05 19:49:27 - sentiment_analysis - INFO - Creating model logistic_regression
+2026-07-05 19:49:33 - sentiment_analysis - INFO - Creating model logistic_regression
+2026-07-05 19:49:48 - sentiment_analysis - INFO - Creating model logistic_regression
+2026-07-05 19:50:03 - sentiment_analysis - INFO - Creating model logistic_regression
+2026-07-05 19:50:10 - sentiment_analysis - INFO - Creating model logistic_regression
+2026-07-05 19:50:16 - sentiment_analysis - INFO - Best params for logistic_regression: {'C': 8.924562771322602, 'solver': 'liblinear', 'max_iter': 297}
+2026-07-05 19:50:16 - sentiment_analysis - INFO - Creating model logistic_regression
+2026-07-05 19:50:26 - sentiment_analysis - INFO - Creating model naive_bayes
+2026-07-05 19:50:26 - sentiment_analysis - INFO - Creating model naive_bayes
+2026-07-05 19:50:26 - sentiment_analysis - INFO - Creating model naive_bayes
+2026-07-05 19:50:26 - sentiment_analysis - INFO - Creating model naive_bayes
+2026-07-05 19:50:27 - sentiment_analysis - INFO - Creating model naive_bayes
+2026-07-05 19:50:27 - sentiment_analysis - INFO - Best params for naive_bayes: {'alpha': 1.1630700203713442}
+2026-07-05 19:50:27 - sentiment_analysis - INFO - Creating model naive_bayes
+2026-07-05 19:50:31 - sentiment_analysis - INFO - Creating model knn_classifier
+2026-07-05 20:12:09 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 20:12:09 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 20:38:38 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 20:38:38 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 20:38:39 - sentiment_analysis - INFO - Deleted existing MLflow database
+2026-07-05 20:38:39 - sentiment_analysis - INFO - Starting pipeline execution
+2026-07-05 20:38:54 - sentiment_analysis - INFO - MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2026-07-05 20:38:54 - sentiment_analysis - INFO - Experiment name: sentiment_analysis_modi_category
+2026-07-05 20:38:55 - sentiment_analysis - INFO - Started pipeline run with ID: 6e950153ef7644728dd916cb894cba45
+2026-07-05 20:38:55 - sentiment_analysis - INFO - Step 1: Loading data
+2026-07-05 20:38:55 - sentiment_analysis - INFO - Intialized Data loader : D:\chatbot_NarendraModi\artifacts\Twitter_Data.csv
+2026-07-05 20:38:55 - sentiment_analysis - INFO - Loading data from csv
+2026-07-05 20:38:55 - sentiment_analysis - INFO - Data Successfully Load
+2026-07-05 20:38:55 - sentiment_analysis - INFO - Validate Data
+2026-07-05 20:38:55 - sentiment_analysis - INFO - Missing Value has been remove
+2026-07-05 20:38:55 - sentiment_analysis - INFO - - Duplicate text only: 3
+2026-07-05 20:38:55 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2026-07-05 20:38:55 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2026-07-05 20:38:55 - sentiment_analysis - INFO - Validate Data
+2026-07-05 20:38:55 - sentiment_analysis - INFO - Missing Value has been remove
+2026-07-05 20:38:55 - sentiment_analysis - INFO - - Duplicate text only: 3
+2026-07-05 20:38:55 - sentiment_analysis - INFO - - Full duplicate rows: 1
+
+2026-07-05 20:38:56 - sentiment_analysis - INFO - Label Distribution : 
+category
+ 1.0    72250
+ 0.0    55213
+-1.0    35510
+Name: count, dtype: int64
+2026-07-05 20:38:56 - sentiment_analysis - INFO - Step 2: Preprocessing data
+2026-07-05 20:38:56 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-05 20:38:56 - sentiment_analysis - INFO - Starting preprocessing...
+2026-07-05 20:38:56 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2026-07-05 20:39:08 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2026-07-05 20:39:08 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2026-07-05 20:39:08 - sentiment_analysis - INFO - TF-IDF FeatureExtractor initialized.
+2026-07-05 20:39:08 - sentiment_analysis - INFO - Running fit_transform for TF-IDF...
+2026-07-05 20:39:10 - sentiment_analysis - INFO - Encoding target labels...
+2026-07-05 20:39:10 - sentiment_analysis - INFO - Logging TF-IDF Vectorizer to MLflow...
+2026-07-05 20:39:17 - sentiment_analysis - INFO - Successfully logged TF-IDF vectorizer to MLflow.
+2026-07-05 20:39:17 - sentiment_analysis - INFO - Saved TF-IDF vectorizer to: models\tfidf
+2026-07-05 20:39:17 - sentiment_analysis - INFO - Applying SMOTE oversampling...
+2026-07-05 20:40:10 - sentiment_analysis - INFO - Preprocessor saved to: models\preprocessing\preprocessor.joblib
+2026-07-05 20:40:10 - sentiment_analysis - INFO - Step 3: Training and evaluating models
+2026-07-05 20:40:10 - sentiment_analysis - INFO - MLflow setup completed successfully
+2026-07-05 20:40:10 - sentiment_analysis - INFO - Initialized ModelTrainer with experiment: sentiment_analysis_modi_category
+2026-07-05 20:40:10 - sentiment_analysis - INFO - Startedd all Tuning models
+2026-07-05 20:40:10 - sentiment_analysis - INFO - Creating model logistic_regression
+2026-07-05 20:40:25 - sentiment_analysis - INFO - Creating model logistic_regression
+2026-07-05 20:40:29 - sentiment_analysis - INFO - Creating model logistic_regression
+2026-07-05 20:40:44 - sentiment_analysis - INFO - Creating model logistic_regression
+2026-07-05 20:40:51 - sentiment_analysis - INFO - Creating model logistic_regression
+2026-07-05 20:40:58 - sentiment_analysis - INFO - Best params for logistic_regression: {'C': 6.543614072725124, 'solver': 'liblinear', 'max_iter': 271}
+2026-07-05 20:40:58 - sentiment_analysis - INFO - Creating model logistic_regression
+2026-07-05 20:41:08 - sentiment_analysis - INFO - Creating model naive_bayes
+2026-07-05 20:41:08 - sentiment_analysis - INFO - Creating model naive_bayes
+2026-07-05 20:41:08 - sentiment_analysis - INFO - Creating model naive_bayes
+2026-07-05 20:41:08 - sentiment_analysis - INFO - Creating model naive_bayes
+2026-07-05 20:41:08 - sentiment_analysis - INFO - Creating model naive_bayes
+2026-07-05 20:41:08 - sentiment_analysis - INFO - Best params for naive_bayes: {'alpha': 0.29146685614898127}
+2026-07-05 20:41:08 - sentiment_analysis - INFO - Creating model naive_bayes
+2026-07-05 20:41:13 - sentiment_analysis - INFO - Creating model knn_classifier
+2026-07-05 20:42:59 - sentiment_analysis - INFO - Creating model knn_classifier
+2026-07-05 20:44:41 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 20:44:41 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 20:44:48 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-05 20:44:49 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-05 20:44:49 - sentiment_analysis - ERROR - FATAL ERROR during startup: No model found in 'Production' stage for name: sentiment_analysis_logistic_regression_optuna_best
+2026-07-05 20:45:02 - sentiment_analysis - INFO - Creating model knn_classifier
+2026-07-05 20:46:41 - sentiment_analysis - INFO - Creating model knn_classifier
+2026-07-05 20:48:26 - sentiment_analysis - INFO - Creating model knn_classifier
+2026-07-05 20:50:04 - sentiment_analysis - INFO - Best params for knn_classifier: {'n_neighbors': 24, 'weights': 'distance', 'metric': 'euclidean'}
+2026-07-05 20:50:04 - sentiment_analysis - INFO - Creating model knn_classifier
+2026-07-05 20:52:00 - sentiment_analysis - INFO - Creating model random_forest_classifier
+2026-07-05 20:52:20 - sentiment_analysis - INFO - Creating model random_forest_classifier
+2026-07-05 20:52:44 - sentiment_analysis - INFO - Creating model random_forest_classifier
+2026-07-05 20:53:36 - sentiment_analysis - INFO - Creating model random_forest_classifier
+2026-07-05 20:54:00 - sentiment_analysis - INFO - Creating model random_forest_classifier
+2026-07-05 20:54:37 - sentiment_analysis - INFO - Best params for random_forest_classifier: {'n_estimators': 285, 'max_depth': 5, 'min_samples_split': 5, 'min_samples_leaf': 2}
+2026-07-05 20:54:37 - sentiment_analysis - INFO - Creating model random_forest_classifier
+2026-07-05 20:55:37 - sentiment_analysis - INFO - Selecting best model
+2026-07-05 20:55:37 - sentiment_analysis - INFO - Selected logistic_regression as best model
+2026-07-05 20:55:37 - sentiment_analysis - INFO - Best model metrics: {'accuracy_score': 0.8993373013438056, 'precision': 0.900673753487528, 'recall': 0.8993373013438056, 'f1_score': 0.8991852142954393}
+2026-07-05 20:55:37 - sentiment_analysis - INFO - Completed training all Tuning models
+2026-07-05 20:55:37 - sentiment_analysis - INFO - Pipeline execution completed successfully
+2026-07-05 21:10:26 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 21:10:26 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 21:10:54 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 21:10:54 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 21:10:58 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-05 21:10:59 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-05 21:10:59 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-05 21:10:59 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-05 21:10:59 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-05 21:11:01 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-05 21:11:01 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-05 21:11:01 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-05 21:11:01 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-05 21:11:01 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-05 21:11:01 - sentiment_analysis - INFO - Received input text : input_text='hello '
+2026-07-05 21:11:01 - sentiment_analysis - ERROR - Error making prediction: predict_sentiment() missing 3 required positional arguments: 'preprocessor', 'model', and 'tfidf'
+2026-07-05 21:11:09 - sentiment_analysis - INFO - Received input text : input_text='hello'
+2026-07-05 21:11:09 - sentiment_analysis - ERROR - Error making prediction: predict_sentiment() missing 3 required positional arguments: 'preprocessor', 'model', and 'tfidf'
+2026-07-05 21:12:58 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 21:12:58 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 21:13:03 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-05 21:13:04 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-05 21:13:04 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-05 21:13:04 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-05 21:13:04 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-05 21:13:06 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-05 21:13:06 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-05 21:13:06 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-05 21:13:06 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-05 21:13:06 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-05 21:13:09 - sentiment_analysis - INFO - Starting preprocessing...
+2026-07-05 21:13:09 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2026-07-05 21:13:09 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2026-07-05 22:18:27 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:18:27 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:18:33 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-05 22:18:33 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-05 22:18:33 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-05 22:18:33 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-05 22:18:33 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-05 22:18:37 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-05 22:18:37 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-05 22:18:37 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-05 22:18:37 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-05 22:18:37 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-05 22:18:40 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:18:40 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:18:44 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-05 22:18:45 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-05 22:18:45 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-05 22:18:45 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-05 22:18:45 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-05 22:18:47 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-05 22:18:47 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-05 22:18:47 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-05 22:18:48 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-05 22:18:48 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-05 22:19:04 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:19:04 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:19:09 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-05 22:19:10 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-05 22:19:10 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-05 22:19:10 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-05 22:19:10 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-05 22:19:12 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-05 22:19:12 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-05 22:19:12 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-05 22:19:12 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-05 22:19:12 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-05 22:19:40 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:19:40 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:19:44 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-05 22:19:45 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-05 22:19:45 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-05 22:19:45 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-05 22:19:45 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-05 22:19:47 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-05 22:19:47 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-05 22:19:47 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-05 22:19:48 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-05 22:19:48 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-05 22:19:50 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:19:50 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:19:55 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-05 22:19:56 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-05 22:19:56 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-05 22:19:56 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-05 22:19:56 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-05 22:19:58 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-05 22:19:58 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-05 22:19:58 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-05 22:19:58 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-05 22:19:58 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-05 22:20:01 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:20:01 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:20:05 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-05 22:20:06 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-05 22:20:06 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-05 22:20:06 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-05 22:20:06 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-05 22:20:09 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-05 22:20:09 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-05 22:20:09 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-05 22:20:09 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-05 22:20:09 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-05 22:20:11 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:20:11 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:20:16 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-05 22:20:17 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-05 22:20:17 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-05 22:20:17 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-05 22:20:17 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-05 22:20:19 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-05 22:20:19 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-05 22:20:19 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-05 22:20:19 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-05 22:20:19 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-05 22:27:09 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:27:09 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:27:14 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-05 22:27:15 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-05 22:27:15 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-05 22:27:15 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-05 22:27:15 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-05 22:27:17 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-05 22:27:17 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-05 22:27:17 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-05 22:27:17 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-05 22:27:17 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-05 22:29:00 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:29:00 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:29:05 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-05 22:29:06 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-05 22:29:06 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-05 22:29:06 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-05 22:29:06 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-05 22:29:08 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-05 22:29:08 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-05 22:29:08 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-05 22:29:08 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-05 22:29:08 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-05 22:29:11 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:29:11 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:29:15 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-05 22:29:16 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-05 22:29:16 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-05 22:29:16 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-05 22:29:16 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-05 22:29:18 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-05 22:29:18 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-05 22:29:18 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-05 22:29:19 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-05 22:29:19 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-05 22:29:37 - sentiment_analysis - INFO - Starting preprocessing...
+2026-07-05 22:29:37 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2026-07-05 22:29:37 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2026-07-05 22:35:11 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:35:11 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:35:15 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-05 22:35:16 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-05 22:35:16 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-05 22:35:16 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-05 22:35:16 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-05 22:35:19 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-05 22:35:19 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-05 22:35:19 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-05 22:35:19 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-05 22:35:19 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-05 22:37:01 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:37:01 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:37:05 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-05 22:37:06 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-05 22:37:06 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-05 22:37:06 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-05 22:37:06 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-05 22:37:09 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-05 22:37:09 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-05 22:37:09 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-05 22:37:09 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-05 22:37:09 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-05 22:38:46 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:38:46 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:38:51 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-05 22:38:51 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-05 22:38:52 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-05 22:38:52 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-05 22:38:52 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-05 22:38:54 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-05 22:38:54 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-05 22:38:54 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-05 22:38:54 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-05 22:38:54 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-05 22:38:55 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:38:55 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:39:36 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:39:36 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:39:46 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:39:46 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:42:22 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:42:22 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:42:26 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-05 22:42:27 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-05 22:42:27 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-05 22:42:27 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-05 22:42:27 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-05 22:42:29 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-05 22:42:29 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-05 22:42:29 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-05 22:42:29 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-05 22:42:29 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-05 22:42:43 - sentiment_analysis - INFO - Starting preprocessing...
+2026-07-05 22:42:43 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2026-07-05 22:42:43 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2026-07-05 22:45:22 - sentiment_analysis - INFO - Starting preprocessing...
+2026-07-05 22:45:22 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2026-07-05 22:45:22 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2026-07-05 22:46:12 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:46:12 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:47:06 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:47:06 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:47:24 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:47:24 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:47:37 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:47:37 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:47:39 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:47:39 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:47:42 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:47:42 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:47:48 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:47:48 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:49:06 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:49:06 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:50:20 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:50:20 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:50:25 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-05 22:50:26 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-05 22:50:26 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-05 22:50:26 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-05 22:50:26 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-05 22:50:28 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-05 22:50:28 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-05 22:50:28 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-05 22:50:29 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-05 22:50:29 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-05 22:50:38 - sentiment_analysis - INFO - Starting preprocessing...
+2026-07-05 22:50:38 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2026-07-05 22:50:38 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2026-07-05 22:52:32 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:52:32 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-05 22:52:37 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-05 22:52:37 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-05 22:52:37 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-05 22:52:37 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-05 22:52:37 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-05 22:52:40 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-05 22:52:40 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-05 22:52:40 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-05 22:52:40 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-05 22:52:40 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-05 22:52:42 - sentiment_analysis - INFO - Starting preprocessing...
+2026-07-05 22:52:42 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2026-07-05 22:52:42 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2026-07-05 22:53:18 - sentiment_analysis - INFO - Starting preprocessing...
+2026-07-05 22:53:18 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2026-07-05 22:53:18 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2026-07-05 22:59:24 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-05 22:59:24 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 00:06:02 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 00:06:02 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 00:06:04 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 00:06:04 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 00:06:25 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 00:06:25 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 00:06:35 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 00:06:35 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 00:08:05 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 00:08:05 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 06:42:34 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 06:42:34 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 06:42:41 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 06:42:42 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 06:42:42 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 06:42:42 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 06:42:42 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 06:42:45 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 06:42:45 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 06:42:45 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 06:42:45 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 06:42:45 - sentiment_analysis - ERROR - MySQL connection failed: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+2026-07-06 06:42:45 - sentiment_analysis - ERROR - FATAL ERROR during startup: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+2026-07-06 06:43:31 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 06:43:31 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 06:43:39 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 06:43:40 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 06:43:40 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 06:43:40 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 06:43:40 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 06:43:42 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 06:43:42 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 06:43:42 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 06:43:42 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 06:43:42 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 06:43:42 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 06:43:42 - sentiment_analysis - INFO - MySQL chat store initialized. Table created/verified.
+2026-07-06 06:43:42 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 06:43:42 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-06 06:44:27 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 06:44:29 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 06:44:37 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 06:44:37 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 06:44:37 - sentiment_analysis - INFO - Starting preprocessing...
+2026-07-06 06:44:37 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2026-07-06 06:44:38 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2026-07-06 06:44:45 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 06:47:49 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 06:47:49 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 06:47:49 - sentiment_analysis - INFO - Starting preprocessing...
+2026-07-06 06:47:49 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2026-07-06 06:47:49 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2026-07-06 06:48:00 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 06:56:54 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 06:56:54 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 06:56:59 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 06:57:00 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 06:57:00 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 06:57:00 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 06:57:00 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 06:57:02 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 06:57:02 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 06:57:02 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 06:57:02 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 06:57:02 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 06:57:02 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 06:57:02 - sentiment_analysis - INFO - MySQL chat store initialized. Table created/verified.
+2026-07-06 06:57:02 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 06:57:02 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-06 06:57:07 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 06:57:07 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 06:57:12 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 06:57:13 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 06:57:13 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 06:57:13 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 06:57:13 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 06:57:15 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 06:57:15 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 06:57:15 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 06:57:15 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 06:57:15 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 06:57:15 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 06:57:15 - sentiment_analysis - INFO - MySQL chat store initialized. Table created/verified.
+2026-07-06 06:57:15 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 06:57:15 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-06 06:57:18 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 06:57:18 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 06:57:20 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 06:57:20 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 06:57:20 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 06:57:20 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 06:57:20 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 06:57:23 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 06:57:23 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 06:57:23 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 06:57:23 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 06:57:23 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 06:57:23 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 06:57:23 - sentiment_analysis - INFO - MySQL chat store initialized. Table created/verified.
+2026-07-06 06:57:23 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 06:57:23 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-06 06:57:26 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 06:57:26 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 06:57:27 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 06:57:28 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 06:57:28 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 06:57:28 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 06:57:28 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 06:57:31 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 06:57:31 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 06:57:31 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 06:57:31 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 06:57:31 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 06:57:31 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 06:57:31 - sentiment_analysis - INFO - MySQL chat store initialized. Table created/verified.
+2026-07-06 06:57:31 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 06:57:31 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-06 06:59:04 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 06:59:04 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 06:59:04 - sentiment_analysis - INFO - Starting preprocessing...
+2026-07-06 06:59:04 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2026-07-06 06:59:04 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2026-07-06 06:59:35 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 07:03:24 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 07:03:24 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 07:03:24 - sentiment_analysis - INFO - Starting preprocessing...
+2026-07-06 07:03:24 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2026-07-06 07:03:24 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2026-07-06 07:03:53 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 07:09:46 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 07:09:46 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 07:09:48 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 07:09:48 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 07:09:48 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 07:09:48 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 07:09:48 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 07:09:51 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 07:09:51 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 07:09:51 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 07:09:51 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 07:09:51 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 07:09:51 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 07:09:51 - sentiment_analysis - INFO - MySQL chat store initialized. Table created/verified.
+2026-07-06 07:09:51 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 07:09:51 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-06 07:13:44 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 07:13:44 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 07:13:45 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 07:13:46 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 07:13:46 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 07:13:46 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 07:13:46 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 07:13:48 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 07:13:48 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 07:13:48 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 07:13:48 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 07:13:48 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 07:13:48 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 07:13:48 - sentiment_analysis - INFO - MySQL chat store initialized. Table created/verified.
+2026-07-06 07:13:48 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 07:13:48 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-06 08:02:33 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 08:02:33 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 08:02:35 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 08:02:36 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 08:02:36 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 08:02:36 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 08:02:36 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 08:02:38 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 08:02:38 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 08:02:38 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 08:02:39 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 08:02:39 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 08:02:39 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 08:02:39 - sentiment_analysis - INFO - MySQL chat store initialized. Table created/verified.
+2026-07-06 08:02:39 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 08:02:39 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-06 08:02:45 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 08:02:45 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 08:02:46 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 08:02:47 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 08:02:47 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 08:02:47 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 08:02:47 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 08:02:49 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 08:02:49 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 08:02:49 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 08:02:49 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 08:02:49 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 08:02:49 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 08:02:49 - sentiment_analysis - INFO - MySQL chat store initialized. Table created/verified.
+2026-07-06 08:02:49 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 08:02:49 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-06 08:06:51 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 08:06:51 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 08:06:52 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 08:06:53 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 08:06:53 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 08:06:53 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 08:06:53 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 08:06:55 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 08:06:55 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 08:06:55 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 08:06:55 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 08:06:55 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 08:06:55 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 08:06:55 - sentiment_analysis - INFO - MySQL chat store initialized. Table created/verified.
+2026-07-06 08:06:55 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 08:06:55 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-06 08:07:40 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 08:07:40 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 08:07:40 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 08:07:42 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 08:07:42 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 08:07:42 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 08:13:03 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 08:13:03 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 08:13:05 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 08:13:05 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 08:13:05 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 08:13:05 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 08:13:05 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 08:13:08 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 08:13:08 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 08:13:08 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 08:13:08 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 08:13:08 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 08:13:08 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 08:13:08 - sentiment_analysis - INFO - MySQL chat store initialized. Table created/verified.
+2026-07-06 08:13:08 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 08:13:08 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-06 08:13:15 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 08:13:15 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 08:13:16 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 08:13:17 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 08:13:17 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 08:13:17 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 08:13:17 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 08:13:19 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 08:13:19 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 08:13:19 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 08:13:19 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 08:13:19 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 08:13:19 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 08:13:19 - sentiment_analysis - INFO - MySQL chat store initialized. Table created/verified.
+2026-07-06 08:13:19 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 08:13:19 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-06 08:13:27 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 08:13:27 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 08:13:28 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 08:13:29 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 08:13:29 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 08:13:29 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 08:13:29 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 08:13:32 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 08:13:32 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 08:13:32 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 08:13:32 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 08:13:32 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 08:13:32 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 08:13:32 - sentiment_analysis - INFO - MySQL chat store initialized. Table created/verified.
+2026-07-06 08:13:32 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 08:13:32 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-06 08:16:13 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 08:16:13 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 08:16:15 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 08:16:15 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 08:16:15 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 08:16:15 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 08:16:15 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 08:16:18 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 08:16:18 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 08:16:18 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 08:16:18 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 08:16:18 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 08:16:18 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 08:16:18 - sentiment_analysis - INFO - MySQL chat store initialized. Table created/verified.
+2026-07-06 08:16:18 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 08:16:18 - sentiment_analysis - INFO - Model (sentiment_analysis_logistic_regression_optuna_best and preprocessor loaded successfully
+2026-07-06 08:16:49 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 08:16:49 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 08:16:52 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 08:16:52 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 08:16:52 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 08:16:52 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 08:16:52 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 08:16:55 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 08:16:55 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 08:16:55 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 08:16:55 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 08:16:55 - sentiment_analysis - INFO - Model and preprocessor loaded successfully
+2026-07-06 08:22:20 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 08:22:20 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 08:22:22 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 08:22:23 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 08:22:23 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 08:22:23 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 08:22:23 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 08:22:25 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 08:22:25 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 08:22:25 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 08:22:26 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 08:22:26 - sentiment_analysis - INFO - Model and preprocessor loaded successfully
+2026-07-06 08:22:30 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 08:22:30 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 08:22:30 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 08:22:30 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 08:22:47 - sentiment_analysis - INFO - Starting preprocessing...
+2026-07-06 08:22:47 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2026-07-06 08:22:47 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2026-07-06 08:24:16 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 08:24:16 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 08:24:19 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 08:24:19 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 08:24:19 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 08:24:19 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 08:24:19 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 08:24:22 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 08:24:22 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 08:24:22 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 08:24:22 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 08:24:22 - sentiment_analysis - INFO - Model and preprocessor loaded successfully
+2026-07-06 08:25:15 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 08:25:15 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 08:25:15 - sentiment_analysis - INFO - Starting preprocessing...
+2026-07-06 08:25:15 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2026-07-06 08:25:15 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2026-07-06 08:25:53 - sentiment_analysis - INFO - Starting preprocessing...
+2026-07-06 08:25:53 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2026-07-06 08:25:53 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2026-07-06 08:27:03 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 08:27:03 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 08:27:06 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 08:27:06 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 08:27:06 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 08:27:06 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 08:27:06 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 08:27:09 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 08:27:09 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 08:27:09 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 08:27:09 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 08:27:09 - sentiment_analysis - INFO - Model and preprocessor loaded successfully
+2026-07-06 08:28:34 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 08:28:34 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 08:28:36 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 08:28:37 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 08:28:37 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 08:28:37 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 08:28:37 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 08:28:40 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 08:28:40 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 08:28:40 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 08:28:40 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 08:28:40 - sentiment_analysis - INFO - Model and preprocessor loaded successfully
+2026-07-06 08:53:47 - sentiment_analysis - INFO - Starting preprocessing...
+2026-07-06 08:53:47 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2026-07-06 08:53:47 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2026-07-06 09:00:00 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 09:00:00 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 09:00:04 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 09:00:05 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 09:00:05 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 09:00:05 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 09:00:05 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 09:00:08 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 09:00:08 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 09:00:08 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 09:00:08 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 09:00:08 - sentiment_analysis - INFO - Model and preprocessor loaded successfully
+2026-07-06 09:01:46 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 09:01:46 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 09:01:50 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 09:01:50 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 09:01:50 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 09:01:50 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 09:01:50 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 09:01:53 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 09:01:53 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 09:01:53 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 09:01:53 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 09:01:53 - sentiment_analysis - INFO - Model and preprocessor loaded successfully
+2026-07-06 09:03:01 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 09:03:01 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 09:03:04 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 09:03:05 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 09:03:05 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 09:03:05 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 09:03:05 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 09:03:07 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 09:03:07 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 09:03:07 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 09:03:08 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 09:03:08 - sentiment_analysis - INFO - Model and preprocessor loaded successfully
+2026-07-06 09:06:11 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 09:06:11 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 09:06:11 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 09:07:37 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 09:07:37 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 09:07:37 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 09:10:28 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 09:10:28 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 09:10:28 - sentiment_analysis - INFO - Starting preprocessing...
+2026-07-06 09:10:28 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2026-07-06 09:10:28 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2026-07-06 09:11:52 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 09:11:52 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 09:11:55 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 09:11:55 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 09:11:55 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 09:11:55 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 09:11:55 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 09:11:58 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 09:11:58 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 09:11:58 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 09:11:58 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 09:11:58 - sentiment_analysis - INFO - Model and preprocessor loaded successfully
+2026-07-06 09:12:06 - sentiment_analysis - ERROR - Error listing sessions: (1146, "Table 'chatbot_modi.chat_messages' doesn't exist")
+2026-07-06 09:12:08 - sentiment_analysis - ERROR - Error listing sessions: (1146, "Table 'chatbot_modi.chat_messages' doesn't exist")
+2026-07-06 09:12:22 - sentiment_analysis - ERROR - Error listing sessions: (1146, "Table 'chatbot_modi.chat_messages' doesn't exist")
+2026-07-06 09:12:24 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 09:12:25 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 09:12:25 - sentiment_analysis - INFO - Starting preprocessing...
+2026-07-06 09:12:25 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2026-07-06 09:12:25 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2026-07-06 09:15:47 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 09:15:47 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 09:15:50 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 09:15:51 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 09:15:51 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 09:15:51 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 09:15:51 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 09:15:55 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 09:15:55 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 09:15:55 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 09:15:55 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 09:15:55 - sentiment_analysis - INFO - Model and preprocessor loaded successfully
+2026-07-06 09:17:30 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 09:17:30 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 09:17:30 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 09:17:42 - sentiment_analysis - INFO - MySQL connected: localhost:3306/chatbot_modi
+2026-07-06 09:17:42 - sentiment_analysis - INFO - Table 'chat_messages' ready
+2026-07-06 09:17:42 - sentiment_analysis - INFO - Starting preprocessing...
+2026-07-06 09:17:42 - sentiment_analysis - INFO - Dropped NaN and duplicate rows.
+2026-07-06 09:17:42 - sentiment_analysis - INFO - Preprocessing completed successfully.
+2026-07-06 09:18:24 - sentiment_analysis - INFO - MySQL connection closed
+2026-07-06 09:38:50 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 09:38:50 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 09:38:52 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 09:38:53 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 09:38:53 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 09:38:53 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 09:38:53 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 09:38:56 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 09:38:56 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 09:38:56 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 09:38:56 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 09:38:56 - sentiment_analysis - INFO - Model and preprocessor loaded successfully
+2026-07-06 09:38:57 - sentiment_analysis - INFO - Loading configuration from config\config.yaml
+2026-07-06 09:38:57 - sentiment_analysis - INFO - Configuration loaded sucessfully
+2026-07-06 09:39:00 - sentiment_analysis - INFO - Loading production model from MLflow Registry.
+2026-07-06 09:39:00 - sentiment_analysis - INFO - Found experiment with ID: 1
+2026-07-06 09:39:01 - sentiment_analysis - INFO - Found 1 Production model version(s)
+2026-07-06 09:39:01 - sentiment_analysis - INFO - Model version 1, run 11e42773c3b24464b7d798b59f1d534a, accuracy_score: 0.8993373013438056
+2026-07-06 09:39:01 - sentiment_analysis - INFO - Loading model directly from MLflow URI: models:/sentiment_analysis_logistic_regression_optuna_best/1
+2026-07-06 09:39:03 - sentiment_analysis - INFO - Loaded model 'sentiment_analysis_logistic_regression_optuna_best' version 1 with accuracy_score: 0.8993373013438056
+2026-07-06 09:39:03 - sentiment_analysis - INFO - Text Preprocessor initialized.
+2026-07-06 09:39:03 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\preprocessing\preprocessor.joblib
+2026-07-06 09:39:04 - sentiment_analysis - INFO - Preprocessor loaded from: D:\chatbot_NarendraModi\models\tfidf\tfidf_vectorizer.joblib
+2026-07-06 09:39:04 - sentiment_analysis - INFO - Model and preprocessor loaded successfully

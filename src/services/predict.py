@@ -1,6 +1,7 @@
 import os
 import mlflow
-import datetime
+from typing import Any, Tuple,List
+from datetime import datetime
 import pandas as pd
 from mlflow.tracking import MlflowClient
 from mlflow.entities.model_registry import ModelVersion
@@ -28,101 +29,143 @@ def predict_sentiment(input_text : str, preprocessor : TextPreprocessor,model,tf
         return pred
     
 
-def load_production_model(model_name:str = None) -> tuple[str, ModelInfo]:
+def load_production_model(
+    model_name: str = None,
+    min_accuracy: float = 0.85,
+    metric_name: str = "accuracy_score"
+) -> Tuple[Any, ModelInfo]:
     """
-    Get the path to the latest trained model
-    
+    Load model Production langsung dari MLflow Model Registry.
+
     Returns:
-        Tuple containing model path and model info
+        model, model_info
     """
+
+    # Pastikan tracking URI mengarah ke SQLite MLflow kamu
+    tracking_uri = config.get("mlflow.tracking_uri", "sqlite:///mlflow.db")
+    experiment_name = config.get("mlflow.experiment_name")
+
+    mlflow.set_tracking_uri(tracking_uri)
+
     print("Tracking URI:", mlflow.get_tracking_uri())
-    client = MlflowClient()
-    
-    #search model version
-    model_versions = client.search_model_versions(f"name='{model_name}'")
-    for v in model_versions:
-        print("Version:", v.version, "Artifact:", v.source)
-    
-    
-    # Get experiment
-    experiment = client.get_experiment_by_name(config.get("mlflow.experiment_name"))
+
+    client = MlflowClient(tracking_uri=tracking_uri)
+
+    if not model_name:
+        model_name = config.get("mlflow.model_name")
+
+    if not model_name:
+        raise ValueError("model_name tidak boleh kosong")
+
+    # ============================================================
+    # Cek experiment
+    # ============================================================
+    experiment = client.get_experiment_by_name(experiment_name)
+
     if not experiment:
-        raise ValueError("No experiment found")
-    
+        raise ValueError(f"Experiment tidak ditemukan: {experiment_name}")
+
     logger.info(f"Found experiment with ID: {experiment.experiment_id}")
-    
-    #get latest client version 
-    production_versions : List[ModelVersion] = client.get_latest_versions(
-        name=model_name,
-        stages=["Production"]
+
+    # ============================================================
+    # Ambil semua versi model yang stage-nya Production
+    # ============================================================
+    model_versions = client.search_model_versions(
+        filter_string=f"name='{model_name}'"
     )
+
+    production_versions: List[ModelVersion] = [
+        v for v in model_versions
+        if v.current_stage == "Production"
+    ]
+
     if not production_versions:
-            raise ValueError(f"No model found in 'Production' stage for name: {model_name}")
-    
-    logger.info(f"Found Production version: {production_versions[0]}")
-    
-    version_object = production_versions[0]
-    run_id = version_object.run_id
-    
-    
-    # Get all runs
-    runs = client.search_runs(
-        experiment_ids=[experiment.experiment_id],
-        order_by=["metrics.accuracy_score DESC"]
-    )
-    
-    logger.info(f"Found {len(runs)} runs")
-    
-    if not runs:
-        raise ValueError("No runs found in the experiment")
-    
-    # Find best run based on average of recall and f1
+        raise ValueError(
+            f"Tidak ada model '{model_name}' dengan stage Production"
+        )
+
+    logger.info(f"Found {len(production_versions)} Production model version(s)")
+
+    # ============================================================
+    # Pilih Production version dengan accuracy tertinggi
+    # ============================================================
+    best_version = None
     best_run = None
-    best_score = -1
-    
-    for run in runs:
+    best_score = -1.0
+
+    for version in production_versions:
+        run_id = version.run_id
+
+        if not run_id:
+            logger.warning(
+                f"Model version {version.version} tidak memiliki run_id"
+            )
+            continue
+
+        run = client.get_run(run_id)
         metrics = run.data.metrics
-        if 'accuracy_score' in metrics :
-            acc = metrics['accuracy_score'] 
-            logger.info(f"Run {run.info.run_id} score: {acc}")
-            if acc > best_score:
-                best_score = acc
-                best_run = run
-                
-    if not best_run:
-        raise ValueError("No valid runs found with required metrics")
-    
-    # Get model path
-    run_id = best_run.info.run_id
-    logger.info(f"Best run ID: {run_id}")
-    version = client.search_model_versions(f"name='{model_name}'")
-    latest_version = max(version, key=lambda x:int(x.version))
-    artifact_uri = latest_version.source.split("models:/")[1]
-    
-    print(f"uri artifact : {artifact_uri}")
-    
-    # Try to load model 
-    try : 
-        logger.info("Trying to load model from local system")
-        local_path = os.path.join("mlruns",experiment.experiment_id,"models",artifact_uri,"artifacts")
-        if not os.path.exists(local_path):
-            raise ValueError(f"Local path does not exist {local_path}")
-        model = mlflow.pyfunc.load_model(local_path)
-    except Exception as e:
-        logger.error(f"Error load model local system : {e}")
-    
-    # Create model info
+
+        score = metrics.get(metric_name)
+
+        if score is None:
+            logger.warning(
+                f"Run {run_id} tidak memiliki metric '{metric_name}'"
+            )
+            continue
+
+        logger.info(
+            f"Model version {version.version}, run {run_id}, "
+            f"{metric_name}: {score}"
+        )
+
+        if score > best_score:
+            best_score = score
+            best_version = version
+            best_run = run
+
+    if best_version is None or best_run is None:
+        raise ValueError(
+            f"Tidak ada Production model dengan metric '{metric_name}'"
+        )
+
+    if best_score < min_accuracy:
+        raise ValueError(
+            f"Model terbaik belum memenuhi minimum accuracy. "
+            f"{metric_name}={best_score}, minimum={min_accuracy}"
+        )
+
+    # ============================================================
+    # Load model langsung dari MLflow Registry
+    # Tidak perlu os.path.join("mlruns", ...)
+    # ============================================================
+    model_uri = f"models:/{model_name}/{best_version.version}"
+
+    logger.info(f"Loading model directly from MLflow URI: {model_uri}")
+
+    model = mlflow.pyfunc.load_model(model_uri)
+
+    # ============================================================
+    # Buat model info
+    # ============================================================
+    run_metrics = best_run.data.metrics
+
     metrics = ModelMetrics(
-        accuracy_score=best_run.data.metrics.get('accuracy', 0.0),
-        precision=best_run.data.metrics.get('precision', 0.0),
-        recall=best_run.data.metrics.get('recall', 0.0),
-        f1_score=best_run.data.metrics.get('f1', 0.0),
+        accuracy_score=run_metrics.get("accuracy_score", 0.0),
+        precision=run_metrics.get("precision", 0.0),
+        recall=run_metrics.get("recall", 0.0),
+        f1_score=run_metrics.get("f1_score", run_metrics.get("f1", 0.0)),
     )
-    
+
     model_info = ModelInfo(
-        run_id=run_id,
-        model_name= model_name,
+        run_id=best_run.info.run_id,
+        model_name=model_name,
         metrics=metrics,
         load_timestamp=datetime.now().isoformat()
-        )
+    )
+
+    logger.info(
+        f"Loaded model '{model_name}' version {best_version.version} "
+        f"with {metric_name}: {best_score}"
+    )
+
     return model, model_info

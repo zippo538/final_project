@@ -47,6 +47,7 @@ class SentimentAnalysisResponse(BaseModel):
 
 class LLMRequest(BaseModel):
     user_message: str = Field(..., description="Modi is great leader!")
+    session_id: str = Field(default="default", description="Chat session ID")
 
 class LLMResponse(BaseModel):
     sentiment: str = Field(..., description="2")

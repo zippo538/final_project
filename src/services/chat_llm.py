@@ -1,13 +1,7 @@
 from haystack import Pipeline, component
 from haystack.components.builders import PromptBuilder
-from haystack.components.embedders import SentenceTransformersTextEmbedder
-from haystack_experimental.chat_message_stores.in_memory import InMemoryChatMessageStore
-from haystack_experimental.components.retrievers import ChatMessageRetriever
-from haystack_experimental.components.writers import ChatMessageWriter
 from haystack.dataclasses import ChatMessage
 from typing import List
-from haystack.components.builders import ChatPromptBuilder
-from haystack.components.joiners import ListJoiner
 from mlflow.tracking import MlflowClient
 from dotenv import load_dotenv
 from src.utils.logger import default_logger as logger
@@ -23,14 +17,16 @@ load_dotenv()
 
 @component
 class GroqLLM:
-    def __init__(self, model_name="meta-llama/llama-4-maverick-17b-128e-instruct", api_key=None):
-        self.api_key = api_key or os.getenv("GROQ_API_KEY")
-        self.model_name = model_name
+    def __init__(self, model_name : str , api_key=None):
+        self.api_key = api_key or os.getenv("OPEN_ROUTER_API_KEY")
+        self.model_name = model_name or os.getenv("MODEL_AI")
 
     @component.output_types(output=List[ChatMessage])
     def run(self, prompt: List[ChatMessage]):
+        # Extract user messages properly
         user_prompt = "".join([msg.text for msg in prompt])
-        url = "https://api.groq.com/openai/v1/chat/completions"
+
+        url = os.getenv("URL_API")
         headers = {
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json"
@@ -38,16 +34,25 @@ class GroqLLM:
 
         payload = {
             "model": self.model_name,
-            "messages": [{"role": "user", "content": user_prompt}],
-            "temperature": 0.7,
+            "messages": [{"role": "user", "content": user_prompt.strip()}],
+            "temperature": 1,
             "max_tokens": 300
         }
 
         response = requests.post(url, headers=headers, json=payload)
+        # Check response status
+        if response.status_code != 200:
+            raise ValueError(
+                f"OpenRouter API returned status {response.status_code}.\n"
+                f"Response: {response.text}"
+            )
         try:
             data = response.json()
         except Exception:
             raise ValueError("Gagal parse JSON dari Groq API: ", response.text)
+        
+        # Debug: print response structure
+        logger.debug(f"OpenRouter API Response: {json.dumps(data, indent=2)}")
 
         # Debug untuk melihat isi JSON asli
         if "choices" not in data:
@@ -96,12 +101,16 @@ class PipelineCategory:
     def __init__(self):
         
         self.pipeline = Pipeline()
-        self.pipeline.add_component('prompt_builder',PromptBuilder(template=config.get("prompt.predictor_prompt"),required_variables=["sentiment","input","context"]))
+        self.pipeline.add_component('prompt_builder',PromptBuilder(
+            template=config.get("prompt.predictor_prompt"),
+            variables={"sentiment", "input", "context"},
+            required_variables={"sentiment", "input"},
+        ))
         self.pipeline.add_component('prompt_to_msg',PromptToMessages())
         self.pipeline.add_component('groq_llm',GroqLLM())
         
         self.pipeline.connect("prompt_builder.prompt","prompt_to_msg.prompt")
-        self.pipeline.connect("prompt_to_msg.messages","groq_llm")
+        self.pipeline.connect("prompt_to_msg.messages","groq_llm.prompt")
     
     def run(self,input_text : str , sentiment : str, context) :
         res = self.pipeline.run(
@@ -115,27 +124,35 @@ class PipelineCategory:
         return res['groq_llm']['output']
 
 class ChatHistoryPipeline:
-    def __init__(self, chat_message_store):
+    def __init__(self, chat_message_store, limit: int = 20):
         self.chat_message_store = chat_message_store
-        self.pipeline = Pipeline()
-        self.pipeline.add_component("memory_retriever", ChatMessageRetriever(chat_message_store))
-        self.pipeline.add_component("prompt_builder", PromptBuilder(variables=["memories"], required_variables=["memories"], template="""
-        Previous Conversations history:
-        {% for memory in memories %}
-            {{memory.text}}
-        {% endfor %}
-        """)
-        )
-        self.pipeline.connect("memory_retriever", "prompt_builder.memories")
+        self.limit = limit
 
     def run(self):
-        res = self.pipeline.run(
-            data = {},
-            include_outputs_from=["prompt_builder"]
-        )
+        # Fetch recent messages directly. MySQLChatMessageStore honors `limit`;
+        # Haystack's InMemoryChatMessageStore does not, so fallback + slice.
+        try:
+            messages = self.chat_message_store.retrieve(limit=self.limit)
+        except (TypeError, AttributeError):
+            messages = self.chat_message_store.retrieve()
+            if self.limit and self.limit > 0 and len(messages) > self.limit:
+                messages = messages[-self.limit:]
+        if not messages:
+            return ""
 
-        # print("Pipeline Input", res["prompt_builder"]["prompt"])
-        return res["prompt_builder"]["prompt"]
+        lines = []
+        role_labels = {
+            "user": "User",
+            "assistant": "Assistant",
+            "system": "System",
+        }
+        for msg in messages:
+            role_value = msg.role.value if hasattr(msg.role, "value") else str(msg.role)
+            label = role_labels.get(role_value, "User")
+            text = (msg.text or "").strip()
+            if text:
+                lines.append(f"{label}: {text}")
+        return "\n".join(lines)
 
         
 

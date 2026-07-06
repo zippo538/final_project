@@ -7,3 +7,6 @@ research/mlruns
 mlruns/
 models/
 mlflow.db
+.agents/
+.claude/
+.vscode/

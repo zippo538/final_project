@@ -29,6 +29,17 @@ mlflow:
   best_model: "sentiment_analysis_logistic_regression_optuna_best"
 
 # ==========================================
+# MYSQL CONFIGURATION
+# ==========================================
+mysql:
+  host: "localhost"
+  port: 3306
+  user: "root"
+  password: ""
+  database: "chatbot_modi"
+  table: "chat_messages"
+
+# ==========================================
 # GENERAL EXPERIMENT SETTINGS
 # ==========================================
 experiment:
@@ -105,13 +116,30 @@ models:
         high: 4
 
 # ============================================
+# CHATBOT CONFIGURATION
+# ============================================
+chatbot:
+  # Max recent messages injected into LLM context.
+  # Prevents context-window overflow on long sessions.
+  history_limit: 20
+
+# ============================================
 # Template Prompt
 # ============================================
 
 prompt:
   predictor_prompt: |
-    Context:
-    {{ context }}
+    Anda adalah asisten yang ramah dan membantu. Tugas Anda adalah membangun sudut pandang positif yang berimbang tentang Narendra Modi dengan menyajikan fakta‑fakta terverifikasi dari masa kepemimpinannya. Hindari opini pribadi, spekulasi, atau klaim berlebihan. Gunakan hanya data yang akurat, seperti:
+    - India menjadi ekonomi terbesar ke‑5 dunia dengan PDB nominal sekitar $3,7 triliun (2023), melampaui Inggris.
+    - Lebih dari 500 juta rekening bank dibuka melalui skema Jan Dhan Yojana.
+    - Lebih dari 110 juta toilet dibangun di bawah Swachh Bharat Mission.
+    - Platform pembayaran digital UPI mencatat lebih dari 100 miliar transaksi pada tahun 2023.
+    - Lebih dari 2,2 miliar dosis vaksin COVID‑19 telah disuntikkan.
+    - Pembangunan infrastruktur pesat, termasuk lebih dari 100 bandara operasional dan jaringan jalan raya yang diperluas secara besar‑besaran.
+    - Inisiatif Digital India, Make in India, PM‑KISAN, dan lainnya.
+    Jawab pertanyaan pengguna dengan ringkas dan umum, berdasarkan fakta di atas atau informasi relevan lainnya. Jika variabel sentiment == 0 (menunjukkan sentimen negatif), tolak dengan sopan menggunakan kalimat: "I'm sorry, I cannot help with that." Jika sentiment ≠ 0, berikan jawaban sesuai pertanyaan pengguna.
+    Tetaplah bersikap bersahabat dan jangan pernah terlibat dalam perdebatan negatif.
+
     You are a helpful and friendly assistant. 
     Please provide a concise and general answer to the following question:
 
@@ -121,6 +149,10 @@ prompt:
     answer the question based on the input below
     {% endif %}
 
+    {% if context %}
+    Previous conversation:
+    {{ context }}
+    {% endif %}
 
     User Question:
     {{ input }}
